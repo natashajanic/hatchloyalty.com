@@ -1,7 +1,9 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import Helmet from 'react-helmet'
 import { StaticQuery, graphql } from 'gatsby'
-
+import theme from '../theme'
+import { ThemeProvider } from 'styled-components'
 import Header from './header'
 import './layout.css'
 
@@ -18,10 +20,22 @@ const Layout = ({ children }) => (
     `}
     render={data => (
       <>
-        <Header siteTitle={data.site.siteMetadata.title} />
-        <div>
-          {children}
-        </div>
+        <Helmet
+          title={data.site.siteMetadata.title}
+          meta={[
+            { name: 'description', content: 'Hatch: Loyalty is an outcome.' },
+            { name: 'keywords', content: 'hatch, loyalty, hatch loyalty,' },
+          ]}
+        >
+          <html lang="en" />
+        </Helmet>
+
+        <ThemeProvider theme={theme}>
+          <>
+            <Header siteTitle={data.site.siteMetadata.title} />
+            {children}
+          </>
+        </ThemeProvider>
       </>
     )}
   />

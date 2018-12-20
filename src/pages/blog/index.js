@@ -2,6 +2,7 @@ import React from 'react'
 import { Link, graphql } from 'gatsby'
 import Layout from '../../components/layout'
 import SEO from '../../components/seo'
+import Box from '../../components/Box'
 
 class BlogIndex extends React.Component {
   render() {
@@ -15,7 +16,12 @@ class BlogIndex extends React.Component {
         {posts.map(({ node }) => {
           const title = node.frontmatter.title || node.fields.slug
           return (
-            <div key={node.fields.slug}>
+            <Box
+              key={node.fields.slug}
+              p={3}
+              bg="offWhite"
+              color="offBlack"
+            >
               <h3>
                 <Link to={node.fields.slug}>
                   {title}
@@ -23,7 +29,7 @@ class BlogIndex extends React.Component {
               </h3>
               <small>{node.frontmatter.date}</small>
               <p dangerouslySetInnerHTML={{ __html: node.excerpt }} />
-            </div>
+            </Box>
           )
         })}
       </Layout>
