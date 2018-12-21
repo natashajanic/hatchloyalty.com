@@ -36,7 +36,7 @@ class BlogIndex extends React.Component {
 
     return (
       <Layout location={this.props.location} title={siteTitle} pageStyle="offWhite">
-        <SEO title="All posts" keywords={['blog', 'gatsby', 'javascript', 'react']} />
+        <SEO title="All Posts" keywords={['hatch', 'hatch loyalty', 'loyalty', 'blog', 'personalization', 'activation',]} />
         <BlogPostContainer
           is="main"
         >
@@ -59,6 +59,10 @@ class BlogIndex extends React.Component {
                   Post Written by {node.frontmatter.author} on {node.frontmatter.date}
                 </BlogPostCardMeta>
                 <Text is="p" dangerouslySetInnerHTML={{ __html: node.excerpt }}/>
+                <UILink
+                  to={node.fields.slug}
+                  color="grayDark"
+                >Read More</UILink>
               </BlogPostCard>
             )
           })}
