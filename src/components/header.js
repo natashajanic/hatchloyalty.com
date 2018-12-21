@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 import React from 'react'
 import system from 'system-components'
 import HatchLogo from '../images/hatch-logo.svg'
-import UILink from './UILink';
+import UILink from './UILink'
 
 const UIHeader = system({
   is: 'header',

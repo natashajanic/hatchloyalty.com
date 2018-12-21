@@ -6,6 +6,7 @@ import theme from '../theme'
 import system from 'system-components'
 import { ThemeProvider } from 'styled-components'
 import Header from './header'
+import Footer from './Footer'
 import './layout.css'
 
 const PageWrapper = system({
@@ -43,6 +44,7 @@ const Layout = ({ children, pageStyle }) => (
           <PageWrapper bg={pageStyle}>
             <Header siteTitle={data.site.siteMetadata.title} />
             {children}
+            <Footer />
           </PageWrapper>
         </ThemeProvider>
       </>
