@@ -1,8 +1,32 @@
 import React from 'react'
-import { Link, graphql } from 'gatsby'
+import { graphql } from 'gatsby'
 import Layout from '../../components/layout'
 import SEO from '../../components/seo'
-import Box from '../../components/Box'
+import UILink from '../../components/UILink'
+import Text from '../../components/Text'
+import system from 'system-components'
+import Panel from '../../components/Panel'
+import BlogPostContainer from '../../components/BlogPostContainer'
+
+const BlogPostCard = system({
+  is: Panel,
+  px: 4,
+  py: 5,
+  mb: 4,
+})
+
+const BlogPostCardTitle = system({
+  is: 'h3',
+  color: 'offBlack',
+  fontSize: [3,4],
+  mb: 2,
+})
+
+const BlogPostCardMeta = system({
+  is: 'div',
+  color: 'grayDark',
+  fontSize: 1,
+})
 
 class BlogIndex extends React.Component {
   render() {
@@ -11,27 +35,34 @@ class BlogIndex extends React.Component {
     const posts = data.allMarkdownRemark.edges
 
     return (
-      <Layout location={this.props.location} title={siteTitle}>
+      <Layout location={this.props.location} title={siteTitle} pageStyle="offWhite">
         <SEO title="All posts" keywords={['blog', 'gatsby', 'javascript', 'react']} />
-        {posts.map(({ node }) => {
-          const title = node.frontmatter.title || node.fields.slug
-          return (
-            <Box
-              key={node.fields.slug}
-              p={3}
-              bg="offWhite"
-              color="offBlack"
-            >
-              <h3>
-                <Link to={node.fields.slug}>
-                  {title}
-                </Link>
-              </h3>
-              <small>{node.frontmatter.date}</small>
-              <p dangerouslySetInnerHTML={{ __html: node.excerpt }} />
-            </Box>
-          )
-        })}
+        <BlogPostContainer
+          is="main"
+        >
+          {posts.map(({ node }) => {
+            const title = node.frontmatter.title || node.fields.slug
+            return (
+              <BlogPostCard
+                key={node.fields.slug}
+              >
+                <BlogPostCardTitle>
+                  <UILink
+                    to={node.fields.slug}
+                    color="offBlack"
+                  >
+                    {title}
+                  </UILink>
+                </BlogPostCardTitle>
+
+                <BlogPostCardMeta>
+                  Post Written by {node.frontmatter.author} on {node.frontmatter.date}
+                </BlogPostCardMeta>
+                <Text is="p" dangerouslySetInnerHTML={{ __html: node.excerpt }}/>
+              </BlogPostCard>
+            )
+          })}
+        </BlogPostContainer>
       </Layout>
     )
   }
@@ -56,6 +87,7 @@ export const pageQuery = graphql`
           frontmatter {
             date(formatString: "MMMM DD, YYYY")
             title
+            author
           }
         }
       }

@@ -3,11 +3,20 @@ import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
 import { StaticQuery, graphql } from 'gatsby'
 import theme from '../theme'
+import system from 'system-components'
 import { ThemeProvider } from 'styled-components'
 import Header from './header'
 import './layout.css'
 
-const Layout = ({ children }) => (
+const PageWrapper = system({
+  is: 'div',
+  bg: 'white',
+},
+  'bg',
+  'color',
+)
+
+const Layout = ({ children, pageStyle }) => (
   <StaticQuery
     query={graphql`
       query SiteTitleQuery {
@@ -31,10 +40,10 @@ const Layout = ({ children }) => (
         </Helmet>
 
         <ThemeProvider theme={theme}>
-          <>
+          <PageWrapper bg={pageStyle}>
             <Header siteTitle={data.site.siteMetadata.title} />
             {children}
-          </>
+          </PageWrapper>
         </ThemeProvider>
       </>
     )}
