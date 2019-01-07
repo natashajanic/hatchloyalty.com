@@ -36,6 +36,24 @@ const Header = ({ siteTitle }) => (
     </Link>
     <Nav>
       <UILink
+        to="/features"
+        color="grayDark"
+      >
+        Features
+      </UILink>
+      <UILink
+        to="/solutions"
+        color="grayDark"
+      >
+        Solutions
+      </UILink>
+      <UILink
+        to="/docs"
+        color="grayDark"
+      >
+        Docs
+      </UILink>
+      <UILink
         to="/blog"
         color="grayDark"
       >
