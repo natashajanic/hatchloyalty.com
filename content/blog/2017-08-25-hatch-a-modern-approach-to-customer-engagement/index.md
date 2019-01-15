@@ -2,7 +2,7 @@
 title: "Hatch: A Modern Approach to Customer Engagement"
 date: "2017-08-25"
 author: "Jake Kiser"
-image: "2017/Positioning-Paper-Image.jpg"
+featuredImage: "./Positioning-Paper-Image.jpg"
 tags: "Enterprise Loyalty"
 ---
 

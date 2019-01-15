@@ -2,7 +2,7 @@
 title: Hatch Announces New CEO, Jake Kiser
 author: Hatch Loyalty
 date: 2018-11-30
-image: 2018/hatch-logo-image.jpg
+featuredImage: ./hatch-logo-image.jpg
 tags: Press Release
 ---
 

@@ -1,10 +1,10 @@
 ---
 
 title: "Customer Engagement Trends 2018: The Age of the Consumer"
-date: 2018-01-24 14:18 CST
+date: 2018-01-24
 tags: "Enterprise Loyalty"
 author: "Natasha Janic"
-image: "2018/customer-engagement-wp.png"
+featuredImage: "./customer-engagement-wp.png"
 addendum_partial: "partials/forms/gated_contact_form_2018_01_24"
 
 ---

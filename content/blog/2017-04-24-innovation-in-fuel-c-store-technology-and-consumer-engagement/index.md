@@ -2,7 +2,7 @@
 title: "Innovation in Fuel & C-Store Technology and Consumer Engagement"
 date: "2017-04-24"
 author: "Natasha Janic"
-image: "2017/Executive-Innovation-Panel.jpg"
+featuredImage: "./Executive-Innovation-Panel.jpg"
 tags: "Enterprise Loyalty"
 excerpt: "Earlier this month, Hatch Loyalty hosted an Executive Innovation Panel in Rosemont, IL that discussed trends in technology and consumer engagement in the Fuel & C-Store space."
 ---

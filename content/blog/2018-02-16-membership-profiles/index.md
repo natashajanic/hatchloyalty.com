@@ -3,7 +3,7 @@ title: "Build Better, More Personalized Relationships with Hatch"
 author: "Dan Lavin"
 date: 2018-02-16
 tags: product
-image: 2018/hatch-better-relationships-hero.png
+featuredImage: ./hatch-better-relationships-hero.png
 ---
 
 At Hatch, we believe successful loyalty and engagement programs start with the
@@ -23,7 +23,7 @@ however, most of our customers choose to enroll new members by leveraging our AP
 in their mobile apps and POS flows. If you're interested in a more detailed
 explanation of how to manage memberships via API, please visit the [Hatch Developer Hub.](https://developer.hatchloyalty.com/tutorials/member-enrollment/)
 
-![Update Member Profile Complete](/assets/images/blog-uploads/2018/member-profiles.png)
+![Update Member Profile Complete](./member-profiles.png)
 
 Once someone becomes a member, the Hatch platform can begin associating
 their behavior to relevant data such as transactions, points earned, offers
@@ -43,7 +43,7 @@ becomes a detailed membership profile filled with rich, actionable data such as:
 - total offers fulfilled
 - externally supplied custom data
 
-![Update Member Profile Complete](/assets/images/blog-uploads/2018/member-profile-complete.png)
+![Update Member Profile Complete](./member-profile-complete.png)
 
 Additionally, Hatch keeps a detailed account of each member's activity with
 the program and displays that data in each profile's activity feed. This feed
@@ -61,7 +61,7 @@ Over time, this data will lead to more informed marketing strategies because
 you'll know exactly which types of offers and rewards will drive
 engagement for each specific member in your program.
 
-![Update Member Activity Feed](/assets/images/blog-uploads/2018/member-activity-feed.png)
+![Update Member Activity Feed](./member-activity-feed.png)
 
 Ultimately, our goal with the membership profile manager is to provide a way
 for our customers to understand how each individual membership is engaging
@@ -74,13 +74,13 @@ We understand that sometimes things don't go as expected. For example, let's say
 a member signed up using the wrong email address. You can log into HQ and easily
 update the details of any membership in the program.
 
-![Update Member Profile](/assets/images/blog-uploads/2018/member-update-info.png)
+![Update Member Profile](./member-update-info.png)
 
 Here's another example. Let's say one of your Members had a poor experience
 at one of your locations. Simply log into HQ and add some points to the members
 profile to prevent further damage. There's nothing worse than an upset customer.
 
-![Adjust Member Points](/assets/images/blog-uploads/2018/member-adjust-points.png)
+![Adjust Member Points](./member-adjust-points.png)
 
 While Hatch is not designed replace your customer support tool, we do want to make sure
 you have a basic set of tools to help manage customer expectations, understand

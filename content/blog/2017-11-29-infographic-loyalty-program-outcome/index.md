@@ -2,7 +2,7 @@
 title: "Infographic: Loyalty Isn't A Program, It's An Outcome"
 author: Natasha Janic
 date: 2017-11-29
-image: 2017/People-Walking.jpg
+featuredImage: ./People-Walking.jpg
 tags: Enterprise Loyalty
 ---
 
@@ -18,4 +18,4 @@ What does this all mean? Retailers and brands must adapt or risk irrelevance. Fi
 
 [Read more about how Hatch](https://www.hatchloyalty.com/) empowers retailers and brands to develop simple, adaptable customer engagement programs that are also profitable for their business.
 
-![loyalty-program-outcome-infographic](/assets/images/blog-uploads/2017/Loyalty-Isnt-A-Program-Infographic.png)
+![loyalty-program-outcome-infographic](./Loyalty-Isnt-A-Program-Infographic.png)

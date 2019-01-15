@@ -3,14 +3,14 @@ title: "Hacking the Habit: Why Understanding Habit Formation is Critical for Ret
 author: Natasha Janic
 date: 2018-09-06
 tags: Enterprise Loyalty
-image: 2018/Hacking-the-Habit-Blog-Image.jpg
+featuredImage: ./Hacking-the-Habit-Blog-Image.jpg
 ---
 
 *Wake up, hit snooze, actually wake up, brush teeth, splash cold water on face, make coffee.*
 
 Chances are, everyone has some variation of a morning routine they go through on autopilot. [Research shows](https://www.nytimes.com/2008/07/13/business/13habit.html?pagewanted=all) that 45% of everything we do on a daily basis is out of habit. Maybe you’re craving pizza and you immediately dial your favorite pizza place with your “usual” order on deck. Maybe you’re walking to work and mobile order your morning coffee as soon as you reach a specific intersection.
 
-Whatever the habit is, it had to start somewhere. Habits are formed when your memory associates specific actions with specific places or moods. This could be as inherent as pouring a glass of water before bed every night, to always choosing the same brand of toothpaste. 
+Whatever the habit is, it had to start somewhere. Habits are formed when your memory associates specific actions with specific places or moods. This could be as inherent as pouring a glass of water before bed every night, to always choosing the same brand of toothpaste.
 
 Some habits aren’t as intuitive as others and require consistent association with one another in order to take hold. Consider peanut butter and jelly. These two items wouldn’t be a natural pairing if the peanut butter and jelly companies didn’t consistently tell us they were, creating automatic neural connections between the items (and if it didn’t taste delicious).
 
@@ -27,7 +27,7 @@ According to *The Power of Habit*, there are 3 components to habit formation:
 2. The routine: the behavior itself
 3. The reward: how the brain learns to turn that behavior into a habit
 
-The habit formation process can seem pretty simple when, for example, you’re trying to get your toddler in the habit of brushing their teeth everyday. Maybe you’re able to get them to brush their teeth as soon as they wake up by promising an extra (sugarfree) treat after they’ve done so. 
+The habit formation process can seem pretty simple when, for example, you’re trying to get your toddler in the habit of brushing their teeth everyday. Maybe you’re able to get them to brush their teeth as soon as they wake up by promising an extra (sugarfree) treat after they’ve done so.
 
 When it comes to a customer’s relationship with a brand or product, the path to behavior change becomes much more nebulous. Customer preferences are always changing so your habit formation strategy should always be adapting.
 
@@ -37,6 +37,6 @@ Retailers and brands must be ready for an ever changing cycle of life. Maybe a c
 
 Accounting for this change in behavior is imperative to keeping this customer returning to your business. Now, instead of focusing on increasing the quantity and frequency of their beer purchases, you want to develop the habit of purchasing baby care items and healthier snack options for this new parent.
 
-Habits today aren’t static. Blasting customers with marketing messages doesn’t help create lasting, profitable habits. Addressing customer pain points and needs both today, and as they evolve, is the key in habit formation. 
+Habits today aren’t static. Blasting customers with marketing messages doesn’t help create lasting, profitable habits. Addressing customer pain points and needs both today, and as they evolve, is the key in habit formation.
 
 [Learn more](https://www.hatchloyalty.com/platform/) about how Hatch can help you on your journey to create and maintain customer Habits.

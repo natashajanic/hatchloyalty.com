@@ -2,7 +2,7 @@
 title: "Bye Bye Bubba: Understanding Today's C-Store Customer"
 author: Natasha Janic
 date: 2018-10-05
-image: 2018/Bye-Bye-Bubba-Image.jpg
+featuredImage: ./Bye-Bye-Bubba-Image.jpg
 tags: Enterprise Loyalty
 ---
 
@@ -34,7 +34,7 @@ Tobacco still accounts for nearly two thirds of in-store sales. However, this co
 
 The key to customer engagement and driving a c-store’s bottom line, therefore, lies in other merchandise. The most purchased categories across generations include packaged beverages, beer, grocery, candy & sweets, salty snacks and fresh food.
 
-![category-breakdown](/assets/images/blog-uploads/2018/Bye-Bye-Bubba_Category-Breakdown.png)
+![category-breakdown](./Bye-Bye-Bubba_Category-Breakdown.png)
 
 The beverage and snack categories are dominant among non-tobacco sales. However, millennials are far less likely to purchase beer at a convenience retailer: a departure from the Bubba persona.
 
@@ -44,7 +44,7 @@ Fresh food (not *just* hot dogs) is one of the [fastest growing categories](http
 
 The packaged beverage category drives a large majority of non-tobacco sales. However, the “Cokes” part of Cokes & smokes may not be as relevant for today’s c-store customer when breaking down the beverage category.
 
-![beverage-breakdown](/assets/images/blog-uploads/2018/Bye-Bye-Bubba-Beverage-Breakdown.png)
+![beverage-breakdown](./Bye-Bye-Bubba-Beverage-Breakdown.png)
 
 Energy drinks are the beverage of choice across generations, but hold the most market share among Gen Z and millennials. Additionally, Coca-Cola is not as dominant among Gen Z and millennials in comparison to other soda brands, indicating that consumer preferences have become more diverse as more options have become available.
 

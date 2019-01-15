@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: 'Hatch Loyalty',
-    description: 'Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.',
+    description: 'Hatch Loyalty is modern customer activation platform that powers personalization for retailers across many different verticals.',
     author: '@hatchloyalty',
     social: {
       twitter: '@hihatch'
@@ -11,8 +11,28 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
+        path: `${__dirname}/src/pages`,
+        name: 'pages',
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
         name: `images`,
         path: `${__dirname}/src/images`,
+      },
+    },
+    {
+      resolve: `gatsby-transformer-remark`,
+      options: {
+        plugins: [
+          {
+            resolve: `gatsby-remark-images`,
+            options: {
+              maxWidth: 600,
+            },
+          },
+        ],
       },
     },
     {
@@ -45,6 +65,5 @@ module.exports = {
     'gatsby-plugin-react-helmet',
     'gatsby-plugin-offline',
     'gatsby-plugin-catch-links',
-    'gatsby-transformer-remark',
   ],
 }

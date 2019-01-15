@@ -2,7 +2,7 @@
 title: "Decoding Gen Z: How the Most Diverse Generation Will Impact Brand Loyalty"
 author: Natasha Janic
 date: 2018-05-25
-image: 2018/gen-z-transforms-brand-loyalty.jpg
+featuredImage: ./gen-z-transforms-brand-loyalty.jpg
 tags: Enterprise Loyalty
 ---
 
@@ -24,7 +24,7 @@ Brands like [Patagonia](https://www.washingtonpost.com/news/morning-mix/wp/2017/
 
 ### Say Something Valuable: Personalization is Key
 
-Brands are no longer successful in gaining customer loyalty by being the loudest and most visible. Gen Z is the first generation to grow up truly mobile-first. Even most millennials remember a time without internet and smartphones. Gen Z has been bombarded with marketing messages for as long as they can remember and have become a generation of marketing skeptics. 
+Brands are no longer successful in gaining customer loyalty by being the loudest and most visible. Gen Z is the first generation to grow up truly mobile-first. Even most millennials remember a time without internet and smartphones. Gen Z has been bombarded with marketing messages for as long as they can remember and have become a generation of marketing skeptics.
 
 Gen Z is willing to [share their data](http://www.adweek.com/digital/the-amazing-guest-test-mind-your-manners-and-make-gen-z-love-your-brand/) with brands if it means that they’ll receive more personalized marketing messages. They’re willing to hear brands talk about themselves, but that can’t be ALL brands say. This is a generation that grew up with online communities being a commodity and want their relationships with brands to be more than a one-way conversation. Gen Z wants to consume brand content without feeling like they’re being sold to, which is where [personalization](https://www.hatchloyalty.com/blog/from-personas-to-personalization-people-based-marketing/) plays a major role.
 

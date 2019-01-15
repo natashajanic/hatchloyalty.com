@@ -2,7 +2,7 @@
 title: "Transforming Engagement in Convenience Retail: Executive Breakfast Recap"
 author: "Natasha Janic"
 date: "2017-11-08"
-image: "2017/Hatch-Executive-Breakfast.png"
+featuredImage: "./Hatch-Executive-Breakfast.png"
 tags: "Enterprise Loyalty"
 ---
 

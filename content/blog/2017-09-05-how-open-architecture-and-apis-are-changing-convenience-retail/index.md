@@ -2,9 +2,9 @@
 title: "How Open Architecture and APIs Are Changing Convenience Retail"
 date: "2017-09-05"
 author: "Natasha Janic"
-image: "2017/How-Open-Architecture-and-APIs-are-changing-CR.jpg"
+featuredImage: "./How-Open-Architecture-and-APIs-are-changing-CR.jpg"
 tags: "Enterprise Loyalty"
-thumbnail: "2017/How-Open-Architecture-and-APIs-are-changing-CR-thumb.png"
+thumbnail: "./How-Open-Architecture-and-APIs-are-changing-CR-thumb.png"
 excerpt: "As retailers face the reality of hardware barriers, there is a greater demand for cloud-based software that allow for greater flexibility. While the industry is in the early stages of pivoting away from proprietary hardware and software, the fuel & c-store industry still has a long way to go."
 ---
 

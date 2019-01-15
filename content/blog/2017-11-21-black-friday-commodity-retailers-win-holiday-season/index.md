@@ -2,7 +2,7 @@
 title: "When Black Friday Deals Become a Commodity: How Retailers Can Win This Holiday Season"
 author: "Natasha Janic"
 date: "2017-11-21"
-image: "2017/Black-Friday-Hatch.jpeg"
+featuredImage: "./Black-Friday-Hatch.jpeg"
 tags: "Enterprise Loyalty"
 ---
 

@@ -2,7 +2,7 @@
 title: "Personalizing Convenience: How Technology and Customer-Focused Marketing Are Transforming the Fuel & Convenience Store Industry"
 date: "2017-09-01"
 author: "Hatch Loyalty"
-image: "2017/industry-leading-loyalty-provider-belly-evolves-to-hatch.png"
+featuredImage: "./industry-leading-loyalty-provider-belly-evolves-to-hatch.png"
 tags: "Enterprise Loyalty"
 featured: true
 thumbnail: "2017/industry-leading-loyalty-provider-belly-evolves-to-hatch-thumb.png"

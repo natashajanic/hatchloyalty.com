@@ -2,7 +2,7 @@
 title: "Hatch Loyalty Partners with Buy It Mobility Networks (BIM) to Bring the Leading Commerce and Customer Engagement Solution to Fuel & Convenience Stores"
 author: "Hatch Loyalty"
 date: "2017-10-24"
-image: "2017/BIM-Hatch-Press-Release-image.png"
+featuredImage: "./BIM-Hatch-Press-Release-image.png"
 tags: "Press Release"
 excerpt: "Partnership Will Enable Merchants to Easily Integrate Incentives, Rewards & Branded Payments Capabilities into Their Mobile Apps"
 ---

@@ -2,7 +2,7 @@
 title: "Hatch Loyalty Partners with SKUPOS to Bring Operations and Customer Engagement Solution to Convenience Retailers"
 author: "Hatch Loyalty"
 date: "2017-10-12"
-image: "2017/Hatch-Partners-SKUPOS-Operations-Customer-Engagement-Convenience-Retail.png"
+featuredImage: "./Hatch-Partners-SKUPOS-Operations-Customer-Engagement-Convenience-Retail.png"
 tags: "Press Release"
 ---
 
