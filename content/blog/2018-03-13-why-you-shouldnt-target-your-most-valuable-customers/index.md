@@ -4,7 +4,7 @@ author: Natasha Janic
 date: 2018-03-13
 featured: true
 thumbnail: "./Why-You-Shouldn't-Target-Your-Most-Valuable-Customers-thumb.png"
-featuredImage: ./Why-You-Shouldn't-Target-Your-Most-Valuable-Customers.jpg
+featuredImage: "./Why-You-Shouldn't-Target-Your-Most-Valuable-Customers.jpg"
 tags: Enterprise Loyalty
 excerpt: "The very top customers of that 20% are a retailer’s Most Valuable Customers (MVC’s). But they aren’t who retailers’ efforts should be focusing most of their marketing dollars on. Retailers may actually see a greater impact by focusing on the Potentially Valuable Customer (PVC)."
 ---

@@ -3,7 +3,6 @@ import PropTypes from 'prop-types'
 import React from 'react'
 import system from 'system-components'
 import HatchLogo from '../images/hatch-logo.svg'
-import UILink from './UILink'
 
 const UIHeader = system({
   is: 'header',
@@ -29,36 +28,13 @@ const Nav = system({
 
 const Header = ({ siteTitle }) => (
   <UIHeader>
-    <Link
-      to="/"
-    >
+    <Link to="/">
       <Logo src={HatchLogo}/>
     </Link>
+
     <Nav>
-      <UILink
-        to="/features"
-        color="grayDark"
-      >
-        Features
-      </UILink>
-      <UILink
-        to="/solutions"
-        color="grayDark"
-      >
-        Solutions
-      </UILink>
-      <UILink
-        to="/docs"
-        color="grayDark"
-      >
-        Docs
-      </UILink>
-      <UILink
-        to="/blog"
-        color="grayDark"
-      >
-        Blog
-      </UILink>
+      <Link to="/features">Features</Link>
+      <Link to="/blog">Blog</Link>
     </Nav>
   </UIHeader>
 )

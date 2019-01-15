@@ -2,7 +2,7 @@
 title: "Decoding Gen Z: How the Most Diverse Generation Will Impact Brand Loyalty"
 author: Natasha Janic
 date: 2018-05-25
-featuredImage: ./gen-z-transforms-brand-loyalty.jpg
+featuredImage: "./gen-z-transforms-brand-loyalty.jpg"
 tags: Enterprise Loyalty
 ---
 

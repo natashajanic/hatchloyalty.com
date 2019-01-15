@@ -2,7 +2,7 @@
 title: "Amazon Go: What Convenience Retailers Should Know"
 author: Natasha Janic
 date: 2018-02-14
-featuredImage: ./Amazon-Go-Blog.jpg
+featuredImage: "./Amazon-Go-Blog.jpg"
 tags: Enterprise Loyalty
 ---
 

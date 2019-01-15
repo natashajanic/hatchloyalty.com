@@ -1,12 +1,12 @@
 import React from 'react'
-import { graphql } from 'gatsby'
-import Layout from '../../components/layout'
-import SEO from '../../components/seo'
-import UILink from '../../components/UILink'
-import Text from '../../components/Text'
+import { graphql, Link } from 'gatsby'
+import Img from 'gatsby-image'
+import Layout from '../components/layout'
+import SEO from '../components/seo'
+import Text from '../components/Text'
 import system from 'system-components'
-import Panel from '../../components/Panel'
-import BlogPostContainer from '../../components/BlogPostContainer'
+import Panel from '../components/Panel'
+import BlogPostContainer from '../components/BlogPostContainer'
 
 const BlogPostCard = system({
   is: Panel,
@@ -47,22 +47,25 @@ class BlogIndex extends React.Component {
                 key={node.fields.slug}
               >
                 <BlogPostCardTitle>
-                  <UILink
+                  <Link
                     to={node.fields.slug}
                     color="offBlack"
                   >
                     {title}
-                  </UILink>
+                  </Link>
                 </BlogPostCardTitle>
 
                 <BlogPostCardMeta>
                   Post Written by {node.frontmatter.author} on {node.frontmatter.date}
                 </BlogPostCardMeta>
+
+                {node.frontmatter.featuredImage && <Img fluid={node.frontmatter.featuredImage.childImageSharp.fluid} />}
+
                 <Text is="p" dangerouslySetInnerHTML={{ __html: node.excerpt }}/>
-                <UILink
+                <Link
                   to={node.fields.slug}
                   color="grayDark"
-                >Read More</UILink>
+                >Read More</Link>
               </BlogPostCard>
             )
           })}
@@ -75,7 +78,7 @@ class BlogIndex extends React.Component {
 export default BlogIndex
 
 export const pageQuery = graphql`
-  query {
+  query BlogIndexQuery {
     site {
       siteMetadata {
         title
@@ -89,9 +92,19 @@ export const pageQuery = graphql`
             slug
           }
           frontmatter {
-            date(formatString: "MMMM DD, YYYY")
+            date(formatString: "DD MMMM, YYYY")
             title
             author
+            featuredImage {
+              childImageSharp {
+                resize(width: 1500, height: 1500) {
+                  src
+                }
+                fluid(maxWidth: 786) {
+                  ...GatsbyImageSharpFluid
+                }
+              }
+            }
           }
         }
       }

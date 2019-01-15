@@ -2,7 +2,7 @@
 title: "Bye Bye Bubba: Understanding Today's C-Store Customer"
 author: Natasha Janic
 date: 2018-10-05
-featuredImage: ./Bye-Bye-Bubba-Image.jpg
+featuredImage: "./Bye-Bye-Bubba-Image.jpg"
 tags: Enterprise Loyalty
 ---
 

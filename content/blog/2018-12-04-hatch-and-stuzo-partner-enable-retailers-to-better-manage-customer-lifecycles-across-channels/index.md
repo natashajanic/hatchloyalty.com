@@ -2,7 +2,7 @@
 title: Hatch and Stuzo Partner to Enable Retailers to Better Manager Customer Lifecycles Across Channels
 author: Hatch Loyalty
 date: 2018-12-04
-featuredImage: ./Stuzo-Hatch-Header.jpg
+featuredImage: "./Stuzo-Hatch-Header.jpg"
 tags: Press Release
 ---
 

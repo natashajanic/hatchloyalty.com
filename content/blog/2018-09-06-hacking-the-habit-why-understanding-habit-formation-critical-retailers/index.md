@@ -3,7 +3,7 @@ title: "Hacking the Habit: Why Understanding Habit Formation is Critical for Ret
 author: Natasha Janic
 date: 2018-09-06
 tags: Enterprise Loyalty
-featuredImage: ./Hacking-the-Habit-Blog-Image.jpg
+featuredImage: "./Hacking-the-Habit-Blog-Image.jpg"
 ---
 
 *Wake up, hit snooze, actually wake up, brush teeth, splash cold water on face, make coffee.*

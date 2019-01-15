@@ -3,7 +3,7 @@ title: "Build Better, More Personalized Relationships with Hatch"
 author: "Dan Lavin"
 date: 2018-02-16
 tags: product
-featuredImage: ./hatch-better-relationships-hero.png
+featuredImage: "./hatch-better-relationships-hero.png"
 ---
 
 At Hatch, we believe successful loyalty and engagement programs start with the
