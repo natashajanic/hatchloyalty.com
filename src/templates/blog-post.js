@@ -3,6 +3,7 @@ import Img from 'gatsby-image'
 import { Link, graphql } from 'gatsby'
 import BlogPostContainer from '../components/BlogPostContainer'
 import Layout from '../components/layout'
+import Box from '../components/Box'
 import SEO from '../components/seo'
 
 class BlogPostTemplate extends React.Component {
@@ -43,6 +44,14 @@ class BlogPostTemplate extends React.Component {
               }
             </li>
           </ul>
+
+          <Box>
+            Enjoyed this post? Sign up to receive the next one in your inbox. Don't worry, we won't spam you, promise!
+            <div>
+              <input type="text"/>
+            </div>
+
+          </Box>
         </BlogPostContainer>
       </Layout>
     )
