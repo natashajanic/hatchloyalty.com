@@ -5,14 +5,50 @@ module.exports = {
     author: '@hatchloyalty',
     social: {
       twitter: '@hihatch'
-    }
+    },
+    navLinks: [
+      {
+        name: 'home',
+        link: '/',
+      },
+      {
+        name: 'features',
+        link: '/features',
+      },
+      {
+        name: 'docs',
+        link: '/docs',
+      },
+      {
+        name: 'blog',
+        link: '/blog',
+      },
+    ]
   },
+  // mapping: {
+  //   "MarkdownRemark.frontmatter.author": `AuthorYaml`,
+  // },
+
   plugins: [
     {
       resolve: `gatsby-source-filesystem`,
       options: {
         path: `${__dirname}/src/pages`,
         name: 'pages',
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: `${__dirname}/content/blog`,
+        name: 'blog',
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: `${__dirname}/content/docs`,
+        name: 'docs',
       },
     },
     {
@@ -33,13 +69,6 @@ module.exports = {
             },
           },
         ],
-      },
-    },
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        path: `${__dirname}/content/blog`,
-        name: 'blog',
       },
     },
     {
@@ -65,5 +94,6 @@ module.exports = {
     'gatsby-plugin-react-helmet',
     'gatsby-plugin-offline',
     'gatsby-plugin-catch-links',
+    'gatsby-plugin-styled-components',
   ],
 }

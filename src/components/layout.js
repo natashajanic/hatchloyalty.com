@@ -17,6 +17,10 @@ const PageWrapper = system({
   'color',
 )
 
+const Main = system({
+  is: 'main',
+})
+
 const Layout = ({ children, pageStyle }) => (
   <StaticQuery
     query={graphql`
@@ -24,6 +28,10 @@ const Layout = ({ children, pageStyle }) => (
         site {
           siteMetadata {
             title
+            navLinks {
+              name
+              link
+            }
           }
         }
       }
@@ -34,7 +42,7 @@ const Layout = ({ children, pageStyle }) => (
           title={data.site.siteMetadata.title}
           meta={[
             { name: 'description', content: 'Hatch: Loyalty is an outcome.' },
-            { name: 'keywords', content: 'hatch, loyalty, hatch loyalty,' },
+            { name: 'keywords', content: 'hatch, loyalty, hatch loyalty, api, customer activation, data activation, platform' },
           ]}
         >
           <html lang="en" />
@@ -42,8 +50,13 @@ const Layout = ({ children, pageStyle }) => (
 
         <ThemeProvider theme={theme}>
           <PageWrapper bg={pageStyle}>
-            <Header siteTitle={data.site.siteMetadata.title} />
-            {children}
+            <Header
+              navLinks={data.site.siteMetadata.navLinks}
+              siteTitle={data.site.siteMetadata.title}
+            />
+            <Main role="main">
+              {children}
+            </Main>
             <Footer />
           </PageWrapper>
         </ThemeProvider>

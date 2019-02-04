@@ -1,19 +1,17 @@
 import Typography from "typography"
 
 const typography = new Typography({
-  title: 'Hatch',
   baseFontSize: "18px",
-  baseLineHeight: 1.66,
-  scaleRatio: 2,
+  baseLineHeight: 1.666,
   headerFontFamily: [
-    "Avenir Next",
+    "Ubuntu",
     "Helvetica Neue",
     "Segoe UI",
     "Helvetica",
     "Arial",
     "sans-serif",
   ],
-  bodyFontFamily: ["Georgia", "serif"],
+  bodyFontFamily: ["Bree Serif", "Georgia", "serif"],
 })
 
 export default typography

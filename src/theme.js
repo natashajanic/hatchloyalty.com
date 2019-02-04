@@ -21,7 +21,7 @@ const colors = {
   yellowDark: '#594430',
 }
 
-const fontSizes = [10, 12, 14, 16, 20, 24, 32, 48, 64, 72, 96]
+const fontSizes = [10, 12, 14, 16, 18, 20, 24, 30, 36, 48, 60, 72, 96]
 const space = [0, 4, 8, 16, 32, 64, 128, 256]
 
 export default {
@@ -81,7 +81,7 @@ export default {
     },
   },
   fontSizes,
-  fonts: ['-apple-system, BlinkMacSystemFont, sans-serif'],
+  // fonts: ['-apple-system, BlinkMacSystemFont, sans-serif'],
   fontWeights: {
     light: 300,
     normal: 400,

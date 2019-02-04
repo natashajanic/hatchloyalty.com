@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1024px" height="384px" viewBox="0 0 1024 384" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>line-graph</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="72.51662%" y1="28.4828294%" x2="79.1233905%" y2="89.438892%" id="linearGradient-1">
+            <stop stop-color="#A6DED8" offset="0%"></stop>
+            <stop stop-color="#B7D6D2" stop-opacity="0" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" fill-opacity="0.5">
+        <g id="Desktop-Copy-2" transform="translate(0.000000, -640.000000)" fill="url(#linearGradient-1)">
+            <g id="line-graph" transform="translate(0.000000, 640.000000)">
+                <path d="M20.9406292,292.035145 L214.608284,228.461501 L319.709419,236.742879 L433.288915,260.248323 L594.747639,195.054584 L758.240526,179.432529 C824.657711,59.8108431 857.866304,0 857.866304,0 C857.866304,0 881.245785,30.9466239 928.004748,92.8398717 L1023.76722,68.9324188 L1023.76722,383.733312 L0,383.733312 L20.9406292,292.035145 Z" id="Path-2"></path>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -7,8 +7,10 @@ const UIFooter = system({
   bg: 'white',
   display: 'flex',
   justifyContent: 'space-between',
+  mx: 'auto',
   px: 3,
   py: 3,
+  width: '1024px',
 })
 
 

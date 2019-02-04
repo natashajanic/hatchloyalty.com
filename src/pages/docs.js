@@ -1,6 +1,6 @@
 import React from 'react'
 import { graphql, Link } from 'gatsby'
-import Img from 'gatsby-image'
+// import Img from 'gatsby-image'
 import { BookOpen } from 'react-feather'
 import Layout from '../components/layout'
 import SEO from '../components/seo'
@@ -25,25 +25,25 @@ const BlogPostCard = system({
 //   mb: 2,
 // })
 
-const BlogPostCardMeta = system({
-  is: 'div',
-  color: 'grayDark',
-  fontSize: 1,
-})
+// const BlogPostCardMeta = system({
+//   is: 'div',
+//   color: 'grayDark',
+//   fontSize: 1,
+// })
 
 const BlogPostTag = system({
   is: 'span',
 })
 
-class BlogIndex extends React.Component {
+class DocsIndex extends React.Component {
   render() {
     const { data } = this.props;
     const siteTitle = data.site.siteMetadata.title
-    const posts = data.allMarkdownRemark.edges
+    const resources = data.allMarkdownRemark.edges
 
     return (
       <Layout location={this.props.location} title={siteTitle} pageStyle="offWhite">
-        <SEO title="All Posts" keywords={['hatch', 'hatch loyalty', 'loyalty', 'blog', 'personalization', 'activation',]} />
+        <SEO title="All Resources" keywords={['hatch', 'hatch loyalty', 'loyalty', 'docs', 'personalization', 'activation',]} />
         <BlogPostContainer
           is="main"
         >
@@ -51,12 +51,12 @@ class BlogIndex extends React.Component {
             <IconCircle bg="green">
               <BookOpen size={20} color="#fff" />
             </IconCircle>
-            <Text fontSize={1} ml={2}>Hatch Insights</Text>
+            <Text fontSize={1} ml={2}>Hatch Resources/Docs</Text>
           </Box>
 
           <Text is="h2" fontSize={5}>Learn from experts. Hatch is here to help you build stronger relationships with your customers.</Text>
 
-          {posts.map(({ node }) => {
+          {resources.map(({ node }) => {
             const title = node.frontmatter.title || node.fields.slug
             return (
               <BlogPostCard
@@ -74,12 +74,6 @@ class BlogIndex extends React.Component {
                 >
                   {title}
                 </Link>
-
-                <BlogPostCardMeta>
-                  Post Written by {node.frontmatter.author} on {node.frontmatter.date}
-                </BlogPostCardMeta>
-
-                {node.frontmatter.featuredImage && <Img fluid={node.frontmatter.featuredImage.childImageSharp.fluid} />}
 
                 <Text
                   is="p"
@@ -103,9 +97,9 @@ class BlogIndex extends React.Component {
   }
 }
 
-export default BlogIndex
+export default DocsIndex
 
-export const blogIndexQuery = graphql`
+export const docIndexQuery = graphql`
   query {
     site {
       siteMetadata {
@@ -114,7 +108,7 @@ export const blogIndexQuery = graphql`
     }
     allMarkdownRemark(
       sort: { fields: [frontmatter___date], order: DESC }
-      filter: { fileAbsolutePath: {regex : "\/blog/"} },
+      filter: { fileAbsolutePath: {regex : "\/docs/"} },
 
     ) {
       edges {
@@ -124,20 +118,7 @@ export const blogIndexQuery = graphql`
             slug
           }
           frontmatter {
-            date(formatString: "MMMM DD, YYYY")
             title
-            author
-            tags
-            featuredImage {
-              childImageSharp {
-                resize(width: 1500, height: 1500) {
-                  src
-                }
-                fluid(maxWidth: 786) {
-                  ...GatsbyImageSharpFluid
-                }
-              }
-            }
           }
         }
       }
