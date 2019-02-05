@@ -1,4 +1,5 @@
 ---
+documentType: "resource"
 title: "Transaction Processing Tutorial"
 layout: "tutorial"
 ---

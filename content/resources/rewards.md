@@ -1,4 +1,5 @@
 ---
+documentType: "resource"
 title: "Rewards"
 layout: "tutorial"
 ---

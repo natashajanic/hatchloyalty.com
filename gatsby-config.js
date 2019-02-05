@@ -16,8 +16,8 @@ module.exports = {
         link: '/features',
       },
       {
-        name: 'docs',
-        link: '/docs',
+        name: 'resources',
+        link: '/resources',
       },
       {
         name: 'blog',
@@ -47,8 +47,8 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        path: `${__dirname}/content/docs`,
-        name: 'docs',
+        path: `${__dirname}/content/resources`,
+        name: 'resources',
       },
     },
     {
@@ -95,5 +95,6 @@ module.exports = {
     'gatsby-plugin-offline',
     'gatsby-plugin-catch-links',
     'gatsby-plugin-styled-components',
+    'gatsby-remark-source-name',
   ],
 }

@@ -1,39 +1,12 @@
 import React from 'react'
 import { graphql, Link } from 'gatsby'
-// import Img from 'gatsby-image'
 import { BookOpen } from 'react-feather'
 import Layout from '../components/layout'
 import SEO from '../components/seo'
 import Text from '../components/Text'
 import Box from '../components/Box'
-import system from 'system-components'
-import Panel from '../components/Panel'
 import BlogPostContainer from '../components/BlogPostContainer'
 import IconCircle from '../components/IconCircle'
-
-const BlogPostCard = system({
-  is: Panel,
-  px: 4,
-  py: 5,
-  mb: 4,
-})
-
-// const BlogPostCardTitle = system({
-//   is: 'h3',
-//   color: 'offBlack',
-//   fontSize: [3,4],
-//   mb: 2,
-// })
-
-// const BlogPostCardMeta = system({
-//   is: 'div',
-//   color: 'grayDark',
-//   fontSize: 1,
-// })
-
-const BlogPostTag = system({
-  is: 'span',
-})
 
 class DocsIndex extends React.Component {
   render() {
@@ -59,10 +32,9 @@ class DocsIndex extends React.Component {
           {resources.map(({ node }) => {
             const title = node.frontmatter.title || node.fields.slug
             return (
-              <BlogPostCard
+              <div
                 key={node.fields.slug}
               >
-                <BlogPostTag>{node.frontmatter.tags}</BlogPostTag>
 
                 <Link
                   to={node.fields.slug}
@@ -88,7 +60,7 @@ class DocsIndex extends React.Component {
                 >
                   Read More
                 </Link>
-              </BlogPostCard>
+              </div>
             )
           })}
         </BlogPostContainer>
@@ -108,7 +80,7 @@ export const docIndexQuery = graphql`
     }
     allMarkdownRemark(
       sort: { fields: [frontmatter___date], order: DESC }
-      filter: { fileAbsolutePath: {regex : "\/docs/"} },
+      filter: { fields: { sourceName: { eq: "resources"}}},
 
     ) {
       edges {

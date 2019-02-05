@@ -6,7 +6,7 @@ tags: "Press Release"
 author: "Hatch Loyalty"
 addendum_partial: "partials/forms/gated_contact_form_2018_01_24"
 excerpt: "Hatch Loyalty Completes Sale of Belly Assets, Finalizes Shift from SMB to Enterprise. The sale of the SMB product line empowers Hatch Loyalty to dedicate its full efforts to product development and growth of its customer activation engine."
-
+featuredImage: ""
 ---
 
 **CHICAGO, November 14, 2018** -- Hatch Loyalty, a customer activation engine that helps retailers better know and serve their customers, today announced an agreement to sell the Belly assets to <a href="https://www.mobivity.com/">Mobivity (MFON)</a>, creators of the award winning recurrency platform that increases customer visits and spend in restaurant, retail, and personal care brands. The Belly product offers a digital loyalty solution for small-to-medium sized businesses. This sale of the Belly product line is a final step in the two-year plan to develop and launch the Hatch platform.

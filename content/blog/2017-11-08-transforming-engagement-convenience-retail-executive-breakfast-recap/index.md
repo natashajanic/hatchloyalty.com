@@ -1,4 +1,5 @@
 ---
+documentType: "blog"
 title: "Transforming Engagement in Convenience Retail: Executive Breakfast Recap"
 author: "Natasha Janic"
 date: "2017-11-08"

@@ -1,4 +1,5 @@
 ---
+documentType: "resource"
 title: "Reward Marketing Contents"
 layout: "tutorial"
 ---

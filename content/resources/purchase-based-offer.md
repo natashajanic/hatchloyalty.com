@@ -1,4 +1,5 @@
 ---
+documentType: "resource"
 title: "Purchase-based Offer Tutorial"
 layout: "tutorial"
 ---

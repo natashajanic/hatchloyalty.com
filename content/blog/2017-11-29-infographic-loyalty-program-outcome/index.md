@@ -1,4 +1,5 @@
 ---
+documentType: "blog"
 title: "Infographic: Loyalty Isn't A Program, It's An Outcome"
 author: Natasha Janic
 date: 2017-11-29

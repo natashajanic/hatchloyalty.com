@@ -1,4 +1,5 @@
 ---
+documentType: "resource"
 title: "Behavioral Offer Tutorial"
 layout: "tutorial"
 ---

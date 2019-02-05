@@ -1,4 +1,5 @@
 ---
+documentType: "resource"
 title: "Product Groups"
 layout: "tutorial"
 ---

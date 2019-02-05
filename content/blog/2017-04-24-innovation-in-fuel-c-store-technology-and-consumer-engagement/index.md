@@ -1,4 +1,5 @@
 ---
+documentType: "blog"
 title: "Innovation in Fuel & C-Store Technology and Consumer Engagement"
 date: "2017-04-24"
 author: "Natasha Janic"

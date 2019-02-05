@@ -79,7 +79,7 @@ class BlogIndex extends React.Component {
                   Post Written by {node.frontmatter.author} on {node.frontmatter.date}
                 </BlogPostCardMeta>
 
-                {node.frontmatter.featuredImage && <Img fluid={node.frontmatter.featuredImage.childImageSharp.fluid} />}
+                {/* {node.frontmatter.featuredImage && <Img fluid={node.frontmatter.featuredImage.childImageSharp.fluid} />} */}
 
                 <Text
                   is="p"
@@ -114,8 +114,7 @@ export const blogIndexQuery = graphql`
     }
     allMarkdownRemark(
       sort: { fields: [frontmatter___date], order: DESC }
-      filter: { fileAbsolutePath: {regex : "\/blog/"} },
-
+      filter: { fields: { sourceName: { eq: "blog"}}},
     ) {
       edges {
         node {

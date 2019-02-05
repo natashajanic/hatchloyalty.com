@@ -1,4 +1,5 @@
 ---
+documentType: "blog"
 title: "Decoding Gen Z: How the Most Diverse Generation Will Impact Brand Loyalty"
 author: Natasha Janic
 date: 2018-05-25

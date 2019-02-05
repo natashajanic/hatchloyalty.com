@@ -15,7 +15,7 @@ const PostTitle = system({
   pb: 4,
 })
 
-class DocumentTemplate extends React.Component {
+class BlogTemplate extends React.Component {
   render() {
     const post = this.props.data.markdownRemark
     const siteTitle = this.props.data.site.siteMetadata.title
@@ -26,6 +26,7 @@ class DocumentTemplate extends React.Component {
         <Wrapper>
           <Box py={4}>
             <PostTitle>{post.frontmatter.title}</PostTitle>
+            <span>{post.frontmatter.author}</span>
           </Box>
 
           <div dangerouslySetInnerHTML={{ __html: post.html }} />
@@ -35,10 +36,10 @@ class DocumentTemplate extends React.Component {
   }
 }
 
-export default DocumentTemplate
+export default BlogTemplate
 
 export const pageQuery = graphql`
-  query DocumentBySlug($slug: String!) {
+  query BlogBySlug($slug: String!) {
     site {
       siteMetadata {
         title

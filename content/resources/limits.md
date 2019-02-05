@@ -1,4 +1,5 @@
 ---
+documentType: "resource"
 title: "Offer Limits"
 layout: "tutorial"
 ---

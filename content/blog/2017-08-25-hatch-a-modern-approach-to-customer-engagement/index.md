@@ -1,4 +1,5 @@
 ---
+documentType: "blog"
 title: "Hatch: A Modern Approach to Customer Engagement"
 date: "2017-08-25"
 author: "Jake Kiser"

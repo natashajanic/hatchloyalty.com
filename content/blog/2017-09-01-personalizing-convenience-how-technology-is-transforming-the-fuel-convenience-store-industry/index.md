@@ -1,4 +1,5 @@
 ---
+documentType: "blog"
 title: "Personalizing Convenience: How Technology and Customer-Focused Marketing Are Transforming the Fuel & Convenience Store Industry"
 date: "2017-09-01"
 author: "Hatch Loyalty"

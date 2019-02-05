@@ -1,4 +1,5 @@
 ---
+documentType: "blog"
 title: "Amazon Go: What Convenience Retailers Should Know"
 author: Natasha Janic
 date: 2018-02-14

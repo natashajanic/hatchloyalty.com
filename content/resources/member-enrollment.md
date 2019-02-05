@@ -1,4 +1,5 @@
 ---
+documentType: "resource"
 title: "Member Enrollment Tutorial"
 layout: "tutorial"
 ---

@@ -1,4 +1,5 @@
 ---
+documentType: "resource"
 title: "Reward Segmentation"
 layout: "tutorial"
 ---

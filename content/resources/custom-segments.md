@@ -1,4 +1,5 @@
 ---
+documentType: "resource"
 title: "Custom Segments"
 layout: "tutorial"
 ---
