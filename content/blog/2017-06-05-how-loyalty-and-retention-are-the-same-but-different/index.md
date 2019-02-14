@@ -1,4 +1,5 @@
 ---
+documentType: "blog"
 title: "How Loyalty and Retention Are The Same, But Different"
 date: "2017-06-05"
 author: "Natasha Janic"

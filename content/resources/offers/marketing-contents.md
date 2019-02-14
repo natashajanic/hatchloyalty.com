@@ -1,4 +1,5 @@
 ---
+documentType: "resource"
 title: "Offer Marketing Contents"
 layout: "tutorial"
 ---

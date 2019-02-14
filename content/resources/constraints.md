@@ -1,7 +1,7 @@
 ---
+documentType: "resource"
 title: "Offer Constraints"
 layout: "tutorial"
-documentType: "guide"
 ---
 
 # API Reference

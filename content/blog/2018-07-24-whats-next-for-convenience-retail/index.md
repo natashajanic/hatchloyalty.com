@@ -1,4 +1,5 @@
 ---
+documentType: "blog"
 title: "What's Next for Convenience Retail"
 author: Natasha Janic
 date: 2018-07-24

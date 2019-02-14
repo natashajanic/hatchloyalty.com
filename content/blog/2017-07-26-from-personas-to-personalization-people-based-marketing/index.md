@@ -1,4 +1,5 @@
 ---
+documentType: "blog"
 title: "From Personas to Personalization: People-Based Marketing"
 date: "2017-07-26"
 author: "Natasha Janic"

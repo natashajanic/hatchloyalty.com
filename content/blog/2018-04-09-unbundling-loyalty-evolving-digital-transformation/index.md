@@ -1,4 +1,5 @@
 ---
+documentType: "blog"
 title: "Unbundling Loyalty: Evolving for Digital Transformation"
 author: Dan Gloede
 date: 2018-04-09

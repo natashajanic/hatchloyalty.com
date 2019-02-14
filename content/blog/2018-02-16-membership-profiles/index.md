@@ -1,4 +1,5 @@
 ---
+documentType: "blog"
 title: "Build Better, More Personalized Relationships with Hatch"
 author: "Dan Lavin"
 date: 2018-02-16

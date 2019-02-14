@@ -1,4 +1,5 @@
 ---
+documentType: "resource"
 title: "Offers"
 layout: "tutorial"
 ---

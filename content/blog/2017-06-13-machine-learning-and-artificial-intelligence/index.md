@@ -1,4 +1,5 @@
 ---
+documentType: "blog"
 title: "Machine Learning and Artificial Intelligence: The Rise of the Robots or Tools That Will Change Your Customer Engagement"
 date: "2017-06-13"
 author: "Dan Gloede"

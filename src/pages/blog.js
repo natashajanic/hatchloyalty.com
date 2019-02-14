@@ -114,8 +114,7 @@ export const blogIndexQuery = graphql`
     }
     allMarkdownRemark(
       sort: { fields: [frontmatter___date], order: DESC }
-      filter: { fileAbsolutePath: {regex : "\/blog/"} },
-
+      filter: { fields: { sourceName: { eq: "blog"}}},
     ) {
       edges {
         node {

@@ -1,4 +1,5 @@
 ---
+documentType: "blog"
 title: "Industry-Leading Loyalty Provider Belly Evolves to Hatch Loyalty, Expanding Engagement Platform Offerings"
 date: "2017-09-05"
 author: "Hatch Loyalty"
