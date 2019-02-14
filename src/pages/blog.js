@@ -79,7 +79,7 @@ class BlogIndex extends React.Component {
                   Post Written by {node.frontmatter.author} on {node.frontmatter.date}
                 </BlogPostCardMeta>
 
-                {/* {node.frontmatter.featuredImage && <Img fluid={node.frontmatter.featuredImage.childImageSharp.fluid} />} */}
+                {node.frontmatter.featuredImage && <Img fluid={node.frontmatter.featuredImage.childImageSharp.fluid} />}
 
                 <Text
                   is="p"
