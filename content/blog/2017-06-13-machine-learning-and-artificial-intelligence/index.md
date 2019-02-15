@@ -3,7 +3,7 @@ documentType: "blog"
 title: "Machine Learning and Artificial Intelligence: The Rise of the Robots or Tools That Will Change Your Customer Engagement"
 date: "2017-06-13"
 author: "Dan Gloede"
-featuredImage: "2017/machine-learning-ai-blog-post.jpg"
+featuredImage: "./machine-learning-ai-blog-post.jpg"
 tags: "Enterprise Loyalty"
 excerpt: "News on machine learning and AI seems to be unavoidable these days; in industry publications, digital strategy consulting research and most recently, the grand political stage in Washington."
 ---

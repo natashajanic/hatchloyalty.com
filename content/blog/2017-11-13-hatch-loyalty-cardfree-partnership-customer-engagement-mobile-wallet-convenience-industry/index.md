@@ -3,7 +3,7 @@ documentType: "blog"
 title: "Hatch Loyalty and CARDFREE Partner to Deliver Combined Customer Engagement and Mobile Wallet Solution to Convenience Industry"
 author: "Hatch Loyalty"
 date: "2017-11-13"
-featuredImage: "//CARDFREE-Announcement.png"
+featuredImage: "./CARDFREE-Announcement.png"
 tags: "Enterprise Loyalty"
 ---
 

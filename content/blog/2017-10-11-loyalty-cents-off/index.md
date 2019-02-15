@@ -3,7 +3,7 @@ documentType: "blog"
 title: "Loyalty Isn't Just Cents Off"
 author: "Dan Gloede"
 date: "2017-10-11"
-featuredImage: "2017/Loyalty-Cents-Off.jpeg"
+featuredImage: "./Loyalty-Cents-Off.jpeg"
 tags: "Enterprise Loyalty"
 ---
 

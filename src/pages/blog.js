@@ -2,6 +2,7 @@ import React from 'react'
 import { graphql, Link } from 'gatsby'
 import Img from 'gatsby-image'
 import { BookOpen } from 'react-feather'
+import kebabCase from 'lodash/kebabCase'
 import Layout from '../components/layout'
 import SEO from '../components/seo'
 import Text from '../components/Text'
@@ -62,7 +63,9 @@ class BlogIndex extends React.Component {
               <BlogPostCard
                 key={node.fields.slug}
               >
-                <BlogPostTag>{node.frontmatter.tags}</BlogPostTag>
+                <BlogPostTag>
+                  <Link to={`/tags/${kebabCase(node.frontmatter.tags)}`}>{node.frontmatter.tags}</Link>
+                </BlogPostTag>
 
                 <Link
                   to={node.fields.slug}

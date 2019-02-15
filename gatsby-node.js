@@ -15,8 +15,8 @@ exports.createPages = ({ graphql, actions }) => {
 
   return new Promise((resolve, reject) => {
     const blogTemplate = path.resolve('./src/templates/blog.js')
-    // const tagTemplate = path.resolve("src/templates/tags.js")
     const resourceTemplate = path.resolve('./src/templates/resources.js')
+    const tagTemplate = path.resolve("src/templates/tag.js")
 
     resolve(
       graphql(
@@ -86,41 +86,43 @@ exports.createPages = ({ graphql, actions }) => {
             },
           })
         })
+      })
+    )
+
+
+    resolve(
+      graphql(
+        `
+          {
+            allMarkdownRemark(
+              limit: 2000
+              filter: {fields: {sourceName: {eq: "blog"}}}
+            ) {
+              group(field: frontmatter___tags) {
+                fieldValue
+              }
+            }
+          }
+        `
+      ).then(result => {
+        if (result.errors) {
+          console.log(result.errors)
+          reject(result.errors)
+        }
 
         // Tag pages:
-        // let tags = []
-        // // Iterate through each post, putting all found tags into `tags`
-        // _.each(posts, edge => {
-        //   if (_.get(edge, "node.frontmatter.tags")) {
-        //     tags = tags.concat(edge.node.frontmatter.tags)
-        //   }
-        // })
-        // // Eliminate duplicate tags
-        // tags = _.uniq(tags)
+        let tags = result.data.allMarkdownRemark.group.map(edge => edge.fieldValue)
 
-        // // Make tag pages
-        // tags.forEach(tag => {
-        //   createPage({
-        //     path: `/tags/${_.kebabCase(tag)}/`,
-        //     component: tagTemplate,
-        //     context: {
-        //       tag,
-        //     },
-        //   })
-        // })
-
-        // // Create resource pages
-        // const resources = result.data.allMarkdownRemark.edges;
-
-        // resources.forEach((resource) => {
-        //   createPage({
-        //     path: resource.node.fields.slug,
-        //     component: resourceTemplate,
-        //     context: {
-        //       slug: resource.node.fields.slug,
-        //     }
-        //   })
-        // })
+        // Make tag pages
+        tags.forEach(tag => {
+          createPage({
+            path: `/tags/${_.kebabCase(tag)}/`,
+            component: tagTemplate,
+            context: {
+              tag,
+            },
+          })
+        })
       })
     )
   })

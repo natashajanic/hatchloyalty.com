@@ -1,5 +1,6 @@
 import React from 'react'
-import { graphql } from 'gatsby'
+import { graphql, Link } from 'gatsby'
+import kebabCase from 'lodash/kebabCase'
 import system from 'system-components'
 import Layout from '../components/layout'
 import Box from '../components/Box'
@@ -27,6 +28,7 @@ class BlogTemplate extends React.Component {
           <Box py={4}>
             <PostTitle>{post.frontmatter.title}</PostTitle>
             <span>{post.frontmatter.author}</span>
+            <Link to={`/tags/${kebabCase(post.frontmatter.tags)}`}>{post.frontmatter.tags}</Link>
           </Box>
 
           <div dangerouslySetInnerHTML={{ __html: post.html }} />
@@ -52,6 +54,7 @@ export const pageQuery = graphql`
       html
       frontmatter {
         title
+        tags
       }
     }
   }
