@@ -1,40 +1,14 @@
 import React from 'react'
-import { graphql, Link } from 'gatsby'
-import Img from 'gatsby-image'
-import { BookOpen } from 'react-feather'
+import { graphql } from 'gatsby'
 import kebabCase from 'lodash/kebabCase'
+import { BookOpen } from 'react-feather'
 import Layout from '../components/layout'
 import SEO from '../components/seo'
 import Text from '../components/Text'
 import Box from '../components/Box'
-import system from 'system-components'
-import Panel from '../components/Panel'
 import BlogPostContainer from '../components/BlogPostContainer'
+import BlogPostPreview from '../components/BlogPostPreview';
 import IconCircle from '../components/IconCircle'
-
-const BlogPostCard = system({
-  is: Panel,
-  px: 4,
-  py: 5,
-  mb: 4,
-})
-
-// const BlogPostCardTitle = system({
-//   is: 'h3',
-//   color: 'offBlack',
-//   fontSize: [3,4],
-//   mb: 2,
-// })
-
-const BlogPostCardMeta = system({
-  is: 'div',
-  color: 'grayDark',
-  fontSize: 1,
-})
-
-const BlogPostTag = system({
-  is: 'span',
-})
 
 class BlogIndex extends React.Component {
   render() {
@@ -57,49 +31,18 @@ class BlogIndex extends React.Component {
 
           <Text is="h2" fontSize={5}>Learn from experts. Hatch is here to help you build stronger relationships with your customers.</Text>
 
-          {posts.map(({ node }) => {
-            const title = node.frontmatter.title || node.fields.slug
-            return (
-              <BlogPostCard
-                key={node.fields.slug}
-              >
-                <BlogPostTag>
-                  <Link to={`/tags/${kebabCase(node.frontmatter.tags)}`}>{node.frontmatter.tags}</Link>
-                </BlogPostTag>
-
-                <Link
-                  to={node.fields.slug}
-                  style={{
-                    color: '#666666',
-                    display: 'block',
-                    textDecoration: 'none'
-                  }}
-                >
-                  {title}
-                </Link>
-
-                <BlogPostCardMeta>
-                  Post Written by {node.frontmatter.author} on {node.frontmatter.date}
-                </BlogPostCardMeta>
-
-                {node.frontmatter.featuredImage && <Img fluid={node.frontmatter.featuredImage.childImageSharp.fluid} />}
-
-                <Text
-                  is="p"
-                  color="grayDark"
-                  fontSize={3}
-                  dangerouslySetInnerHTML={{ __html: node.excerpt }}
-                />
-
-                <Link
-                  to={node.fields.slug}
-                  color="grayDark"
-                >
-                  Read More
-                </Link>
-              </BlogPostCard>
-            )
-          })}
+          {posts.map(({ node }) => (
+            <BlogPostPreview
+              key={kebabCase(node.fields.slug)}
+              author={node.frontmatter.author}
+              date={node.frontmatter.date}
+              excerpt={node.excerpt}
+              featuredImage={node.frontmatter.featuredImage}
+              slug={node.fields.slug}
+              tags={node.frontmatter.tags}
+              title={node.frontmatter.title}
+            />
+          ))}
         </BlogPostContainer>
       </Layout>
     )
