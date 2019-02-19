@@ -1,40 +1,36 @@
 import React from "react"
 import PropTypes from "prop-types"
+import kebabCase from 'lodash/kebabCase'
 
 // Components
 import { Link, graphql } from "gatsby"
 import system from 'system-components'
+import BlogPostContainer from "../components/BlogPostContainer";
+import BlogPostPreview from "../components/BlogPostPreview";
 import Box from '../components/Box'
 import Layout from '../components/layout'
-import Panel from '../components/Panel'
+import Pager from "../components/Pager";
+import Text from '../components/Text'
 import SEO from '../components/seo'
 import Wrapper from '../components/Wrapper'
 
-const PostListCard = system({
-  is: Panel,
-  px: 4,
-  py: 4,
-  my: 4,
-})
-const NavContainer = system({
+const TitleContainer = system({
   is: Box,
-  px: 4,
-  py: 2,
-  my: 2,
+  mb: 4,
 })
 
 class TagTemplate extends React.Component {
   render() {
     const {
-      pageContext: { tag },
+      pageContext: { pageCount, pageNum, tag, totalCount },
       data: {
-        allMarkdownRemark: { edges, totalCount },
         site: {
           siteMetadata: { siteTitle },
         },
+        allMarkdownRemark: { edges },
       },
     } = this.props
-    const tagHeader = `${totalCount} post${
+    const tagHeader = `Showing ${edges.length} of ${totalCount} post${
       totalCount === 1 ? "" : "s"
       } tagged with "${tag}"`
 
@@ -42,24 +38,33 @@ class TagTemplate extends React.Component {
       <Layout location={this.props.location} title={siteTitle} pageStyle="offWhite">
         <SEO title={tag} />
         <Wrapper>
-          <PostListCard>
-            <h2>{tagHeader}</h2>
-            <ul>
-              {edges.map(({ node }) => {
-                const title = node.frontmatter.title
-                const path = node.fields.slug
-
-                return (
-                  <li key={path}>
-                    <Link to={path}>{title}</Link>
-                  </li>
-                )
-              })}
-            </ul>
-          </PostListCard>
-          <NavContainer>
-            <Link to="/tags">&lt;&lt; Back to All tags</Link>
-          </NavContainer>
+          <BlogPostContainer
+            is="main"
+          >
+            <TitleContainer>
+              <Text is="h2" fontSize={4}>{tagHeader}</Text>
+              <Text fontSize={3}><Link to="/tags">View to All tags</Link></Text>
+            </TitleContainer>
+            <Box>
+              {edges.map(({ node }) => (
+                <BlogPostPreview
+                  key={kebabCase(node.fields.slug)}
+                  author={node.frontmatter.author}
+                  date={node.frontmatter.date}
+                  excerpt={node.excerpt}
+                  featuredImage={node.frontmatter.featuredImage}
+                  slug={node.fields.slug}
+                  tags={node.frontmatter.tags}
+                  title={node.frontmatter.title}
+                />
+              ))}
+            </Box>
+            {(pageCount > 1) && <Pager
+                currentPage={pageNum}
+                maxPage={pageCount}
+                pathRoot={`/tags/${kebabCase(tag)}`}
+              />}
+          </BlogPostContainer>
         </Wrapper>
       </Layout>
     )
@@ -68,16 +73,19 @@ class TagTemplate extends React.Component {
 
 TagTemplate.propTypes = {
   pageContext: PropTypes.shape({
+    pageCount: PropTypes.number,
+    pageNum: PropTypes.number,
+    pageOffset: PropTypes.number,
+    pageSize: PropTypes.number,
     tag: PropTypes.string.isRequired,
+    totalCount: PropTypes.number.isRequired,
   }),
   data: PropTypes.shape({
     allMarkdownRemark: PropTypes.shape({
-      totalCount: PropTypes.number.isRequired,
       edges: PropTypes.arrayOf(
         PropTypes.shape({
           node: PropTypes.shape({
             frontmatter: PropTypes.shape({
-              path: PropTypes.string.isRequired,
               title: PropTypes.string.isRequired,
             }),
           }),
@@ -93,26 +101,39 @@ TagTemplate.propTypes = {
 export default TagTemplate
 
 export const pageQuery = graphql`
-  query($tag: String) {
+  query($tag: String, $pageOffset: Int, $pageSize: Int) {
     site {
       siteMetadata {
         title
       }
     }
     allMarkdownRemark(
-      limit: 2000
+      limit: $pageSize
+      skip: $pageOffset
       sort: { fields: [frontmatter___date], order: DESC }
       filter: { frontmatter: { tags: { in: [$tag] } } }
     ) {
-      totalCount
       edges {
         node {
+          excerpt
           fields {
             slug
           }
           frontmatter {
+            date(formatString: "MMMM DD, YYYY")
             title
+            author
             tags
+            featuredImage {
+              childImageSharp {
+                resize(width: 1500, height: 1500) {
+                  src
+                }
+                fluid(maxWidth: 786) {
+                  ...GatsbyImageSharpFluid
+                }
+              }
+            }
           }
         }
       }
