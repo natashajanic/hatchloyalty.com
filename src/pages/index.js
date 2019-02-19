@@ -2,9 +2,8 @@ import React from 'react'
 import { graphql, Link } from 'gatsby'
 import Layout from '../components/layout'
 import SEO from '../components/seo'
-// import Flex from '../components/Flex'
-import Box from '../components/Box'
-import Wrapper from '../components/Wrapper'
+import Box from '../components/box'
+import Wrapper from '../components/wrapper'
 import HatchWeb from '../images/hatch-web.svg'
 
 
@@ -143,11 +142,6 @@ export default IndexPage
 
 export const pageQuery = graphql`
   query IndexQuery {
-    site {
-      siteMetadata {
-        title
-      }
-    }
     allMarkdownRemark (
       filter: {
         frontmatter: { featured: { eq: true } }

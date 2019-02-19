@@ -10,7 +10,27 @@ const path = require('path')
 const _ = require("lodash")
 const { createFilePath } = require('gatsby-source-filesystem')
 
+const paginatePosts = (postsDetails, createPage, template, basePath, context = {}) => {
+  const postsPerPage = 10
+  const numPages = Math.ceil(postsDetails.edges.length / postsPerPage)
+  Array.from({ length: numPages }).forEach((_element, i) => {
+    createPage({
+      path: i === 0 ? basePath : `${basePath}/${i + 1}`,
+      component: template,
+      context: {
+        pageCount: numPages,
+        pageNum: (i + 1),
+        pageOffset: i * postsPerPage,
+        pageSize: postsPerPage,
+        totalCount: postsDetails.totalCount,
+        ...context,
+      },
+    })
+  })
+}
+
 const createBlogPages = (graphql, createPage) => new Promise((resolve, reject) => {
+  const blogListTemplate = path.resolve('./src/templates/blog-list.js')
   const blogTemplate = path.resolve('./src/templates/blog.js')
 
   graphql(
@@ -21,6 +41,7 @@ const createBlogPages = (graphql, createPage) => new Promise((resolve, reject) =
           limit: 1000
           filter: {fields: {sourceName: {eq: "blog"}}}
         ) {
+          totalCount
           edges {
             node {
               fields {
@@ -41,11 +62,13 @@ const createBlogPages = (graphql, createPage) => new Promise((resolve, reject) =
       reject(result.errors)
     }
 
-    const posts = result.data.allMarkdownRemark.edges
-    posts.forEach((post, index) => {
+    const { data: { allMarkdownRemark } } = result
+    paginatePosts(allMarkdownRemark, createPage, blogListTemplate, '/blog')
 
-      const previous = index === posts.length - 1 ? null : posts[index + 1].node;
-      const next = index === 0 ? null : posts[index - 1].node;
+    const { edges } = allMarkdownRemark
+    edges.forEach((post, index) => {
+      const previous = index === edges.length - 1 ? null : edges[index + 1].node;
+      const next = index === 0 ? null : edges[index - 1].node;
 
       createPage({
         path: post.node.fields.slug,
@@ -93,8 +116,8 @@ const createResourcePages = (graphql, createPage) => new Promise((resolve, rejec
       reject(result.errors)
     }
 
-    const resources = result.data.allMarkdownRemark.edges;
-    resources.forEach((resource) => {
+    const { data: { allMarkdownRemark: { edges } } } = result
+    edges.forEach((resource) => {
       createPage({
         path: resource.node.fields.slug,
         component: resourceTemplate,
@@ -138,7 +161,7 @@ const createTagPages = (graphql, createPage) => new Promise((resolve, reject) =>
         graphql(
           `
             query($tag: String) {
-              posts: allMarkdownRemark(
+              allMarkdownRemark(
                 limit: 2000
                 sort: { fields: [frontmatter___date], order: DESC }
                 filter: { frontmatter: { tags: { in: [$tag] } } }
@@ -160,24 +183,9 @@ const createTagPages = (graphql, createPage) => new Promise((resolve, reject) =>
             console.log(result.errors)
             reject(result.errors)
           }
-          const { data: { posts: { totalCount, edges } } } = result
 
-          const postsPerPage = 10
-          const numPages = Math.ceil(edges.length / postsPerPage)
-          Array.from({ length: numPages }).forEach((_element, i) => {
-            createPage({
-              path: i === 0 ? `/tags/${_.kebabCase(tag)}` : `/tags/${_.kebabCase(tag)}/${i + 1}`,
-              component: tagTemplate,
-              context: {
-                pageCount: numPages,
-                pageNum: (i + 1),
-                pageOffset: i * postsPerPage,
-                pageSize: postsPerPage,
-                tag,
-                totalCount,
-              },
-            })
-          })
+          const { data: { allMarkdownRemark } } = result
+          paginatePosts(allMarkdownRemark, createPage, tagTemplate, `/tags/${_.kebabCase(tag)}`, { tag })
 
           resolve()
         })

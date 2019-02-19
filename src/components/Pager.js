@@ -2,7 +2,7 @@ import PropTypes from 'prop-types'
 import React from 'react'
 import { Link } from 'gatsby'
 import system from 'system-components'
-import Box from '../components/Box'
+import Box from './box'
 
 const PagerWrapper = system({
   is: Box,

@@ -3,9 +3,9 @@ import React from 'react'
 import { Link } from 'gatsby'
 import Img from 'gatsby-image'
 import kebabCase from 'lodash/kebabCase'
-import Text from '../components/Text'
 import system from 'system-components'
-import Panel from '../components/Panel'
+import Panel from './panel'
+import Text from './text'
 
 const BlogPostCard = system({
   is: Panel,

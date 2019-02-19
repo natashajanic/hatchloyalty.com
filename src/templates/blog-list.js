@@ -4,20 +4,26 @@ import kebabCase from 'lodash/kebabCase'
 import { BookOpen } from 'react-feather'
 import Layout from '../components/layout'
 import SEO from '../components/seo'
-import Text from '../components/Text'
-import Box from '../components/Box'
-import BlogPostContainer from '../components/BlogPostContainer'
-import BlogPostPreview from '../components/BlogPostPreview';
-import IconCircle from '../components/IconCircle'
+import Text from '../components/text'
+import Box from '../components/box'
+import BlogPostContainer from '../components/blog-post-container'
+import BlogPostPreview from '../components/blog-post-preview';
+import IconCircle from '../components/icon-circle'
+import Pager from '../components/pager';
 
-class BlogIndex extends React.Component {
+class BlogListTemplate extends React.Component {
   render() {
-    const { data } = this.props;
-    const siteTitle = data.site.siteMetadata.title
-    const posts = data.allMarkdownRemark.edges
+    const {
+      pageContext: { pageCount, pageNum, totalCount },
+      data: {
+        posts: { edges: posts },
+      }
+    } = this.props;
+    const pageDescription = `Showing ${posts.length} of ${totalCount}
+      post${totalCount === 1 ? "" : "s"}`
 
     return (
-      <Layout location={this.props.location} title={siteTitle} pageStyle="offWhite">
+      <Layout pageStyle="offWhite">
         <SEO title="All Posts" keywords={['hatch', 'hatch loyalty', 'loyalty', 'blog', 'personalization', 'activation',]} />
         <BlogPostContainer
           is="main"
@@ -31,6 +37,7 @@ class BlogIndex extends React.Component {
 
           <Text is="h2" fontSize={5}>Learn from experts. Hatch is here to help you build stronger relationships with your customers.</Text>
 
+          <Text is="h2" fontSize={4} mt={4} mb={2}>{pageDescription}</Text>
           {posts.map(({ node }) => (
             <BlogPostPreview
               key={kebabCase(node.fields.slug)}
@@ -43,22 +50,24 @@ class BlogIndex extends React.Component {
               title={node.frontmatter.title}
             />
           ))}
+          {(pageCount > 1) && <Pager
+            currentPage={pageNum}
+            maxPage={pageCount}
+            pathRoot={`/blog`}
+          />}
         </BlogPostContainer>
       </Layout>
     )
   }
 }
 
-export default BlogIndex
+export default BlogListTemplate
 
-export const blogIndexQuery = graphql`
-  query {
-    site {
-      siteMetadata {
-        title
-      }
-    }
-    allMarkdownRemark(
+export const pageQuery = graphql`
+  query($pageOffset: Int, $pageSize: Int) {
+    posts: allMarkdownRemark(
+      limit: $pageSize
+      skip: $pageOffset
       sort: { fields: [frontmatter___date], order: DESC }
       filter: { fields: { sourceName: { eq: "blog"}}},
     ) {

@@ -6,7 +6,7 @@ import theme from '../theme'
 import system from 'system-components'
 import { ThemeProvider } from 'styled-components'
 import Header from './header'
-import Footer from './Footer'
+import Footer from './footer'
 import './layout.css'
 
 const PageWrapper = system({

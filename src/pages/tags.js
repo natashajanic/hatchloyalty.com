@@ -8,9 +8,9 @@ import kebabCase from "lodash/kebabCase"
 import { Link, graphql } from "gatsby"
 import system from 'system-components'
 import Layout from "../components/layout"
-import Panel from '../components/Panel'
+import Panel from '../components/panel'
 import SEO from '../components/seo'
-import Wrapper from "../components/Wrapper"
+import Wrapper from "../components/wrapper"
 
 const TagListCard = system({
   is: Panel,
@@ -24,14 +24,11 @@ class TagsPage extends React.Component {
     const {
       data: {
         allMarkdownRemark: { group },
-        site: {
-          siteMetadata: { siteTitle },
-        },
       },
     } = this.props
 
     return (
-      <Layout location={this.props.location} title={siteTitle} pageStyle="offWhite">
+      <Layout pageStyle="offWhite">
         <SEO title="All Tags" />
         <Wrapper>
           <TagListCard>
@@ -81,11 +78,6 @@ export const pageQuery = graphql`
       group(field: frontmatter___tags) {
         fieldValue
         totalCount
-      }
-    }
-    site {
-      siteMetadata {
-        title
       }
     }
   }

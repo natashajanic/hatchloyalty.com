@@ -3,12 +3,10 @@ import PropTypes from 'prop-types'
 import React from 'react'
 import system from 'system-components'
 import HatchLogo from '../images/hatch-logo.svg'
-// import Wrapper from '../components/Wrapper'
 
 const UIHeader = system({
   is: 'header',
   alignItems: 'center',
-  // bg: 'white',
   borderBottom: '1px solid',
   borderColor: 'grayLight',
   display: 'flex',
