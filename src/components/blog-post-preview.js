@@ -41,11 +41,11 @@ class BlogPostPreview extends React.Component {
         key={slug}
       >
         <BlogPostTag>
-          <Link to={`/tags/${kebabCase(tags)}`}>{tags}</Link>
+          <Link to={`/blog/tags/${kebabCase(tags)}`}>{tags}</Link>
         </BlogPostTag>
 
         <Link
-          to={slug}
+          to={`/blog/${slug}`}
           style={{
             color: '#666666',
             display: 'block',
@@ -69,7 +69,7 @@ class BlogPostPreview extends React.Component {
         />
 
         <Link
-          to={slug}
+          to={`/blog/${slug}`}
           color="grayDark"
         >
           Read More

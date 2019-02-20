@@ -26,7 +26,7 @@ class BlogTemplate extends React.Component {
           <Box py={4}>
             <PostTitle>{post.frontmatter.title}</PostTitle>
             <span>{post.frontmatter.author}</span>
-            <Link to={`/tags/${kebabCase(post.frontmatter.tags)}`}>{post.frontmatter.tags}</Link>
+            <Link to={`/blog/tags/${kebabCase(post.frontmatter.tags)}`}>{post.frontmatter.tags}</Link>
           </Box>
 
           <div dangerouslySetInnerHTML={{ __html: post.html }} />

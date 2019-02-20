@@ -40,7 +40,7 @@ class TagTemplate extends React.Component {
           >
             <TitleContainer>
               <Text is="h2" fontSize={4}>{tagHeader}</Text>
-              <Text fontSize={3}><Link to="/tags">View to All tags</Link></Text>
+              <Text fontSize={3}><Link to="/blog/tags">View to All tags</Link></Text>
             </TitleContainer>
             <Box>
               {edges.map(({ node }) => (
@@ -59,7 +59,7 @@ class TagTemplate extends React.Component {
             {(pageCount > 1) && <Pager
                 currentPage={pageNum}
                 maxPage={pageCount}
-                pathRoot={`/tags/${kebabCase(tag)}`}
+                basePath={`/blog/tags/${kebabCase(tag)}`}
               />}
           </BlogPostContainer>
         </Wrapper>
