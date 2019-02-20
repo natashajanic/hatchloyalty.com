@@ -4,7 +4,7 @@ title: "Hatch: A Modern Approach to Customer Engagement"
 date: "2017-08-25"
 author: "Jake Kiser"
 featuredImage: "./Positioning-Paper-Image.jpg"
-tags: "Enterprise Loyalty"
+tags: ["Enterprise Loyalty"]
 ---
 
 ## Keep Your Marketing Strategy on Pace With Changing Technology & Consumer Demands

@@ -174,7 +174,10 @@ const createTagPages = (graphql, createPage) => new Promise((resolve, reject) =>
               allMarkdownRemark(
                 limit: 2000
                 sort: { fields: [frontmatter___date], order: DESC }
-                filter: { frontmatter: { tags: { in: [$tag] } } }
+                filter: {
+                  fields: { sourceName: { eq: "blog" } }
+                  frontmatter: { tags: { in: [$tag] } }
+                }
               ) {
                 totalCount
                 edges {

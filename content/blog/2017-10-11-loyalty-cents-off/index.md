@@ -4,7 +4,7 @@ title: "Loyalty Isn't Just Cents Off"
 author: "Dan Gloede"
 date: "2017-10-11"
 featuredImage: "./Loyalty-Cents-Off.jpeg"
-tags: "Enterprise Loyalty"
+tags: ["Enterprise Loyalty"]
 ---
 
 Over the past 12 months, we’ve surveyed the convenience and fuel landscape with current and potential customers.  We’ve asked questions and we’ve listened.

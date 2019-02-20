@@ -22,6 +22,7 @@ const BlogPostCardMeta = system({
 
 const BlogPostTag = system({
   is: 'span',
+  mx: 1,
 })
 
 class BlogPostPreview extends React.Component {
@@ -36,14 +37,16 @@ class BlogPostPreview extends React.Component {
       title,
     } = this.props;
 
+    const tagLinks = tags.map(tag =>
+      <BlogPostTag key={`tagLink-${tag}`}>
+        <Link to={`/blog/tags/${kebabCase(tag)}`}>{tag}</Link>
+      </BlogPostTag>
+    )
+
     return (
       <BlogPostCard
         key={slug}
       >
-        <BlogPostTag>
-          <Link to={`/blog/tags/${kebabCase(tags)}`}>{tags}</Link>
-        </BlogPostTag>
-
         <Link
           to={`/blog/${slug}`}
           style={{
@@ -56,7 +59,8 @@ class BlogPostPreview extends React.Component {
         </Link>
 
         <BlogPostCardMeta>
-          Post Written by {author} on {date}
+          <span>Post Written by {author} on {date}</span><br />
+          <span>Tags: {tagLinks}</span>
         </BlogPostCardMeta>
 
         {featuredImage && <Img fluid={featuredImage.childImageSharp.fluid} />}

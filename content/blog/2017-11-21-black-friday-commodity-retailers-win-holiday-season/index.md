@@ -4,7 +4,7 @@ title: "When Black Friday Deals Become a Commodity: How Retailers Can Win This H
 author: "Natasha Janic"
 date: "2017-11-21"
 featuredImage: "./Black-Friday-Hatch.jpeg"
-tags: "Enterprise Loyalty"
+tags: ["Enterprise Loyalty"]
 ---
 
 Many consumers have been receiving Black Friday promotions for weeks. Brands have likely been focused on executing their strategy for the holidays for quite some time and rightfully so. [Nearly 40% of all retail sales](https://www.thebalance.com/what-is-black-friday-3305710) occur between Black Friday and Christmas, with nearly 102 million people shopping last Black Friday alone. Imagine all of those people in one space and the number becomes mind-boggling. This year brings an additional opportunity for retailers as the amount spent per shopper is expected to increase by approximately 4% to $967.13.

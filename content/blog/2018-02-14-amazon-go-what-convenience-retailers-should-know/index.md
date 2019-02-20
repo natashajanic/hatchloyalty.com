@@ -4,7 +4,7 @@ title: "Amazon Go: What Convenience Retailers Should Know"
 author: Natasha Janic
 date: 2018-02-14
 featuredImage: "./Amazon-Go-Blog.jpg"
-tags: Enterprise Loyalty
+tags: ["Enterprise Loyalty"]
 ---
 
 Amazon recently unveiled in shiny, new, cashier-less toy/convenience store: Amazon Go. Seeking to disrupt the convenience store space, Amazon Go allows customers to identify themselves with the app, pick up their items and walk right out. Through Amazon’s Just Walk Out technology, customers’ Amazon accounts are billed for their purchase when they exit the store. No wait. No line. No hassle.

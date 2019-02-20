@@ -4,7 +4,7 @@ title: "Hatch Loyalty Partners with SKUPOS to Bring Operations and Customer Enga
 author: "Hatch Loyalty"
 date: "2017-10-12"
 featuredImage: "./Hatch-Partners-SKUPOS-Operations-Customer-Engagement-Convenience-Retail.png"
-tags: "Press Release"
+tags: ["Press Release"]
 ---
 
 CHICAGO, October 12, 2017 -- Hatch Loyalty, a consumer engagement platform, has partnered with SKUPOS, a leading Front-Office software platform for the convenience retail industry, to bring an innovative solution to the fuel and convenience store space.

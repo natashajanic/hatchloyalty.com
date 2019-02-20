@@ -4,7 +4,7 @@ title: "Hatch Loyalty and CARDFREE Partner to Deliver Combined Customer Engageme
 author: "Hatch Loyalty"
 date: "2017-11-13"
 featuredImage: "./CARDFREE-Announcement.png"
-tags: "Enterprise Loyalty"
+tags: ["Enterprise Loyalty"]
 ---
 
 Today, customer engagement and loyalty platform, [Hatch Loyalty](https://www.hatchloyalty.com/), announced a new partnership with mobile commerce leader, [CARDFREE](https://cardfree.com/), combining capabilities to bring personalized engagement and mobile wallet services to large retailers. Powering some of the highest volume mobile ordering applications in market today, CARDFREE’s partnership with Hatch Loyalty will provide gas stations and convenience stores best in class order-ahead, stored-value, engagement and loyalty services.
