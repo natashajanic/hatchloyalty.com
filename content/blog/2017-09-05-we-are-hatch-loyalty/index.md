@@ -1,5 +1,4 @@
 ---
-documentType: "blog"
 title: "We Are Hatch Loyalty"
 date: "2017-09-05"
 author: "Dan Gloede"

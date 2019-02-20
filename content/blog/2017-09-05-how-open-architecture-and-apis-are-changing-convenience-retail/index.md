@@ -1,5 +1,4 @@
 ---
-documentType: "blog"
 title: "How Open Architecture and APIs Are Changing Convenience Retail"
 date: "2017-09-05"
 author: "Natasha Janic"

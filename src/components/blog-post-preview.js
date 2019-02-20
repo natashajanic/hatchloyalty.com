@@ -5,11 +5,11 @@ import Img from 'gatsby-image'
 import kebabCase from 'lodash/kebabCase'
 import system from 'system-components'
 import Panel from './panel'
+import Box from './Box'
 import Text from './text'
 
 const BlogPostCard = system({
-  is: Panel,
-  px: 4,
+  is: 'article',
   py: 5,
   mb: 4,
 })
@@ -47,6 +47,7 @@ class BlogPostPreview extends React.Component {
       <BlogPostCard
         key={slug}
       >
+        <span>Tags: {tagLinks}</span>
         <Link
           to={`/blog/${slug}`}
           style={{
@@ -60,24 +61,39 @@ class BlogPostPreview extends React.Component {
 
         <BlogPostCardMeta>
           <span>Post Written by {author} on {date}</span><br />
-          <span>Tags: {tagLinks}</span>
         </BlogPostCardMeta>
 
-        {featuredImage && <Img fluid={featuredImage.childImageSharp.fluid} />}
-
-        <Text
-          is="p"
-          color="grayDark"
-          fontSize={3}
-          dangerouslySetInnerHTML={{ __html: excerpt }}
-        />
-
-        <Link
-          to={`/blog/${slug}`}
-          color="grayDark"
+        <Box
+          display="flex"
         >
-          Read More
-        </Link>
+          <Box
+            width="40%"
+          >
+            {featuredImage && <Img fluid={featuredImage.childImageSharp.fluid} />}
+          </Box>
+
+          <Box
+            display="flex"
+            flexDirection="column"
+            justifyContent="space-between"
+            px={4}
+            width="60%"
+          >
+            <Text
+              is="p"
+              color="grayDark"
+              fontSize={3}
+              dangerouslySetInnerHTML={{ __html: excerpt }}
+            />
+
+            <Link
+              to={`/blog/${slug}`}
+              color="grayDark"
+            >
+              Read More
+            </Link>
+          </Box>
+        </Box>
       </BlogPostCard>
     )
   }

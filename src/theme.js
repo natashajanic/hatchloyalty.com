@@ -58,27 +58,6 @@ export default {
       backgroundColor: colors.yellowLight,
       color: colors.yellowDark,
     },
-    currentStep: {
-      backgroundColor: colors.white,
-      borderColor: colors.green,
-      color: colors.green,
-      fontWeight: 600,
-    },
-    completedStep: {
-      backgroundColor: colors.green,
-      borderColor: colors.green,
-      color: colors.white,
-    },
-    disabledStep: {
-      borderColor: colors.grayLight,
-      color: colors.grayLight,
-      cursor: 'not-allowed',
-    },
-    futureStep: {
-      backgroundColor: colors.white,
-      borderColor: colors.grayLight,
-      color: colors.grayDark,
-    },
   },
   fontSizes,
   // fonts: ['-apple-system, BlinkMacSystemFont, sans-serif'],
@@ -87,7 +66,6 @@ export default {
     normal: 400,
     bold: 600,
   },
-  lineHeight: '1.5',
   listTypes: ['none', 'disc'],
   shadows: [
     'none',

@@ -1,19 +1,37 @@
 import React from 'react'
 import { graphql, Link } from 'gatsby'
+import Img from 'gatsby-image'
 import kebabCase from 'lodash/kebabCase'
 import system from 'system-components'
 import Layout from '../components/layout'
-import Box from '../components/box'
-import Wrapper from '../components/wrapper'
+import Wrapper from '../components/Wrapper'
 import SEO from '../components/seo'
+
+const PostHeader = system({
+  is: 'header',
+  py: 5
+})
 
 const PostTitle = system({
   is: 'h1',
-  borderBottom: '1px solid',
-  borderColor: 'grayLight',
-  fontSize: 5,
-  m: 0,
-  pb: 4,
+  color: 'offBlack',
+  fontSize: 8,
+  lineHeight: '1.25',
+})
+
+const PostAuthor = system({
+  is: 'div',
+  color: 'grayDark',
+  fontSize: 3,
+})
+
+const PostTags = system({
+  is: 'div'
+})
+
+const PostBody = system({
+  is: 'div',
+  color: 'grayDark',
 })
 
 const TagLink = system({
@@ -30,16 +48,24 @@ class BlogTemplate extends React.Component {
       </TagLink>
     )
     return (
-      <Layout>
+      <Layout
+        pageStyle="white"
+      >
         <SEO title={post.frontmatter.title} description={post.excerpt} />
-        <Wrapper>
-          <Box py={4}>
+        <Wrapper
+          maxWidth="750px"
+        >
+          <PostHeader>
             <PostTitle>{post.frontmatter.title}</PostTitle>
-            <span>{post.frontmatter.author}</span>
-            <span>Tags: {tagLinks}</span>
-          </Box>
+            <PostAuthor>Written By: {post.frontmatter.author}</PostAuthor>
 
-          <div dangerouslySetInnerHTML={{ __html: post.html }} />
+            {post.frontmatter.featuredImage && <Img fluid={post.frontmatter.featuredImage.childImageSharp.fluid} />}
+
+          </PostHeader>
+
+          <PostBody is="div" dangerouslySetInnerHTML={{ __html: post.html }} />
+
+          <PostTags>{tagLinks}</PostTags>
         </Wrapper>
       </Layout>
     )
@@ -56,7 +82,18 @@ export const pageQuery = graphql`
       html
       frontmatter {
         title
+        author
         tags
+        featuredImage {
+          childImageSharp {
+            resize(width: 1500, height: 1500) {
+              src
+            }
+            fluid(maxWidth: 786) {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
       }
     }
   }

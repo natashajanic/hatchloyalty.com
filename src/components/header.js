@@ -3,20 +3,15 @@ import PropTypes from 'prop-types'
 import React from 'react'
 import system from 'system-components'
 import HatchLogo from '../images/hatch-logo.svg'
+import Wrapper from './Wrapper.js'
+import Box from './Box'
 
 const UIHeader = system({
   is: 'header',
-  alignItems: 'center',
   borderBottom: '1px solid',
   borderColor: 'grayLight',
-  display: 'flex',
-  justifyContent: 'space-between',
-  mx: 'auto',
-  px: 3,
   py: 3,
-  width: '1024px',
 })
-
 
 const Logo = system({
   is: 'img',
@@ -44,24 +39,33 @@ const NavLink = system(
 
 const Header = ({ siteTitle, navLinks }) => (
   <UIHeader>
-    <Link to="/">
-      <Logo src={HatchLogo} alt={siteTitle}/>
-    </Link>
+    <Wrapper>
+      <Box
+        is="div"
+        alignItems="center"
+        display="flex"
+        justifyContent="space-between"
+      >
+        <Link to="/">
+          <Logo src={HatchLogo} alt={siteTitle}/>
+        </Link>
 
-    <Nav>
-      {
-        navLinks.map(link =>
-          <NavLink key={link.name}>
-            <Link
-              to={link.link}
-              style={{textDecoration: 'none', color: 'inherit'}}
-            >
-              {link.name}
-            </Link>
-          </NavLink>
-        )
-      }
-    </Nav>
+        <Nav>
+          {
+            navLinks.map(link =>
+              <NavLink key={link.name}>
+                <Link
+                  to={link.link}
+                  style={{textDecoration: 'none', color: 'inherit'}}
+                >
+                  {link.name}
+                </Link>
+              </NavLink>
+            )
+          }
+        </Nav>
+      </Box>
+    </Wrapper>
   </UIHeader>
 )
 

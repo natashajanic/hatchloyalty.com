@@ -8,6 +8,7 @@ const Box = system(
   'borderRadius',
   'color',
   'display',
+  'flexDirection',
   'justifyContent',
   'space',
   'width',

@@ -6,7 +6,7 @@ import Layout from '../components/layout'
 import SEO from '../components/seo'
 import Text from '../components/text'
 import Box from '../components/box'
-import BlogPostContainer from '../components/blog-post-container'
+import Wrapper from '../components/wrapper'
 import BlogPostPreview from '../components/blog-post-preview';
 import IconCircle from '../components/icon-circle'
 import Pager from '../components/pager';
@@ -23,12 +23,14 @@ class BlogListTemplate extends React.Component {
       post${totalCount === 1 ? "" : "s"}`
 
     return (
-      <Layout pageStyle="offWhite">
+      <Layout pageStyle="white">
         <SEO title="All Posts" keywords={['hatch', 'hatch loyalty', 'loyalty', 'blog', 'personalization', 'activation',]} />
-        <BlogPostContainer
-          is="main"
-        >
-          <Box display="flex" alignItems="center">
+        <Wrapper>
+          <Box
+            alignItems="center"
+            display="flex"
+            py={4}
+          >
             <IconCircle bg="green">
               <BookOpen size={20} color="#fff" />
             </IconCircle>
@@ -55,7 +57,7 @@ class BlogListTemplate extends React.Component {
             maxPage={pageCount}
             basePath={`/blog`}
           />}
-        </BlogPostContainer>
+        </Wrapper>
       </Layout>
     )
   }

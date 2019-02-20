@@ -1,5 +1,4 @@
 ---
-documentType: "blog"
 title: "Bye Bye Bubba: Understanding Today's C-Store Customer"
 author: Natasha Janic
 date: 2018-10-05

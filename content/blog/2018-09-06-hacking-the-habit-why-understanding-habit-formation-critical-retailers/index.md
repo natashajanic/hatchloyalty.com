@@ -1,5 +1,4 @@
 ---
-documentType: "blog"
 title: "Hacking the Habit: Why Understanding Habit Formation is Critical for Retailers"
 author: Natasha Janic
 date: 2018-09-06

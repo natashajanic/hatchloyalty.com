@@ -1,9 +1,9 @@
 ---
-
 title: "Hatch Loyalty Finalizes Shift from SMB to Enterprise"
 date: 2018-11-14
 tags: ["Press Release"]
 author: "Hatch Loyalty"
+featuredImage: "./hatch-logo-image.jpg"
 addendum_partial: "partials/forms/gated_contact_form_2018_01_24"
 excerpt: "Hatch Loyalty Completes Sale of Belly Assets, Finalizes Shift from SMB to Enterprise. The sale of the SMB product line empowers Hatch Loyalty to dedicate its full efforts to product development and growth of its customer activation engine."
 ---

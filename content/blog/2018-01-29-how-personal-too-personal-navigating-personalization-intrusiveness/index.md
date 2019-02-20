@@ -1,5 +1,4 @@
 ---
-documentType: "blog"
 title: How Personal Is Too Personal? Navigating the Line Between Personalization and Intrusiveness
 author: Natasha Janic
 date: 2018-01-29
