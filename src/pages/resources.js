@@ -3,19 +3,18 @@ import { graphql, Link } from 'gatsby'
 import { BookOpen } from 'react-feather'
 import Layout from '../components/layout'
 import SEO from '../components/seo'
-import Text from '../components/Text'
-import Box from '../components/Box'
-import BlogPostContainer from '../components/BlogPostContainer'
-import IconCircle from '../components/IconCircle'
+import Text from '../components/text'
+import Box from '../components/box'
+import BlogPostContainer from '../components/blog-post-container'
+import IconCircle from '../components/icon-circle'
 
 class DocsIndex extends React.Component {
   render() {
     const { data } = this.props;
-    const siteTitle = data.site.siteMetadata.title
     const resources = data.allMarkdownRemark.edges
 
     return (
-      <Layout location={this.props.location} title={siteTitle} pageStyle="offWhite">
+      <Layout pageStyle="offWhite">
         <SEO title="All Resources" keywords={['hatch', 'hatch loyalty', 'loyalty', 'docs', 'personalization', 'activation',]} />
         <BlogPostContainer
           is="main"
@@ -73,11 +72,6 @@ export default DocsIndex
 
 export const docIndexQuery = graphql`
   query {
-    site {
-      siteMetadata {
-        title
-      }
-    }
     allMarkdownRemark(
       sort: { fields: [frontmatter___date], order: DESC }
       filter: { fields: { sourceName: { eq: "resources"}}},

@@ -5,14 +5,14 @@ import kebabCase from 'lodash/kebabCase'
 // Components
 import { Link, graphql } from "gatsby"
 import system from 'system-components'
-import BlogPostContainer from "../components/BlogPostContainer";
-import BlogPostPreview from "../components/BlogPostPreview";
-import Box from '../components/Box'
+import BlogPostContainer from "../components/blog-post-container";
+import BlogPostPreview from "../components/blog-post-preview";
+import Box from '../components/box'
 import Layout from '../components/layout'
-import Pager from "../components/Pager";
-import Text from '../components/Text'
+import Pager from "../components/pager";
+import Text from '../components/text'
 import SEO from '../components/seo'
-import Wrapper from '../components/Wrapper'
+import Wrapper from '../components/wrapper'
 
 const TitleContainer = system({
   is: Box,
@@ -24,9 +24,6 @@ class TagTemplate extends React.Component {
     const {
       pageContext: { pageCount, pageNum, tag, totalCount },
       data: {
-        site: {
-          siteMetadata: { siteTitle },
-        },
         allMarkdownRemark: { edges },
       },
     } = this.props
@@ -35,7 +32,7 @@ class TagTemplate extends React.Component {
       } tagged with "${tag}"`
 
     return (
-      <Layout location={this.props.location} title={siteTitle} pageStyle="offWhite">
+      <Layout pageStyle="offWhite">
         <SEO title={tag} />
         <Wrapper>
           <BlogPostContainer
@@ -102,11 +99,6 @@ export default TagTemplate
 
 export const pageQuery = graphql`
   query($tag: String, $pageOffset: Int, $pageSize: Int) {
-    site {
-      siteMetadata {
-        title
-      }
-    }
     allMarkdownRemark(
       limit: $pageSize
       skip: $pageOffset

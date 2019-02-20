@@ -1,10 +1,10 @@
 import React from 'react'
 import Layout from '../components/layout'
 import SEO from '../components/seo'
-import Wrapper from '../components/Wrapper'
-import Box from '../components/Box'
-import Text from '../components/Text'
-import IconCircle from '../components/IconCircle'
+import Wrapper from '../components/wrapper'
+import Box from '../components/box'
+import Text from '../components/text'
+import IconCircle from '../components/icon-circle'
 import { Activity, BarChart, Layers, Repeat, UserCheck } from 'react-feather'
 
 const Features = () => (
