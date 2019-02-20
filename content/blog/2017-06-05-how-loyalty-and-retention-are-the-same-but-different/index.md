@@ -4,7 +4,7 @@ title: "How Loyalty and Retention Are The Same, But Different"
 date: "2017-06-05"
 author: "Natasha Janic"
 featuredImage: "./How-Loyalty-And-Retention-Are-The-Same-But-Different.jpg"
-tags: "Enterprise Loyalty"
+tags: ["Enterprise Loyalty"]
 excerpt: "Imagine offering your customers a 10% discount on their purchase as a retention incentive. Now imagine that your competitor down the street is offering a 15% discount on their purchase."
 ---
 

@@ -4,7 +4,7 @@ title: "We Are Hatch Loyalty"
 date: "2017-09-05"
 author: "Dan Gloede"
 featuredImage: "./we-are-hatch-loyalty.png"
-tags: "Press Release"
+tags: ["Press Release", "Major Events"]
 excerpt: "Today, we are announcing the renaming of our company to Hatch Loyalty. We chose ‘Hatch Loyalty’ because we believe loyalty is an outcome of a great customer experience.  Hatch is the origin.  It’s the start of a relationship that will grow and change and endure.  And it’s how we approach innovation.  We crack things wide open.  We change and we evolve."
 ---
 

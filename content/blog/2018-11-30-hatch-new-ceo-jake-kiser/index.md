@@ -4,7 +4,7 @@ title: Hatch Announces New CEO, Jake Kiser
 author: Hatch Loyalty
 date: 2018-11-30
 featuredImage: "./hatch-logo-image.jpg"
-tags: Press Release
+tags: ["Press Release"]
 ---
 
 Jake Kiser will lead Hatch as it continues its focus on being the leading customer activation engine for enterprise retailers. He will replace outgoing CEO, Dan Gloede, who successfully led the Hatch team as it completed an important transition from SMB to enterprise loyalty, preparing the company for long term growth.

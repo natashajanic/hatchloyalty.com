@@ -16,9 +16,19 @@ const PostTitle = system({
   pb: 4,
 })
 
+const TagLink = system({
+  is: 'span',
+  mx: 1,
+})
+
 class BlogTemplate extends React.Component {
   render() {
     const post = this.props.data.markdownRemark
+    const tagLinks = post.frontmatter.tags.map(tag =>
+      <TagLink key={`tagLink-${tag}`}>
+        <Link to={`/blog/tags/${kebabCase(tag)}`}>{tag}</Link>
+      </TagLink>
+    )
     return (
       <Layout>
         <SEO title={post.frontmatter.title} description={post.excerpt} />
@@ -26,7 +36,7 @@ class BlogTemplate extends React.Component {
           <Box py={4}>
             <PostTitle>{post.frontmatter.title}</PostTitle>
             <span>{post.frontmatter.author}</span>
-            <Link to={`/tags/${kebabCase(post.frontmatter.tags)}`}>{post.frontmatter.tags}</Link>
+            <span>Tags: {tagLinks}</span>
           </Box>
 
           <div dangerouslySetInnerHTML={{ __html: post.html }} />

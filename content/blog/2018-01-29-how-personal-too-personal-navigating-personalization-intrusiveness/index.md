@@ -4,7 +4,7 @@ title: How Personal Is Too Personal? Navigating the Line Between Personalization
 author: Natasha Janic
 date: 2018-01-29
 featuredImage: "./how-personal-is-too-personal.jpeg"
-tags: Enterprise Loyalty
+tags: ["Enterprise Loyalty"]
 ---
 
 Personalization is **the** marketing buzzword of the moment. In a hyper-connected world where the average consumer is blasted with up to [10,000 brand messages](https://www.ama.org/partners/content/Pages/why-customers-attention-scarcest-resources-2017.aspx) per day, personalization becomes a strategic way for brands to break through the clutter. The demand is there as well, with [74% of consumers](https://www.marketingmag.com.au/hubs-c/customers-frustrated-irrelevant-marketing-messages/) saying they become frustrated when they’re targeted with irrelevant offers and marketing messages. Luckily, advancements in technology and access to increased amounts of customer data have enabled brands to deliver more targeted messages.

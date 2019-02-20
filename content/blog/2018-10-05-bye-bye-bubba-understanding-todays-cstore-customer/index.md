@@ -4,7 +4,7 @@ title: "Bye Bye Bubba: Understanding Today's C-Store Customer"
 author: Natasha Janic
 date: 2018-10-05
 featuredImage: "./Bye-Bye-Bubba-Image.jpg"
-tags: Enterprise Loyalty
+tags: ["Enterprise Loyalty"]
 ---
 
 The convenience store industry has been riddled with renditions of the infamous [Bubba persona](https://www.technomic.com/newsletters/technomics-take/beyond-bubba-recalibrating-conventional-view-c-store-consumer), believed to embody the characteristics of the industry’s most frequent and valuable customer. For decades, convenience, fuel and shopper marketers alike have funnelled large amounts of marketing dollars into campaigns and offers rooted in the Bubba persona.

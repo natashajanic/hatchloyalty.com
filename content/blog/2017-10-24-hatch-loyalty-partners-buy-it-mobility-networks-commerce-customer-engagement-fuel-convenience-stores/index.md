@@ -4,7 +4,7 @@ title: "Hatch Loyalty Partners with Buy It Mobility Networks (BIM) to Bring the 
 author: "Hatch Loyalty"
 date: "2017-10-24"
 featuredImage: "./BIM-Hatch-Press-Release-image.png"
-tags: "Press Release"
+tags: ["Press Release"]
 excerpt: "Partnership Will Enable Merchants to Easily Integrate Incentives, Rewards & Branded Payments Capabilities into Their Mobile Apps"
 ---
 

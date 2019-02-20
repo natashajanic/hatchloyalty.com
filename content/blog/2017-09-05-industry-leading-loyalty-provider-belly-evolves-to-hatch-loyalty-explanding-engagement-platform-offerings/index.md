@@ -4,7 +4,7 @@ title: "Industry-Leading Loyalty Provider Belly Evolves to Hatch Loyalty, Expand
 date: "2017-09-05"
 author: "Hatch Loyalty"
 featuredImage: "./industry-leading-loyalty-provider-belly-evolves-to-hatch.png"
-tags: "Enterprise Loyalty"
+tags: ["Enterprise Loyalty"]
 excerpt: "Hatch Loyalty, formerly Belly, has undergone a renaming that represents the evolution, growth and innovation of the company. Hatch’s simple and adaptable engagement platform enables retailers and brands of all sizes to build stronger relationships with their customers."
 ---
 

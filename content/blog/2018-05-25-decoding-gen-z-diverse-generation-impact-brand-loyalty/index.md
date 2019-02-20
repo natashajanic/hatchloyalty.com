@@ -4,7 +4,7 @@ title: "Decoding Gen Z: How the Most Diverse Generation Will Impact Brand Loyalt
 author: Natasha Janic
 date: 2018-05-25
 featuredImage: "./gen-z-transforms-brand-loyalty.jpg"
-tags: Enterprise Loyalty
+tags: ["Enterprise Loyalty"]
 ---
 
 ‘Millennials’ has been the buzzword of the last several years as marketers have been trying to understand that generation and how to address their radically different purchasing behaviors. Now enter an equally complex generation: Generation Z. Who are they? Defined as individuals born between [1997-2011](http://www.pewresearch.org/fact-tank/2018/03/01/defining-generations-where-millennials-end-and-post-millennials-begin/), its oldest members are just about to enter the workforce while its youngest members are still being censored on YouTube. Not to be underestimated, Gen Z expected to account for [40% of all shoppers](https://www.retaildive.com/news/how-gen-z-is-driving-a-cultural-shift-in-retail-branding/521439/) by 2020.

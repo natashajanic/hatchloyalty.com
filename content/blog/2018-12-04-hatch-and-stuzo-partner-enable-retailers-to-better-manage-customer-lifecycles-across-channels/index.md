@@ -4,7 +4,7 @@ title: Hatch and Stuzo Partner to Enable Retailers to Better Manager Customer Li
 author: Hatch Loyalty
 date: 2018-12-04
 featuredImage: "./Stuzo-Hatch-Header.jpg"
-tags: Press Release
+tags: ["Press Release"]
 ---
 
 ### Hatch Standardizes Loyalty Infrastructure On Stuzo’s Open Commerce Platform

@@ -71,7 +71,7 @@ const createBlogPages = (graphql, createPage) => new Promise((resolve, reject) =
       const next = index === 0 ? null : edges[index - 1].node;
 
       createPage({
-        path: post.node.fields.slug,
+        path: `/blog${post.node.fields.slug}`,
         component: blogTemplate,
         context: {
           slug: post.node.fields.slug,
@@ -119,7 +119,7 @@ const createResourcePages = (graphql, createPage) => new Promise((resolve, rejec
     const { data: { allMarkdownRemark: { edges } } } = result
     edges.forEach((resource) => {
       createPage({
-        path: resource.node.fields.slug,
+        path: `/resource${resource.node.fields.slug}`,
         component: resourceTemplate,
         context: {
           slug: resource.node.fields.slug,
@@ -132,6 +132,7 @@ const createResourcePages = (graphql, createPage) => new Promise((resolve, rejec
 })
 
 const createTagPages = (graphql, createPage) => new Promise((resolve, reject) => {
+  const tagListTemplate = path.resolve('./src/templates/tag-list.js')
   const tagTemplate = path.resolve('./src/templates/tag.js')
 
   graphql(
@@ -141,8 +142,9 @@ const createTagPages = (graphql, createPage) => new Promise((resolve, reject) =>
           limit: 2000
           filter: {fields: {sourceName: {eq: "blog"}}}
         ) {
-          group(field: frontmatter___tags) {
-            fieldValue
+          tags: group(field: frontmatter___tags) {
+            name: fieldValue
+            postCount: totalCount
           }
         }
       }
@@ -153,7 +155,15 @@ const createTagPages = (graphql, createPage) => new Promise((resolve, reject) =>
       reject(result.errors)
     }
 
-    let tags = result.data.allMarkdownRemark.group.map(edge => edge.fieldValue)
+    let tags = result.data.allMarkdownRemark.tags
+    createPage({
+      path: '/blog/tags',
+      component: tagListTemplate,
+      context: {
+        basePath: '/blog/tags',
+        tags,
+      },
+    })
 
     // Make each tag's pages
     const tagPagesCreation = tags.map(tag => (
@@ -164,7 +174,10 @@ const createTagPages = (graphql, createPage) => new Promise((resolve, reject) =>
               allMarkdownRemark(
                 limit: 2000
                 sort: { fields: [frontmatter___date], order: DESC }
-                filter: { frontmatter: { tags: { in: [$tag] } } }
+                filter: {
+                  fields: { sourceName: { eq: "blog" } }
+                  frontmatter: { tags: { in: [$tag] } }
+                }
               ) {
                 totalCount
                 edges {
@@ -177,7 +190,7 @@ const createTagPages = (graphql, createPage) => new Promise((resolve, reject) =>
               }
             }
           `,
-          { tag }
+          { tag: tag.name }
         ).then(result => {
           if (result.errors) {
             console.log(result.errors)
@@ -185,7 +198,13 @@ const createTagPages = (graphql, createPage) => new Promise((resolve, reject) =>
           }
 
           const { data: { allMarkdownRemark } } = result
-          paginatePosts(allMarkdownRemark, createPage, tagTemplate, `/tags/${_.kebabCase(tag)}`, { tag })
+          paginatePosts(
+            allMarkdownRemark,
+            createPage,
+            tagTemplate,
+            `/blog/tags/${_.kebabCase(tag.name)}`,
+            { tag: tag.name }
+          )
 
           resolve()
         })

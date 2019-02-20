@@ -53,7 +53,7 @@ class BlogListTemplate extends React.Component {
           {(pageCount > 1) && <Pager
             currentPage={pageNum}
             maxPage={pageCount}
-            pathRoot={`/blog`}
+            basePath={`/blog`}
           />}
         </BlogPostContainer>
       </Layout>

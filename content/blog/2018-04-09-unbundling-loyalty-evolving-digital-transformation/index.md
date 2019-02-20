@@ -7,7 +7,7 @@ featuredImage: "./Unbundling-Loyalty-Grocery-Store.jpg"
 featured: true
 thumbnail: "./Unbundling-Loyalty-Grocery-Store-thumb.png"
 excerpt: "Organizations are changing they work, and suppliers of technology must follow suit.  Hatch is purpose-built for this shift, introducing speed, agility and scalability to your consumer engagement efforts.  If your provider can’t deliver a product to drive revenue in 3 months, you may have the wrong partner."
-tags: Enterprise Loyalty
+tags: ["Enterprise Loyalty"]
 ---
 
 ## The Digital Era is Changing How Organizations Work

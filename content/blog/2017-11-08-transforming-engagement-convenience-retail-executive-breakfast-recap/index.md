@@ -4,7 +4,7 @@ title: "Transforming Engagement in Convenience Retail: Executive Breakfast Recap
 author: "Natasha Janic"
 date: "2017-11-08"
 featuredImage: "./Hatch-Executive-Breakfast.png"
-tags: "Enterprise Loyalty"
+tags: ["Enterprise Loyalty"]
 ---
 
 Last month, we hosted an Executive Breakfast and Leadership Discussion to kick off a busy week at the NACS Show in Chicago. The discussion covered leading innovation in the retail sector, factors that affect customer expectations and the impact of digital on how consumers interact with retailers and brands. Our experienced panel featured moderator Kevin Phelan, current President of Agon Partners and former Chief Sales and Marketing Officer at BP North America. Panelists included Todd Lutwak, Partner at Andreessen Horowitz and former Vice President of Selling at eBay, and Kelly Mahoney, current Director of Strategy at Ulta Beauty and former Director of Consumer Engagement and Loyalty at BP.

@@ -36,7 +36,7 @@ class DocsIndex extends React.Component {
               >
 
                 <Link
-                  to={node.fields.slug}
+                  to={`/resource/${node.fields.slug}`}
                   style={{
                     color: '#666666',
                     display: 'block',
@@ -54,7 +54,7 @@ class DocsIndex extends React.Component {
                 />
 
                 <Link
-                  to={node.fields.slug}
+                  to={`/resource/${node.fields.slug}`}
                   color="grayDark"
                 >
                   Read More

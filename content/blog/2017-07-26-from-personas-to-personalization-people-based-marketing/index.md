@@ -4,7 +4,7 @@ title: "From Personas to Personalization: People-Based Marketing"
 date: "2017-07-26"
 author: "Natasha Janic"
 featuredImage: "./people-based-marketing.jpeg"
-tags: "Enterprise Loyalty"
+tags: ["Enterprise Loyalty"]
 excerpt: "With more focused targeting opportunities offered by platforms such as Facebook and Google, marketers have shifted from personas to personalization."
 ---
 

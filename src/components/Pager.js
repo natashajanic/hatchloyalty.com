@@ -46,13 +46,13 @@ const PagerPlaceholder = system({
 
 class Pager extends React.Component {
   renderLink(pageNum, text) {
-    const { pathRoot } = this.props;
+    const { basePath } = this.props;
 
     return (
       <Link
         key={`page-${pageNum}`}
         style={{ textDecoration: 'none' }}
-        to={pageNum === 1 ? pathRoot : `${pathRoot}/${pageNum}`}
+        to={pageNum === 1 ? basePath : `${basePath}/${pageNum}`}
       >
         <PagerLink>{text}</PagerLink>
       </Link>
@@ -98,7 +98,7 @@ class Pager extends React.Component {
 Pager.propTypes = {
   currentPage: PropTypes.number,
   maxPage: PropTypes.number,
-  pathRoot: PropTypes.string,
+  basePath: PropTypes.string,
 }
 
 export default Pager

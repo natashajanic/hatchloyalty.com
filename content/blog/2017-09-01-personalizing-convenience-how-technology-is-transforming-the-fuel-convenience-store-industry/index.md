@@ -4,7 +4,7 @@ title: "Personalizing Convenience: How Technology and Customer-Focused Marketing
 date: "2017-09-01"
 author: "Hatch Loyalty"
 featuredImage: "./industry-leading-loyalty-provider-belly-evolves-to-hatch.png"
-tags: "Enterprise Loyalty"
+tags: ["Enterprise Loyalty"]
 featured: true
 thumbnail: "2017/industry-leading-loyalty-provider-belly-evolves-to-hatch-thumb.png"
 addendum_partial: "partials/forms/gated_contact_form_2017_09_01"
