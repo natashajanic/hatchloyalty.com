@@ -10,7 +10,7 @@ const Box = system(
   'display',
   'justifyContent',
   'space',
-  'width',
+  'width'
 )
 
 export default Box

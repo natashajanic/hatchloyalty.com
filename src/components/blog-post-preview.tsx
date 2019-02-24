@@ -1,8 +1,7 @@
-import PropTypes from 'prop-types'
-import React from 'react'
 import { Link } from 'gatsby'
 import Img from 'gatsby-image'
-import kebabCase from 'lodash/kebabCase'
+import { kebabCase } from 'lodash'
+import * as React from 'react'
 import system from 'system-components'
 import Panel from './panel'
 import Text from './text'
@@ -25,7 +24,21 @@ const BlogPostTag = system({
   mx: 1,
 })
 
-class BlogPostPreview extends React.Component {
+interface IBlogPostPreviewProps {
+  author: string
+  date: string
+  excerpt: string
+  featuredImage: {
+    childImageSharp: {
+      fluid: any
+    }
+  }
+  slug: string
+  tags: string[]
+  title: string
+}
+
+class BlogPostPreview extends React.Component<IBlogPostPreviewProps, {}> {
   render() {
     const {
       author,
@@ -35,31 +48,28 @@ class BlogPostPreview extends React.Component {
       slug,
       tags,
       title,
-    } = this.props;
+    } = this.props
 
-    const tagLinks = tags.map(tag =>
+    const tagLinks = tags.map(tag => (
       <BlogPostTag key={`tagLink-${tag}`}>
         <Link to={`/blog/tags/${kebabCase(tag)}`}>{tag}</Link>
       </BlogPostTag>
-    )
+    ))
 
     return (
-      <BlogPostCard
-        key={slug}
-      >
+      <BlogPostCard key={slug}>
         <Link
-          to={`/blog/${slug}`}
-          style={{
-            color: '#666666',
-            display: 'block',
-            textDecoration: 'none'
-          }}
+          to={`/blog${slug}`}
+          style={{ color: '#666666', display: 'block', textDecoration: 'none' }}
         >
           {title || slug}
         </Link>
 
         <BlogPostCardMeta>
-          <span>Post Written by {author} on {date}</span><br />
+          <span>
+            Post Written by {author} on {date}
+          </span>
+          <br />
           <span>Tags: {tagLinks}</span>
         </BlogPostCardMeta>
 
@@ -72,29 +82,12 @@ class BlogPostPreview extends React.Component {
           dangerouslySetInnerHTML={{ __html: excerpt }}
         />
 
-        <Link
-          to={`/blog/${slug}`}
-          color="grayDark"
-        >
+        <Link to={`/blog${slug}`} color="grayDark">
           Read More
         </Link>
       </BlogPostCard>
     )
   }
-}
-
-BlogPostPreview.propTypes = {
-  author: PropTypes.string,
-  date: PropTypes.string,
-  excerpt: PropTypes.string,
-  featuredImage: PropTypes.shape({
-    childImageSharp: PropTypes.shape({
-      fluid: PropTypes.shape({}),
-    }),
-  }),
-  slug: PropTypes.string,
-  tags: PropTypes.string,
-  title: PropTypes.string,
 }
 
 export default BlogPostPreview

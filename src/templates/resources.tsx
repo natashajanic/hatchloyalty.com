@@ -1,4 +1,4 @@
-import React from 'react'
+import * as React from 'react'
 import { graphql } from 'gatsby'
 import system from 'system-components'
 import Layout from '../components/layout'
@@ -15,7 +15,19 @@ const PostTitle = system({
   pb: 4,
 })
 
-class ResourceTemplate extends React.Component {
+interface IResourceTemplateProps {
+  data: {
+    markdownRemark: {
+      excerpt: string
+      frontmatter: {
+        title: string
+      }
+      html: string
+    }
+  }
+}
+
+class ResourceTemplate extends React.Component<IResourceTemplateProps, {}> {
   render() {
     const post = this.props.data.markdownRemark
     return (
@@ -38,7 +50,6 @@ export default ResourceTemplate
 export const pageQuery = graphql`
   query ResourceBySlug($slug: String!) {
     markdownRemark(fields: { slug: { eq: $slug } }) {
-      id
       excerpt(pruneLength: 160)
       html
       frontmatter {

@@ -1,15 +1,16 @@
 import system from 'system-components'
 
-const Flex = system({
-  display: 'flex',
-},
+const Flex = system(
+  {
+    display: 'flex',
+  },
   'alignItems',
   'display',
   'flexWrap',
   'flexDirection',
   'justifyContent',
   'space',
-  'width',
+  'width'
 )
 
 export default Flex

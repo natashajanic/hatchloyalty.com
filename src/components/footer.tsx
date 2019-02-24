@@ -1,4 +1,4 @@
-import React from 'react'
+import * as React from 'react'
 import system from 'system-components'
 
 const UIFooter = system({
@@ -13,12 +13,10 @@ const UIFooter = system({
   width: '1024px',
 })
 
-
-const Footer = () => (
-  <UIFooter>
-    Footer
-  </UIFooter>
-)
-
+class Footer extends React.Component<{}, {}> {
+  render() {
+    return <UIFooter>Footer</UIFooter>
+  }
+}
 
 export default Footer

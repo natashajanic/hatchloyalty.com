@@ -1,6 +1,6 @@
-import React from 'react'
+import * as React from 'react'
 import { graphql, Link } from 'gatsby'
-import kebabCase from 'lodash/kebabCase'
+import { kebabCase } from 'lodash'
 import system from 'system-components'
 import Layout from '../components/layout'
 import Box from '../components/box'
@@ -21,14 +21,28 @@ const TagLink = system({
   mx: 1,
 })
 
-class BlogTemplate extends React.Component {
+interface IBlogTemplateProps {
+  data: {
+    markdownRemark: {
+      excerpt: string
+      frontmatter: {
+        author: string
+        tags: string[]
+        title: string
+      }
+      html: string
+    }
+  }
+}
+
+class BlogTemplate extends React.Component<IBlogTemplateProps, {}> {
   render() {
     const post = this.props.data.markdownRemark
-    const tagLinks = post.frontmatter.tags.map(tag =>
+    const tagLinks = post.frontmatter.tags.map(tag => (
       <TagLink key={`tagLink-${tag}`}>
         <Link to={`/blog/tags/${kebabCase(tag)}`}>{tag}</Link>
       </TagLink>
-    )
+    ))
     return (
       <Layout>
         <SEO title={post.frontmatter.title} description={post.excerpt} />
@@ -51,12 +65,12 @@ export default BlogTemplate
 export const pageQuery = graphql`
   query BlogBySlug($slug: String!) {
     markdownRemark(fields: { slug: { eq: $slug } }) {
-      id
       excerpt(pruneLength: 160)
       html
       frontmatter {
-        title
+        author
         tags
+        title
       }
     }
   }

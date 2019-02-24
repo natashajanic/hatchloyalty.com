@@ -1,5 +1,4 @@
 import system from 'system-components'
-// import { themeGet } from 'styled-system'
 
 const Panel = system(
   {
@@ -17,7 +16,7 @@ const Panel = system(
     // boxShadow: `${themeGet(grayLight 0 2px 4px)}`,
     boxShadow: '#dfdfdf 0 3px 10px',
   },
-  props => ({
+  (props: any) => ({
     cursor: props.cursor ? 'pointer' : 'auto',
     background: props.disabled ? 'grayLight' : props.background || 'white',
   }),
@@ -29,7 +28,7 @@ const Panel = system(
   'justifyContent',
   'position',
   'space',
-  'width',
+  'width'
 )
 
 Panel.displayName = 'Panel'
@@ -50,7 +49,7 @@ Panel.Header = system(
   'alignItems',
   'flex',
   'flexDirection',
-  'justifyContent',
+  'justifyContent'
 )
 
 Panel.Header.displayName = 'Panel.Header'
@@ -64,7 +63,7 @@ Panel.Title = system(
   },
   'alignItems',
   'display',
-  'space',
+  'space'
 )
 
 Panel.Body = system(
@@ -74,7 +73,7 @@ Panel.Body = system(
   {
     maxHeight: '415px',
     overflow: 'scroll',
-  },
+  }
 )
 
 Panel.Footer = system(
@@ -90,7 +89,7 @@ Panel.Footer = system(
     pt: 3,
     px: 3,
   },
-  'justifyContent',
+  'justifyContent'
 )
 
 Panel.Footer.displayName = 'Panel.Footer'

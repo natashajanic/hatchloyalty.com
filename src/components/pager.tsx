@@ -1,5 +1,4 @@
-import PropTypes from 'prop-types'
-import React from 'react'
+import * as React from 'react'
 import { Link } from 'gatsby'
 import system from 'system-components'
 import Box from './box'
@@ -44,9 +43,15 @@ const PagerPlaceholder = system({
   mx: 2,
 })
 
-class Pager extends React.Component {
-  renderLink(pageNum, text) {
-    const { basePath } = this.props;
+interface IPagerProps {
+  basePath: string
+  currentPage: number
+  maxPage: number
+}
+
+class Pager extends React.Component<IPagerProps, {}> {
+  renderLink(pageNum: number, text: string) {
+    const { basePath } = this.props
 
     return (
       <Link
@@ -59,24 +64,24 @@ class Pager extends React.Component {
     )
   }
 
-  renderPageLinks(startingPage, endingPage) {
-    const { currentPage } = this.props;
+  renderPageLinks(startingPage: number, endingPage: number) {
+    const { currentPage } = this.props
 
-    return Array(endingPage - startingPage + 1).fill(1).map((_val, index) => {
-      const pageNum = (startingPage + index)
-      if (pageNum === currentPage) {
-        return (
-          <PageCurrentPage key={`page-${pageNum}`}>
-            {pageNum}
-          </PageCurrentPage>
-        )
-      }
-      return this.renderLink(pageNum, pageNum)
-    });
+    return Array(endingPage - startingPage + 1)
+      .fill(1)
+      .map((_, index) => {
+        const pageNum = startingPage + index
+        if (pageNum === currentPage) {
+          return (
+            <PageCurrentPage key={`page-${pageNum}`}>{pageNum}</PageCurrentPage>
+          )
+        }
+        return this.renderLink(pageNum, `${pageNum}`)
+      })
   }
 
   render() {
-    const { currentPage, maxPage } = this.props;
+    const { currentPage, maxPage } = this.props
 
     const hasPrev = currentPage > 1
     const hasNext = currentPage < maxPage
@@ -86,19 +91,13 @@ class Pager extends React.Component {
     return (
       <PagerWrapper>
         {hasPrev && this.renderLink(currentPage - 1, '< Prev')}
-        {(startingPage > 1) && <PagerPlaceholder>...</PagerPlaceholder>}
+        {startingPage > 1 && <PagerPlaceholder>...</PagerPlaceholder>}
         {this.renderPageLinks(startingPage, endingPage)}
-        {(endingPage < maxPage) && <PagerPlaceholder>...</PagerPlaceholder>}
+        {endingPage < maxPage && <PagerPlaceholder>...</PagerPlaceholder>}
         {hasNext && this.renderLink(currentPage + 1, 'Next >')}
       </PagerWrapper>
     )
   }
-}
-
-Pager.propTypes = {
-  currentPage: PropTypes.number,
-  maxPage: PropTypes.number,
-  basePath: PropTypes.string,
 }
 
 export default Pager

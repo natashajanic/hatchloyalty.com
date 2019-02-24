@@ -1,9 +1,10 @@
 import system from 'system-components'
 import { Link } from 'gatsby'
 
-const UILink = system({
-  is: Link,
-},
+const UILink = system(
+  {
+    is: Link,
+  },
   {
     textDecoration: 'none',
   },
@@ -13,7 +14,7 @@ const UILink = system({
   'fontSize',
   'fontWeight',
   'space',
-  'textDecoration',
+  'textDecoration'
 )
 
 export default UILink

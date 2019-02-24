@@ -1,10 +1,11 @@
 import system from 'system-components'
 
-const IconCircle = system({
-  borderRadius: 100,
-  display: 'inline-flex',
-  p: 2,
-},
+const IconCircle = system(
+  {
+    borderRadius: 100,
+    display: 'inline-flex',
+    p: 2,
+  },
   'alignItems',
   'border',
   'borderColor',
@@ -14,7 +15,7 @@ const IconCircle = system({
   'display',
   'justifyContent',
   'space',
-  'width',
+  'width'
 )
 
 export default IconCircle

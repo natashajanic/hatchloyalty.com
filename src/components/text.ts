@@ -7,7 +7,7 @@ const Text = system(
     m: 0,
     textStyle: 'normal',
   },
-  props => ({
+  (props: any) => ({
     overflow: props.truncate ? 'hidden' : null,
     textOverflow: props.truncate ? 'ellipsis' : null,
     whiteSpace: props.truncate ? 'nowrap' : null,
@@ -21,7 +21,7 @@ const Text = system(
   'lineHeight',
   'space',
   'textStyle',
-  'textAlign',
+  'textAlign'
 )
 
 Text.displayName = 'Text'
