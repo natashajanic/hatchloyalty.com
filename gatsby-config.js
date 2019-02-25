@@ -94,7 +94,9 @@ module.exports = {
     'gatsby-plugin-react-helmet',
     'gatsby-plugin-offline',
     'gatsby-plugin-catch-links',
+    'gatsby-plugin-root-import',
     'gatsby-plugin-styled-components',
+    `gatsby-plugin-typescript`,
     'gatsby-remark-source-name',
   ],
 }

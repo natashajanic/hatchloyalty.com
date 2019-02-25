@@ -1,0 +1,109 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Layout render matches the expected snapshot 1`] = `
+<HelmetWrapper
+  defer={true}
+  encodeSpecialCharacters={true}
+  htmlAttributes={
+    Object {
+      "lang": "en",
+    }
+  }
+  meta={
+    Array [
+      Object {
+        "content": "Hatch Loyalty is modern customer activation.",
+        "name": "description",
+      },
+      Object {
+        "content": "Hatch Loyalty",
+        "property": "og:title",
+      },
+      Object {
+        "content": "Hatch Loyalty is modern customer activation.",
+        "property": "og:description",
+      },
+      Object {
+        "content": "website",
+        "property": "og:type",
+      },
+      Object {
+        "content": "summary",
+        "name": "twitter:card",
+      },
+      Object {
+        "content": "John Doe",
+        "name": "twitter:creator",
+      },
+      Object {
+        "content": "Hatch Loyalty",
+        "name": "twitter:title",
+      },
+      Object {
+        "content": "Hatch Loyalty is modern customer activation.",
+        "name": "twitter:description",
+      },
+    ]
+  }
+  title="Hatch Loyalty"
+  titleTemplate="%s | Hatch Loyalty"
+/>
+`;
+
+exports[`Layout render renders properly with overriden attributes 1`] = `
+<HelmetWrapper
+  defer={true}
+  encodeSpecialCharacters={true}
+  htmlAttributes={
+    Object {
+      "lang": "de",
+    }
+  }
+  meta={
+    Array [
+      Object {
+        "content": "Test Description",
+        "name": "description",
+      },
+      Object {
+        "content": "Test Title",
+        "property": "og:title",
+      },
+      Object {
+        "content": "Test Description",
+        "property": "og:description",
+      },
+      Object {
+        "content": "website",
+        "property": "og:type",
+      },
+      Object {
+        "content": "summary",
+        "name": "twitter:card",
+      },
+      Object {
+        "content": "John Doe",
+        "name": "twitter:creator",
+      },
+      Object {
+        "content": "Test Title",
+        "name": "twitter:title",
+      },
+      Object {
+        "content": "Test Description",
+        "name": "twitter:description",
+      },
+      Object {
+        "content": "test, hatch",
+        "name": "keywords",
+      },
+      Object {
+        "content": "Test Content",
+        "name": "test",
+      },
+    ]
+  }
+  title="Test Title"
+  titleTemplate="%s | Hatch Loyalty"
+/>
+`;
