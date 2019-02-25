@@ -5,6 +5,7 @@ import SEO from 'src/components/seo'
 import Box from 'src/components/box'
 import Wrapper from 'src/components/wrapper'
 import HatchWeb from 'src/images/hatch-web.svg'
+import ActiveCampaignForm from 'src/components/active-campaign-form'
 
 interface IndexPageProps {
   data: {
@@ -208,11 +209,9 @@ class IndexPage extends React.Component<IndexPageProps, {}> {
           <section>
             <h3>Try the Hatch Platform!</h3>
             <h4>Contact us to learn more.</h4>
-            <div className="_form_1" />
-            <script
-              src="https://hatchloyalty.activehosted.com/f/embed.php?id=1"
-              type="text/javascript"
-              charSet="utf-8"
+            <ActiveCampaignForm
+              formID="_form_1"
+              formSrc="https://hatchloyalty.activehosted.com/f/embed.php?id=1"
             />
           </section>
         </Wrapper>
