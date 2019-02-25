@@ -1,0 +1,107 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`BlogPostContainer render matches the expected snapshot 1`] = `
+<StyledComponent
+  blacklist={
+    Array [
+      "css",
+      "maxWidth",
+      "m",
+      "mt",
+      "mr",
+      "mb",
+      "ml",
+      "mx",
+      "my",
+      "p",
+      "pt",
+      "pr",
+      "pb",
+      "pl",
+      "px",
+      "py",
+    ]
+  }
+  forwardedComponent={
+    Object {
+      "$$typeof": Symbol(react.forward_ref),
+      "attrs": Array [],
+      "componentStyle": ComponentStyle {
+        "componentId": "sc-bdVaJa",
+        "isStatic": false,
+        "rules": Array [
+          [Function],
+          [Function],
+          [Function],
+        ],
+      },
+      "defaultProps": Object {
+        "blacklist": Array [
+          "css",
+          "maxWidth",
+          "m",
+          "mt",
+          "mr",
+          "mb",
+          "ml",
+          "mx",
+          "my",
+          "p",
+          "pt",
+          "pr",
+          "pb",
+          "pl",
+          "px",
+          "py",
+        ],
+        "is": "main",
+        "maxWidth": "800px",
+        "mx": "auto",
+        "p": Array [
+          3,
+          5,
+        ],
+      },
+      "displayName": "Styled(Component)",
+      "foldedComponentIds": Array [],
+      "propTypes": Object {
+        "m": [Function],
+        "maxWidth": [Function],
+        "mb": [Function],
+        "ml": [Function],
+        "mr": [Function],
+        "mt": [Function],
+        "mx": [Function],
+        "my": [Function],
+        "p": [Function],
+        "pb": [Function],
+        "pl": [Function],
+        "pr": [Function],
+        "pt": [Function],
+        "px": [Function],
+        "py": [Function],
+      },
+      "render": [Function],
+      "styledComponentId": "sc-bdVaJa",
+      "systemComponent": true,
+      "target": Object {
+        "$$typeof": Symbol(react.forward_ref),
+        "render": [Function],
+      },
+      "toString": [Function],
+      "warnTooManyClasses": [Function],
+      "withComponent": [Function],
+    }
+  }
+  forwardedRef={null}
+  is="main"
+  maxWidth="800px"
+  mx="auto"
+  p={
+    Array [
+      3,
+      5,
+    ]
+  }
+/>
+`;

@@ -1,0 +1,215 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Layout render matches the expected snapshot 1`] = `
+<Fragment>
+  <HelmetWrapper
+    defer={true}
+    encodeSpecialCharacters={true}
+    meta={
+      Array [
+        Object {
+          "content": "Hatch: Loyalty is an outcome.",
+          "name": "description",
+        },
+        Object {
+          "content": "hatch, loyalty, hatch loyalty, api, customer activation, data activation, platform",
+          "name": "keywords",
+        },
+      ]
+    }
+    title="Hatch Loyalty"
+  >
+    <html
+      lang="en"
+    />
+  </HelmetWrapper>
+  <ThemeProvider
+    theme={
+      Object {
+        "borders": Array [
+          0,
+          "1px solid",
+          "2px solid",
+        ],
+        "breakpoints": Array [
+          "960px",
+          "1200px",
+          "1400px",
+        ],
+        "colorStyles": Object {
+          "completedStep": Object {
+            "backgroundColor": "#63bab0",
+            "borderColor": "#63bab0",
+            "color": "#ffffff",
+          },
+          "currentStep": Object {
+            "backgroundColor": "#ffffff",
+            "borderColor": "#63bab0",
+            "color": "#63bab0",
+            "fontWeight": 600,
+          },
+          "danger": Object {
+            "backgroundColor": "#f7e2e2",
+            "color": "#9c292d",
+          },
+          "default": Object {
+            "backgroundColor": "#f7f7f7",
+            "border": "1px solid #dfdfdf",
+            "color": "#666666",
+          },
+          "defaultAlt": Object {
+            "backgroundColor": "#ffffff",
+            "color": "#666666",
+          },
+          "disabledStep": Object {
+            "borderColor": "#dfdfdf",
+            "color": "#dfdfdf",
+            "cursor": "not-allowed",
+          },
+          "futureStep": Object {
+            "backgroundColor": "#ffffff",
+            "borderColor": "#dfdfdf",
+            "color": "#666666",
+          },
+          "info": Object {
+            "backgroundColor": "#CDECFF",
+            "color": "#2d5d95",
+          },
+          "primary": Object {
+            "backgroundColor": "#ebfcfa",
+            "color": "#04575b",
+          },
+          "secondary": Object {
+            "backgroundColor": "#ebfcfa",
+            "color": "#04575b",
+          },
+          "warning": Object {
+            "backgroundColor": "#fceddf",
+            "color": "#594430",
+          },
+        },
+        "colors": Object {
+          "black": "#232323",
+          "blue": "#3ca1df",
+          "blueDark": "#2d5d95",
+          "blueLight": "#CDECFF",
+          "gray": "#999999",
+          "grayDark": "#666666",
+          "grayLight": "#dfdfdf",
+          "green": "#63bab0",
+          "greenDark": "#04575b",
+          "greenLight": "#79e9dd",
+          "greenXLight": "#ebfcfa",
+          "offBlack": "#484848",
+          "offWhite": "#f7f7f7",
+          "red": "#c34848",
+          "redDark": "#9c292d",
+          "redLight": "#f7e2e2",
+          "white": "#ffffff",
+          "yellow": "#ffc58b",
+          "yellowDark": "#594430",
+          "yellowLight": "#fceddf",
+        },
+        "fontSizes": Array [
+          10,
+          12,
+          14,
+          16,
+          18,
+          20,
+          24,
+          30,
+          36,
+          48,
+          60,
+          72,
+          96,
+        ],
+        "fontWeights": Object {
+          "bold": 600,
+          "light": 300,
+          "normal": 400,
+        },
+        "lineHeight": "1.5",
+        "listTypes": Array [
+          "none",
+          "disc",
+        ],
+        "shadows": Array [
+          "none",
+          "inset 0 0 0 1px #dfdfdf",
+          "inset 0 0 0 1px #dfdfdf, 0 0 4px #999999",
+          "0 2px 6px 0 #dfdfdf",
+        ],
+        "space": Array [
+          0,
+          4,
+          8,
+          16,
+          32,
+          64,
+          128,
+          256,
+        ],
+        "textColor": "#484848",
+        "textStyles": Object {
+          "lowercase": Object {
+            "textTransform": "lowercase",
+          },
+          "normal": Object {
+            "textTransform": "none",
+          },
+          "uppercase": Object {
+            "letterSpacing": "0.1em",
+            "textTransform": "uppercase",
+          },
+        },
+      }
+    }
+  >
+    <Styled(Component)
+      bg="offWhite"
+      blacklist={
+        Array [
+          "css",
+          "color",
+          "bg",
+        ]
+      }
+      is="div"
+    >
+      <Header
+        navLinks={
+          Array [
+            Object {
+              "link": "/",
+              "name": "Home",
+            },
+            Object {
+              "link": "/resources",
+              "name": "Resources",
+            },
+            Object {
+              "link": "/blogs",
+              "name": "Blog",
+            },
+          ]
+        }
+        siteTitle="Hatch Loyalty"
+      />
+      <Styled(Component)
+        blacklist={
+          Array [
+            "css",
+          ]
+        }
+        is="main"
+        role="main"
+      >
+        Child Content
+      </Styled(Component)>
+      <Footer />
+    </Styled(Component)>
+  </ThemeProvider>
+</Fragment>
+`;

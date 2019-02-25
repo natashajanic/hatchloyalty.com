@@ -43,7 +43,7 @@ const PagerPlaceholder = system({
   mx: 2,
 })
 
-interface IPagerProps {
+export interface IPagerProps {
   basePath: string
   currentPage: number
   maxPage: number

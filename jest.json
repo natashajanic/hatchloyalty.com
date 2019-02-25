@@ -1,0 +1,30 @@
+{
+  "collectCoverage": true,
+  "coveragePathIgnorePatterns": ["tests"],
+  "globals": {},
+  "moduleFileExtensions": [
+    "ts",
+    "tsx",
+    "js"
+  ],
+  "moduleNameMapper": {
+    "^.+\\.(css|less|scss)$": "identity-obj-proxy",
+    "\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>/tests/assetsTransformer.ts",
+    "^src/(.*)$": "<rootDir>/src/$1"
+  },
+  "setupFiles": [
+    "raf/polyfill"
+  ],
+  "setupFilesAfterEnv": [
+    "<rootDir>/tests/setupTests.ts"
+  ],
+  "snapshotSerializers": [
+    "enzyme-to-json/serializer"
+  ],
+  "transform": {
+    "\\.(ts|tsx)$": "ts-jest"
+  },
+  "testRegex": "/src/.*/__tests__/.*\\.(ts|tsx|js)$",
+  "unmockedModulePathPatterns": [],
+  "verbose": true
+}

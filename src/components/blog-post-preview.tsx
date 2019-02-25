@@ -1,5 +1,5 @@
 import { Link } from 'gatsby'
-import Img from 'gatsby-image'
+import Img, { FluidObject } from 'gatsby-image'
 import { kebabCase } from 'lodash'
 import * as React from 'react'
 import system from 'system-components'
@@ -24,13 +24,13 @@ const BlogPostTag = system({
   mx: 1,
 })
 
-interface IBlogPostPreviewProps {
+export interface IBlogPostPreviewProps {
   author: string
   date: string
   excerpt: string
-  featuredImage: {
+  featuredImage?: {
     childImageSharp: {
-      fluid: any
+      fluid: FluidObject
     }
   }
   slug: string
@@ -62,7 +62,7 @@ class BlogPostPreview extends React.Component<IBlogPostPreviewProps, {}> {
           to={`/blog${slug}`}
           style={{ color: '#666666', display: 'block', textDecoration: 'none' }}
         >
-          {title || slug}
+          {title}
         </Link>
 
         <BlogPostCardMeta>

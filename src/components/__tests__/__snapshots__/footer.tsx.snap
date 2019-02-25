@@ -1,0 +1,42 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Footer render matches the expected snapshot 1`] = `
+<Styled(Component)
+  alignItems="center"
+  bg="white"
+  blacklist={
+    Array [
+      "css",
+      "alignItems",
+      "color",
+      "bg",
+      "display",
+      "justifyContent",
+      "m",
+      "mt",
+      "mr",
+      "mb",
+      "ml",
+      "mx",
+      "my",
+      "p",
+      "pt",
+      "pr",
+      "pb",
+      "pl",
+      "px",
+      "py",
+      "width",
+    ]
+  }
+  display="flex"
+  is="footer"
+  justifyContent="space-between"
+  mx="auto"
+  px={3}
+  py={3}
+  width="1024px"
+>
+  Footer
+</Styled(Component)>
+`;

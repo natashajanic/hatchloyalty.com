@@ -1,4 +1,3 @@
-import * as autoBind from 'auto-bind'
 import { StaticQuery, graphql } from 'gatsby'
 import * as React from 'react'
 import Helmet from 'react-helmet'
@@ -24,49 +23,57 @@ const Main = system({
   is: 'main',
 })
 
+export interface IPureLayoutProps {
+  children?: React.ReactNode
+  pageStyle?: any
+  data: {
+    site: {
+      siteMetadata: {
+        title: string
+        navLinks: Array<{ name: string; link: string }>
+      }
+    }
+  }
+}
+
+export const PureLayout = (props: IPureLayoutProps) => {
+  const { children, data, pageStyle } = props
+  const meta = [
+    {
+      name: 'description',
+      content: 'Hatch: Loyalty is an outcome.',
+    },
+    {
+      name: 'keywords',
+      content:
+        'hatch, loyalty, hatch loyalty, api, customer activation, data activation, platform',
+    },
+  ]
+  return (
+    <>
+      <Helmet title={data.site.siteMetadata.title} meta={meta}>
+        <html lang="en" />
+      </Helmet>
+
+      <ThemeProvider theme={theme}>
+        <PageWrapper bg={pageStyle}>
+          <Header
+            navLinks={data.site.siteMetadata.navLinks}
+            siteTitle={data.site.siteMetadata.title}
+          />
+          <Main role="main">{children}</Main>
+          <Footer />
+        </PageWrapper>
+      </ThemeProvider>
+    </>
+  )
+}
+
 interface ILayoutProps {
   pageStyle?: any
 }
 
 class Layout extends React.Component<ILayoutProps, {}> {
-  constructor(props: ILayoutProps) {
-    super(props)
-    autoBind(this)
-  }
-
-  renderContent(data: any) {
-    const { children, pageStyle } = this.props
-    const meta = [
-      {
-        name: 'description',
-        content: 'Hatch: Loyalty is an outcome.',
-      },
-      {
-        name: 'keywords',
-        content:
-          'hatch, loyalty, hatch loyalty, api, customer activation, data activation, platform',
-      },
-    ]
-    return (
-      <>
-        <Helmet title={data.site.siteMetadata.title} meta={meta}>
-          <html lang="en" />
-        </Helmet>
-
-        <ThemeProvider theme={theme}>
-          <PageWrapper bg={pageStyle}>
-            <Header
-              navLinks={data.site.siteMetadata.navLinks}
-              siteTitle={data.site.siteMetadata.title}
-            />
-            <Main role="main">{children}</Main>
-            <Footer />
-          </PageWrapper>
-        </ThemeProvider>
-      </>
-    )
-  }
-
   render() {
     const query = graphql`
       query SiteTitleQuery {
@@ -82,7 +89,12 @@ class Layout extends React.Component<ILayoutProps, {}> {
       }
     `
 
-    return <StaticQuery query={query} render={this.renderContent} />
+    return (
+      <StaticQuery
+        query={query}
+        render={data => <PureLayout {...this.props} data={data} />}
+      />
+    )
   }
 }
 

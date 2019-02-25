@@ -40,7 +40,7 @@ const NavLink = system(
   }
 )
 
-interface IHeaderProps {
+export interface IHeaderProps {
   siteTitle: string
   navLinks: Array<{ name: string; link: string }>
 }
