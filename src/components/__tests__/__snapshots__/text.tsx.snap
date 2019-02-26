@@ -1,0 +1,433 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Text render matches the expected snapshot 1`] = `
+<Text
+  blacklist={
+    Array [
+      "css",
+      "fontSize",
+      "lineHeight",
+      "m",
+      "mt",
+      "mr",
+      "mb",
+      "ml",
+      "mx",
+      "my",
+      "p",
+      "pt",
+      "pr",
+      "pb",
+      "pl",
+      "px",
+      "py",
+      "textStyle",
+      "alignItems",
+      "color",
+      "bg",
+      "display",
+      "flex",
+      "fontWeight",
+      "textAlign",
+    ]
+  }
+  fontSize={3}
+  lineHeight="1.5"
+  m={0}
+  textStyle="normal"
+>
+  <StyledComponent
+    blacklist={
+      Array [
+        "css",
+        "fontSize",
+        "lineHeight",
+        "m",
+        "mt",
+        "mr",
+        "mb",
+        "ml",
+        "mx",
+        "my",
+        "p",
+        "pt",
+        "pr",
+        "pb",
+        "pl",
+        "px",
+        "py",
+        "textStyle",
+        "alignItems",
+        "color",
+        "bg",
+        "display",
+        "flex",
+        "fontWeight",
+        "textAlign",
+      ]
+    }
+    fontSize={3}
+    forwardedComponent={
+      Object {
+        "$$typeof": Symbol(react.forward_ref),
+        "attrs": Array [],
+        "componentStyle": ComponentStyle {
+          "componentId": "sc-bdVaJa",
+          "isStatic": false,
+          "lastClassName": "gytoeM",
+          "rules": Array [
+            [Function],
+            [Function],
+            [Function],
+            [Function],
+            [Function],
+            [Function],
+            [Function],
+            [Function],
+            [Function],
+            [Function],
+            [Function],
+            [Function],
+          ],
+        },
+        "defaultProps": Object {
+          "blacklist": Array [
+            "css",
+            "fontSize",
+            "lineHeight",
+            "m",
+            "mt",
+            "mr",
+            "mb",
+            "ml",
+            "mx",
+            "my",
+            "p",
+            "pt",
+            "pr",
+            "pb",
+            "pl",
+            "px",
+            "py",
+            "textStyle",
+            "alignItems",
+            "color",
+            "bg",
+            "display",
+            "flex",
+            "fontWeight",
+            "textAlign",
+          ],
+          "fontSize": 3,
+          "lineHeight": "1.5",
+          "m": 0,
+          "textStyle": "normal",
+        },
+        "displayName": "Text",
+        "foldedComponentIds": Array [],
+        "propTypes": Object {
+          "alignItems": [Function],
+          "bg": [Function],
+          "color": [Function],
+          "display": [Function],
+          "flex": [Function],
+          "fontSize": [Function],
+          "fontWeight": [Function],
+          "lineHeight": [Function],
+          "m": [Function],
+          "mb": [Function],
+          "ml": [Function],
+          "mr": [Function],
+          "mt": [Function],
+          "mx": [Function],
+          "my": [Function],
+          "p": [Function],
+          "pb": [Function],
+          "pl": [Function],
+          "pr": [Function],
+          "pt": [Function],
+          "px": [Function],
+          "py": [Function],
+          "textAlign": [Function],
+          "textStyle": [Function],
+        },
+        "render": [Function],
+        "styledComponentId": "sc-bdVaJa",
+        "systemComponent": true,
+        "target": Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "render": [Function],
+        },
+        "toString": [Function],
+        "warnTooManyClasses": [Function],
+        "withComponent": [Function],
+      }
+    }
+    forwardedRef={null}
+    lineHeight="1.5"
+    m={0}
+    textStyle="normal"
+  >
+    <ForwardRef
+      blacklist={
+        Array [
+          "css",
+          "fontSize",
+          "lineHeight",
+          "m",
+          "mt",
+          "mr",
+          "mb",
+          "ml",
+          "mx",
+          "my",
+          "p",
+          "pt",
+          "pr",
+          "pb",
+          "pl",
+          "px",
+          "py",
+          "textStyle",
+          "alignItems",
+          "color",
+          "bg",
+          "display",
+          "flex",
+          "fontWeight",
+          "textAlign",
+        ]
+      }
+      className="sc-bdVaJa gytoeM"
+      fontSize={3}
+      lineHeight="1.5"
+      m={0}
+      textStyle="normal"
+    >
+      <div
+        className="sc-bdVaJa gytoeM"
+      >
+        Test 123
+      </div>
+    </ForwardRef>
+  </StyledComponent>
+</Text>
+`;
+
+exports[`Text render renders properly setup to truncate 1`] = `
+<Text
+  blacklist={
+    Array [
+      "css",
+      "fontSize",
+      "lineHeight",
+      "m",
+      "mt",
+      "mr",
+      "mb",
+      "ml",
+      "mx",
+      "my",
+      "p",
+      "pt",
+      "pr",
+      "pb",
+      "pl",
+      "px",
+      "py",
+      "textStyle",
+      "alignItems",
+      "color",
+      "bg",
+      "display",
+      "flex",
+      "fontWeight",
+      "textAlign",
+    ]
+  }
+  fontSize={3}
+  lineHeight="1.5"
+  m={0}
+  textStyle="normal"
+  truncate={3}
+>
+  <StyledComponent
+    blacklist={
+      Array [
+        "css",
+        "fontSize",
+        "lineHeight",
+        "m",
+        "mt",
+        "mr",
+        "mb",
+        "ml",
+        "mx",
+        "my",
+        "p",
+        "pt",
+        "pr",
+        "pb",
+        "pl",
+        "px",
+        "py",
+        "textStyle",
+        "alignItems",
+        "color",
+        "bg",
+        "display",
+        "flex",
+        "fontWeight",
+        "textAlign",
+      ]
+    }
+    fontSize={3}
+    forwardedComponent={
+      Object {
+        "$$typeof": Symbol(react.forward_ref),
+        "attrs": Array [],
+        "componentStyle": ComponentStyle {
+          "componentId": "sc-bdVaJa",
+          "isStatic": false,
+          "lastClassName": "iFjSNO",
+          "rules": Array [
+            [Function],
+            [Function],
+            [Function],
+            [Function],
+            [Function],
+            [Function],
+            [Function],
+            [Function],
+            [Function],
+            [Function],
+            [Function],
+            [Function],
+          ],
+        },
+        "defaultProps": Object {
+          "blacklist": Array [
+            "css",
+            "fontSize",
+            "lineHeight",
+            "m",
+            "mt",
+            "mr",
+            "mb",
+            "ml",
+            "mx",
+            "my",
+            "p",
+            "pt",
+            "pr",
+            "pb",
+            "pl",
+            "px",
+            "py",
+            "textStyle",
+            "alignItems",
+            "color",
+            "bg",
+            "display",
+            "flex",
+            "fontWeight",
+            "textAlign",
+          ],
+          "fontSize": 3,
+          "lineHeight": "1.5",
+          "m": 0,
+          "textStyle": "normal",
+        },
+        "displayName": "Text",
+        "foldedComponentIds": Array [],
+        "propTypes": Object {
+          "alignItems": [Function],
+          "bg": [Function],
+          "color": [Function],
+          "display": [Function],
+          "flex": [Function],
+          "fontSize": [Function],
+          "fontWeight": [Function],
+          "lineHeight": [Function],
+          "m": [Function],
+          "mb": [Function],
+          "ml": [Function],
+          "mr": [Function],
+          "mt": [Function],
+          "mx": [Function],
+          "my": [Function],
+          "p": [Function],
+          "pb": [Function],
+          "pl": [Function],
+          "pr": [Function],
+          "pt": [Function],
+          "px": [Function],
+          "py": [Function],
+          "textAlign": [Function],
+          "textStyle": [Function],
+        },
+        "render": [Function],
+        "styledComponentId": "sc-bdVaJa",
+        "systemComponent": true,
+        "target": Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "render": [Function],
+        },
+        "toString": [Function],
+        "warnTooManyClasses": [Function],
+        "withComponent": [Function],
+      }
+    }
+    forwardedRef={null}
+    lineHeight="1.5"
+    m={0}
+    textStyle="normal"
+    truncate={3}
+  >
+    <ForwardRef
+      blacklist={
+        Array [
+          "css",
+          "fontSize",
+          "lineHeight",
+          "m",
+          "mt",
+          "mr",
+          "mb",
+          "ml",
+          "mx",
+          "my",
+          "p",
+          "pt",
+          "pr",
+          "pb",
+          "pl",
+          "px",
+          "py",
+          "textStyle",
+          "alignItems",
+          "color",
+          "bg",
+          "display",
+          "flex",
+          "fontWeight",
+          "textAlign",
+        ]
+      }
+      className="sc-bdVaJa iFjSNO"
+      fontSize={3}
+      lineHeight="1.5"
+      m={0}
+      textStyle="normal"
+      truncate={3}
+    >
+      <div
+        className="sc-bdVaJa iFjSNO"
+        truncate={3}
+      >
+        Test 123
+      </div>
+    </ForwardRef>
+  </StyledComponent>
+</Text>
+`;

@@ -4,8 +4,6 @@
  * See: https://www.gatsbyjs.org/docs/node-apis/
  */
 
-// You can delete this file if you're not using it
-
 const path = require('path')
 const _ = require("lodash")
 const { createFilePath } = require('gatsby-source-filesystem')
@@ -30,8 +28,8 @@ const paginatePosts = (postsDetails, createPage, template, basePath, context = {
 }
 
 const createBlogPages = (graphql, createPage) => new Promise((resolve, reject) => {
-  const blogListTemplate = path.resolve('./src/templates/blog-list.js')
-  const blogTemplate = path.resolve('./src/templates/blog.js')
+  const blogListTemplate = path.resolve('./src/templates/blog-list.tsx')
+  const blogTemplate = path.resolve('./src/templates/blog.tsx')
 
   graphql(
     `
@@ -86,7 +84,7 @@ const createBlogPages = (graphql, createPage) => new Promise((resolve, reject) =
 })
 
 const createResourcePages = (graphql, createPage) => new Promise((resolve, reject) => {
-  const resourceTemplate = path.resolve('./src/templates/resources.js')
+  const resourceTemplate = path.resolve('./src/templates/resources.tsx')
 
   graphql(
     `
@@ -132,8 +130,8 @@ const createResourcePages = (graphql, createPage) => new Promise((resolve, rejec
 })
 
 const createTagPages = (graphql, createPage) => new Promise((resolve, reject) => {
-  const tagListTemplate = path.resolve('./src/templates/tag-list.js')
-  const tagTemplate = path.resolve('./src/templates/tag.js')
+  const tagListTemplate = path.resolve('./src/templates/tag-list.tsx')
+  const tagTemplate = path.resolve('./src/templates/tag.tsx')
 
   graphql(
     `
