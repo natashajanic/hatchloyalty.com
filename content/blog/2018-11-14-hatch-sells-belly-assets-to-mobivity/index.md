@@ -1,5 +1,4 @@
 ---
-
 title: "Hatch Loyalty Finalizes Shift from SMB to Enterprise"
 date: 2018-11-14
 tags: ["Press Release"]

@@ -1,5 +1,4 @@
 ---
-documentType: "blog"
 title: "Loyalty Isn't Just Cents Off"
 author: "Dan Gloede"
 date: "2017-10-11"

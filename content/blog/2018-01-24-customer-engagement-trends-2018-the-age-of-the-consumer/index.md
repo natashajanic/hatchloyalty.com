@@ -1,5 +1,4 @@
 ---
-
 title: "Customer Engagement Trends 2018: The Age of the Consumer"
 date: 2018-01-24
 tags: ["Enterprise Loyalty"]

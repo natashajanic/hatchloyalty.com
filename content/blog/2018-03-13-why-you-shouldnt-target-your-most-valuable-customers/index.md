@@ -1,5 +1,4 @@
 ---
-documentType: "blog"
 title: Why You Shouldn't Target Your Most Valuable Customers
 author: Natasha Janic
 date: 2018-03-13

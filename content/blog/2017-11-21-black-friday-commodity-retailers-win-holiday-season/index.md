@@ -1,5 +1,4 @@
 ---
-documentType: "blog"
 title: "When Black Friday Deals Become a Commodity: How Retailers Can Win This Holiday Season"
 author: "Natasha Janic"
 date: "2017-11-21"
