@@ -1,5 +1,6 @@
 import * as React from 'react'
 import { graphql, Link } from 'gatsby'
+import Img from 'gatsby-image'
 import { kebabCase } from 'lodash'
 import system from 'system-components'
 import Layout from '../components/layout'
@@ -29,6 +30,7 @@ interface IBlogTemplateProps {
         author: string
         tags: string[]
         title: string
+        featuredImage: any
       }
       html: string
     }
@@ -38,6 +40,7 @@ interface IBlogTemplateProps {
 class BlogTemplate extends React.Component<IBlogTemplateProps, {}> {
   render() {
     const post = this.props.data.markdownRemark
+    const featuredImage = this.props.data.markdownRemark.frontmatter.featuredImage
     const tagLinks = post.frontmatter.tags.map(tag => (
       <TagLink key={`tagLink-${tag}`}>
         <Link to={`/blog/tags/${kebabCase(tag)}`}>{tag}</Link>
@@ -51,6 +54,7 @@ class BlogTemplate extends React.Component<IBlogTemplateProps, {}> {
             <PostTitle>{post.frontmatter.title}</PostTitle>
             <span>{post.frontmatter.author}</span>
             <span>Tags: {tagLinks}</span>
+            {featuredImage && <Img fluid={featuredImage.childImageSharp.fluid} />}
           </Box>
 
           <div dangerouslySetInnerHTML={{ __html: post.html }} />
@@ -71,6 +75,16 @@ export const pageQuery = graphql`
         author
         tags
         title
+        featuredImage {
+          childImageSharp {
+            resize(width: 1200, height: 1200) {
+              src
+            }
+            fluid(maxWidth: 786) {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
       }
     }
   }
