@@ -3,6 +3,7 @@ import system from 'system-components'
 const Flex = system(
   {
     display: 'flex',
+    flexWrap: 'wrap',
   },
   'alignItems',
   'display',

@@ -23,9 +23,8 @@ const Main = system({
   is: 'main',
 })
 
-export interface IPureLayoutProps {
+export interface IPureLayoutProps extends ILayoutProps {
   children?: React.ReactNode
-  pageStyle?: any
   data: {
     site: {
       siteMetadata: {
