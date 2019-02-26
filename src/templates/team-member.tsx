@@ -27,12 +27,12 @@ const ProfileContainer = system({
 
 const ProfileImageWrapper = system({
   is: Box,
-  borderRadius: 62.5,
-  height: 250,
+  borderRadius: '100%',
+  height: 100,
   mx: 'auto',
   my: 2,
   overflow: 'hidden',
-  width: 250,
+  width: 100,
 })
 
 interface ITeamMemberTemplateProps {

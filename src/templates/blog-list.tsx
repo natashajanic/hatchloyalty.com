@@ -6,7 +6,8 @@ import Layout from 'src/components/layout'
 import SEO from 'src/components/seo'
 import Text from 'src/components/text'
 import Box from 'src/components/box'
-import BlogPostContainer from 'src/components/blog-post-container'
+import Wrapper from 'src/components/wrapper'
+// import BlogPostContainer from 'src/components/blog-post-container'
 import BlogPostPreview from 'src/components/blog-post-preview'
 import IconCircle from 'src/components/icon-circle'
 import Pager from 'src/components/pager'
@@ -70,7 +71,7 @@ class BlogListTemplate extends React.Component<IBlogListTemplateProps, {}> {
             'activation',
           ]}
         />
-        <BlogPostContainer is="main">
+        <Wrapper is="main">
           <Box display="flex" alignItems="center">
             <IconCircle bg="green">
               <BookOpen size={20} color="#fff" />
@@ -96,7 +97,7 @@ class BlogListTemplate extends React.Component<IBlogListTemplateProps, {}> {
               basePath={`/blog`}
             />
           )}
-        </BlogPostContainer>
+        </Wrapper>
       </Layout>
     )
   }

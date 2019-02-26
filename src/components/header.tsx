@@ -1,19 +1,13 @@
 import { Link } from 'gatsby'
 import * as React from 'react'
 import system from 'system-components'
+import Wrapper from 'src/components/wrapper'
 import HatchLogo from 'src/images/hatch-logo.svg'
 
 const UIHeader = system({
   is: 'header',
-  alignItems: 'center',
-  borderBottom: '1px solid',
-  borderColor: 'grayLight',
-  display: 'flex',
-  justifyContent: 'space-between',
-  mx: 'auto',
-  px: 3,
+  bg: 'offWhite',
   py: 3,
-  width: '1024px',
 })
 
 const Logo = system({
@@ -24,6 +18,7 @@ const Logo = system({
 
 const Nav = system({
   is: 'nav',
+  display: 'flex',
 })
 
 const NavLink = system(
@@ -31,9 +26,9 @@ const NavLink = system(
     is: 'li',
     color: 'offBlack',
     fontSize: 3,
-    fontWeight: 400,
-    display: 'inline-flex',
+    fontWeight: 600,
     px: 2,
+    m: 0,
   },
   {
     listStyleType: 'none',
@@ -60,11 +55,17 @@ class Header extends React.Component<IHeaderProps, {}> {
     ))
     return (
       <UIHeader>
-        <Link to="/">
-          <Logo src={HatchLogo} alt={siteTitle} />
-        </Link>
+        <Wrapper
+          alignItems="center"
+          display={['block', 'flex']}
+          justifyContent="space-between"
+        >
+          <Link to="/">
+            <Logo src={HatchLogo} alt={siteTitle} />
+          </Link>
 
-        <Nav>{links}</Nav>
+          <Nav>{links}</Nav>
+        </Wrapper>
       </UIHeader>
     )
   }
