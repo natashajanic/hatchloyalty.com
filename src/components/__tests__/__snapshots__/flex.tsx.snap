@@ -6,8 +6,8 @@ exports[`Flex render matches the expected snapshot 1`] = `
     Array [
       "css",
       "display",
-      "alignItems",
       "flexWrap",
+      "alignItems",
       "flexDirection",
       "justifyContent",
       "m",
@@ -28,6 +28,7 @@ exports[`Flex render matches the expected snapshot 1`] = `
     ]
   }
   display="flex"
+  flexWrap="wrap"
   forwardedComponent={
     Object {
       "$$typeof": Symbol(react.forward_ref),
@@ -50,8 +51,8 @@ exports[`Flex render matches the expected snapshot 1`] = `
         "blacklist": Array [
           "css",
           "display",
-          "alignItems",
           "flexWrap",
+          "alignItems",
           "flexDirection",
           "justifyContent",
           "m",
@@ -71,6 +72,7 @@ exports[`Flex render matches the expected snapshot 1`] = `
           "width",
         ],
         "display": "flex",
+        "flexWrap": "wrap",
       },
       "displayName": "Styled(Component)",
       "foldedComponentIds": Array [],

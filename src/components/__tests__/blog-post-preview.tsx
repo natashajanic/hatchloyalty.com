@@ -25,14 +25,17 @@ describe('BlogPostPreview', () => {
 
   describe('render', () => {
     it('renders the blog title as a link to the blog post', async () => {
-      expect(mountedComponent.find(Link).length).toEqual(4)
+      expect(mountedComponent.find(Link).length).toEqual(5)
       const titleLink = mountedComponent.find(Link).at(0)
       expect(titleLink.text()).toEqual(props.title)
       expect(titleLink.prop('to')).toEqual(`/blog/2019-02-25-test-post/`)
     })
 
-    it('renders the author for the blog post', async () => {
-      expect(mountedComponent.text()).toContain('Written by John Doe')
+    it('renders the author as a link to their profile page', async () => {
+      expect(mountedComponent.find(Link).length).toEqual(5)
+      const authorLink = mountedComponent.find(Link).at(1)
+      expect(authorLink.text()).toEqual(props.author)
+      expect(authorLink.prop('to')).toEqual(`/team/john-doe`)
     })
 
     it('renders the publication date for the blog post', async () => {
@@ -40,11 +43,11 @@ describe('BlogPostPreview', () => {
     })
 
     it('renders each tag as a link', async () => {
-      expect(mountedComponent.find(Link).length).toEqual(4)
-      const testTagLink = mountedComponent.find(Link).at(1)
+      expect(mountedComponent.find(Link).length).toEqual(5)
+      const testTagLink = mountedComponent.find(Link).at(2)
       expect(testTagLink.text()).toEqual('Test')
       expect(testTagLink.prop('to')).toEqual(`/blog/tags/test`)
-      const prTagLink = mountedComponent.find(Link).at(2)
+      const prTagLink = mountedComponent.find(Link).at(3)
       expect(prTagLink.text()).toEqual('Press Release')
       expect(prTagLink.prop('to')).toEqual(`/blog/tags/press-release`)
     })
@@ -81,8 +84,8 @@ describe('BlogPostPreview', () => {
     })
 
     it('renders an explicit link to the blog post', async () => {
-      expect(mountedComponent.find(Link).length).toEqual(4)
-      const readMoreLink = mountedComponent.find(Link).at(3)
+      expect(mountedComponent.find(Link).length).toEqual(5)
+      const readMoreLink = mountedComponent.find(Link).last()
       expect(readMoreLink.text()).toEqual('Read More')
       expect(readMoreLink.prop('to')).toEqual(`/blog/2019-02-25-test-post/`)
     })
