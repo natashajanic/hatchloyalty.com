@@ -6,7 +6,7 @@ type MetaEntry =
   | { name: string; content: any; property?: undefined }
   | { property: string; content: any; name?: undefined }
 
-export interface IPureSEOProps {
+export interface IPureSEOProps extends ISEOProps {
   data: {
     site: {
       siteMetadata: {
@@ -16,11 +16,6 @@ export interface IPureSEOProps {
       }
     }
   }
-  description?: string
-  keywords?: string[]
-  lang?: string
-  meta?: MetaEntry[]
-  title: string
 }
 
 export const PureSEO = (props: IPureSEOProps) => {

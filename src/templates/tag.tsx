@@ -83,7 +83,7 @@ class TagTemplate extends React.Component<ITagTemplateProps, {}> {
                 {tagHeader}
               </Text>
               <Text fontSize={3}>
-                <Link to="/blog/tags">View to All tags</Link>
+                <Link to="/blog/tags">View All tags</Link>
               </Text>
             </TitleContainer>
             <Box>{posts}</Box>

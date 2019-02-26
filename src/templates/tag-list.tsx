@@ -21,7 +21,7 @@ interface ITagsListTemplateProps {
   }
 }
 
-class TagsListTemplate extends React.Component<ITagsListTemplateProps, {}> {
+class TagListTemplate extends React.Component<ITagsListTemplateProps, {}> {
   render() {
     const {
       pageContext: { basePath, tags },
@@ -48,4 +48,4 @@ class TagsListTemplate extends React.Component<ITagsListTemplateProps, {}> {
   }
 }
 
-export default TagsListTemplate
+export default TagListTemplate

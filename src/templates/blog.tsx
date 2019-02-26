@@ -27,6 +27,7 @@ interface IBlogTemplateProps {
       excerpt: string
       frontmatter: {
         author: string
+        date: string
         tags: string[]
         title: string
       }
@@ -49,8 +50,11 @@ class BlogTemplate extends React.Component<IBlogTemplateProps, {}> {
         <Wrapper>
           <Box py={4}>
             <PostTitle>{post.frontmatter.title}</PostTitle>
-            <span>{post.frontmatter.author}</span>
-            <span>Tags: {tagLinks}</span>
+            <div>
+              Written by <Link to={`/team/${kebabCase(post.frontmatter.author)}`}>{post.frontmatter.author}</Link>
+              &nbsp;on {post.frontmatter.date}
+            </div>
+            <div>Tags: {tagLinks}</div>
           </Box>
 
           <div dangerouslySetInnerHTML={{ __html: post.html }} />
@@ -69,6 +73,7 @@ export const pageQuery = graphql`
       html
       frontmatter {
         author
+        date(formatString: "MMMM DD, YYYY")
         tags
         title
       }
