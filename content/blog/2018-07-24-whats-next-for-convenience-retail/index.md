@@ -2,6 +2,7 @@
 title: "What's Next for Convenience Retail"
 author: Natasha Janic
 date: 2018-07-24
+featuredImage: "./hatch-logo-image.jpg"
 tags: ["Enterprise Loyalty"]
 ---
 

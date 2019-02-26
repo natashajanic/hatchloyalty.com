@@ -3,11 +3,14 @@ import Img, { FluidObject } from 'gatsby-image'
 import { kebabCase } from 'lodash'
 import * as React from 'react'
 import system from 'system-components'
-import Panel from './panel'
 import Text from './text'
 
 const BlogPostCard = system({
-  is: Panel,
+  is: 'div',
+  bg: 'white',
+  border: '1px solid',
+  borderColor: 'grayLight',
+  borderRadius: 4,
   px: 4,
   py: 5,
   mb: 4,

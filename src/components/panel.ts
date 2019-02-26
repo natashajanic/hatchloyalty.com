@@ -21,6 +21,8 @@ const Panel = system(
     background: props.disabled ? 'grayLight' : props.background || 'white',
   }),
   'alignItems',
+  'borderColor',
+  'borderRadius',
   'display',
   'height',
   'flex',
