@@ -3,7 +3,7 @@ import Img from 'gatsby-image'
 import { kebabCase } from 'lodash'
 import * as React from 'react'
 import system from 'system-components'
-import { IGraphQLImage } from 'src/types'
+import { IGraphQLImage } from 'src/models'
 import Panel from './panel'
 import Text from './text'
 
@@ -64,7 +64,8 @@ class BlogPostPreview extends React.Component<IBlogPostPreviewProps, {}> {
 
         <BlogPostCardMeta>
           <span>
-            Post Written by <Link to={`/team/${kebabCase(author)}`}>{author}</Link> on {date}
+            Post Written by{' '}
+            <Link to={`/team/${kebabCase(author)}`}>{author}</Link> on {date}
           </span>
           <br />
           <span>Tags: {tagLinks}</span>

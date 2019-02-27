@@ -1,0 +1,34 @@
+{
+  "changes": [
+    {
+      "component": "PLATFORM",
+      "description": "Exposes a JSON API relationship between a Point Change and its Redemption Source."
+    },
+    {
+      "component": "PLATFORM",
+      "description": "Updates to provide better webhook summaries on Loyalty and Transaction events."
+    },
+    {
+      "component": "PLATFORM",
+      "description": "Adds new attribute (visible_status) to Membership Offers that helps manage Offer visibility."
+    },
+    {
+      "component": "PLATFORM",
+      "description": "Bugfix to prevent the fulfillment of previously cancelled Redemptions."
+    },
+    {
+      "component": "HATCH HQ",
+      "description": "Dashboard improvements that highlight program key program metrics."
+    },
+    {
+      "component": "HATCH HQ",
+      "description": "Membership point change activity table displays marketing contents"
+    },
+    {
+      "component": "HATCH HQ",
+      "description": "General improvements and bugfixes."
+    }
+  ],
+  "date": "2018-04-01",
+  "name": "Release 2018.04"
+}

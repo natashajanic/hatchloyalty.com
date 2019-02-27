@@ -1,6 +1,6 @@
 const _ = require('lodash')
 const path = require('path')
-const { paginatePosts } = require('./helpers')
+const { paginateList } = require('./helpers')
 
 exports.createPages = (graphql, createPage) => new Promise((resolve, reject) => {
   const tagListTemplate = path.resolve('./src/templates/tag-list.tsx')
@@ -69,7 +69,7 @@ exports.createPages = (graphql, createPage) => new Promise((resolve, reject) => 
           }
 
           const { data: { allMarkdownRemark } } = tagPageResult
-          paginatePosts(
+          paginateList(
             allMarkdownRemark,
             createPage,
             tagTemplate,

@@ -51,7 +51,10 @@ class BlogTemplate extends React.Component<IBlogTemplateProps, {}> {
           <Box py={4}>
             <PostTitle>{post.frontmatter.title}</PostTitle>
             <div>
-              Written by <Link to={`/team/${kebabCase(post.frontmatter.author)}`}>{post.frontmatter.author}</Link>
+              Written by{' '}
+              <Link to={`/team/${kebabCase(post.frontmatter.author)}`}>
+                {post.frontmatter.author}
+              </Link>
               &nbsp;on {post.frontmatter.date}
             </div>
             <div>Tags: {tagLinks}</div>

@@ -88,3 +88,8 @@ Looking for more guidance? Full documentation for Gatsby lives [on the website](
 ## 💫 Deploy
 
 [![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/gatsbyjs/gatsby-starter-default)
+
+## TODOs
+
+* Find a better way to manage paths and routing throughout the app. Right now this uses a lot of hard-coded strings.
+* Standardize data models used throughout the app (e.g. Blog, Resource, Team Member, etc). Define clear interfaces for these data models and use them consistently. Right now a number of single-use structures are used for these data models making it unclear when it's safe to access various properties of these models.

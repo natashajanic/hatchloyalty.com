@@ -1,0 +1,26 @@
+{
+  "changes": [
+    {
+      "component": "PLATFORM",
+      "description": "Require proper scope parameters when making API calls to create tokens."
+    },
+    {
+      "component": "PLATFORM",
+      "description": "Asynchronously send password reset calls via webhook notification"
+    },
+    {
+      "component": "PLATFORM",
+      "description": "Adds support for sending Membership update notifications on point changes"
+    },
+    {
+      "component": "PLATFORM",
+      "description": "General bugfixes and performance improvements"
+    },
+    {
+      "component": "HATCH HQ",
+      "description": "General bugfixes and performance improvements"
+    }
+  ],
+  "date": "2018-09-01",
+  "name": "Release 2018.09"
+}

@@ -1,0 +1,54 @@
+{
+  "changes": [
+    {
+      "component": "PLATFORM",
+      "description": "API-wide scope enforcement"
+    },
+    {
+      "component": "PLATFORM",
+      "description": "Eager loads Membership on Membership Rewards API calls"
+    },
+    {
+      "component": "PLATFORM",
+      "description": "Removes Membership Reward resource and replace with decorated Reward resource"
+    },
+    {
+      "component": "PLATFORM",
+      "description": "Improves performance for Transaction metrics"
+    },
+    {
+      "component": "PLATFORM",
+      "description": "Expands filtering of jsonapi-included resources"
+    },
+    {
+      "component": "PLATFORM",
+      "description": "Performance improvements when side-loading Offers and Rewards on Memberships"
+    },
+    {
+      "component": "PLATFORM",
+      "description": "General bugfixes and performance improvements"
+    },
+    {
+      "component": "HATCH HQ",
+      "description": "Updates Offer Management UI"
+    },
+    {
+      "component": "HATCH HQ",
+      "description": "Updates authorized scopes for Admin and Support user roles."
+    },
+    {
+      "component": "HATCH HQ",
+      "description": "Membership Offers now display a badge communicating an Offers visibility status"
+    },
+    {
+      "component": "HATCH HQ",
+      "description": "Fixes issue where Offer details fail to load if no marketing contents where configured."
+    },
+    {
+      "component": "HATCH HQ",
+      "description": "General bugfixes and performance improvements"
+    }
+  ],
+  "date": "2018-11-01",
+  "name": "Release 2018.11"
+}

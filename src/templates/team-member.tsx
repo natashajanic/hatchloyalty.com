@@ -12,7 +12,7 @@ import Text from 'src/components/text'
 import SEO from 'src/components/seo'
 import Wrapper from 'src/components/wrapper'
 import ProfileDefault from 'src/images/profile-default.jpg'
-import { IGraphQLImage } from 'src/types'
+import { IGraphQLImage } from 'src/models'
 
 const TitleContainer = system({
   is: Box,
@@ -76,17 +76,23 @@ class TeamMemberTemplate extends React.Component<ITeamMemberTemplateProps, {}> {
       data: { allTeamMembersJson },
     } = this.props
 
-    const teamMember = (allTeamMembersJson && allTeamMembersJson.edges.length > 0) ?
-      allTeamMembersJson.edges[0].node :
-      undefined
-    const profileImage = teamMember && teamMember.headshot ?
-      <Img fluid={teamMember.headshot.childImageSharp.fluid} /> :
-      <img src={ProfileDefault} alt="" />
+    const teamMember =
+      allTeamMembersJson && allTeamMembersJson.edges.length > 0
+        ? allTeamMembersJson.edges[0].node
+        : undefined
+    const profileImage =
+      teamMember && teamMember.headshot ? (
+        <Img fluid={teamMember.headshot.childImageSharp.fluid} />
+      ) : (
+        <img src={ProfileDefault} alt="" />
+      )
 
     return (
       <ProfileContainer>
         <ProfileImageWrapper>{profileImage}</ProfileImageWrapper>
-        <Text is="h1" fontSize={5}>{name}</Text>
+        <Text is="h1" fontSize={5}>
+          {name}
+        </Text>
         <Text fontSize={2}>{teamMember && teamMember.position}</Text>
       </ProfileContainer>
     )
@@ -99,7 +105,7 @@ class TeamMemberTemplate extends React.Component<ITeamMemberTemplateProps, {}> {
     } = this.props
 
     if (!allMarkdownRemark || allMarkdownRemark.edges.length === 0) {
-      return null;
+      return null
     }
 
     const posts = allMarkdownRemark.edges.map(({ node }) => (
@@ -116,7 +122,7 @@ class TeamMemberTemplate extends React.Component<ITeamMemberTemplateProps, {}> {
     ))
     const postsDescription = `Showing ${posts.length} of ${totalCount} post${
       totalCount === 1 ? '' : 's'
-      } by ${name}`
+    } by ${name}`
     const pager = (
       <Pager
         currentPage={pageNum}
@@ -139,7 +145,9 @@ class TeamMemberTemplate extends React.Component<ITeamMemberTemplateProps, {}> {
   }
 
   render() {
-    const { pageContext: { name } } = this.props
+    const {
+      pageContext: { name },
+    } = this.props
     return (
       <Layout pageStyle="offWhite">
         <SEO title={name} />
@@ -192,9 +200,7 @@ export const pageQuery = graphql`
         }
       }
     }
-    allTeamMembersJson(
-      filter: { name: { eq: $name } }
-    ) {
+    allTeamMembersJson(filter: { name: { eq: $name } }) {
       edges {
         node {
           name

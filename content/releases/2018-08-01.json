@@ -1,0 +1,67 @@
+{
+  "changes": [
+    {
+      "component": "PLATFORM",
+      "description": "Allow a Membership password to be set if it has never been set before"
+    },
+    {
+      "component": "PLATFORM",
+      "description": "Allow unfulfilled Redemptions to transition to abandoned state"
+    },
+    {
+      "component": "PLATFORM",
+      "description": "Platform automatically abandons Redemptions as Rewards expire"
+    },
+    {
+      "component": "PLATFORM",
+      "description": "Adds email format validation for Membership"
+    },
+    {
+      "component": "PLATFORM",
+      "description": "Fixes a bug where authenticated webhook calls would sometimes fail"
+    },
+    {
+      "component": "PLATFORM",
+      "description": "Introduces Segments API",
+      "link": "https://developer.hatchloyalty.com/api/#segments"
+    },
+    {
+      "component": "PLATFORM",
+      "description": "Performance optimization when presenting Offers"
+    },
+    {
+      "component": "PLATFORM",
+      "description": "General bugfixes and platform improvements"
+    },
+    {
+      "component": "HATCH HQ",
+      "description": "Design updates and improvements to the program dashboard"
+    },
+    {
+      "component": "HATCH HQ",
+      "description": "Program dashboard metrics support custom date ranges"
+    },
+    {
+      "component": "HATCH HQ",
+      "description": "Program dashboard supports display of hourly, daily, and cumulative metrics"
+    },
+    {
+      "component": "HATCH HQ",
+      "description": "Program dashboard displays snapshot of loyalty revenue metrics"
+    },
+    {
+      "component": "HATCH HQ",
+      "description": "Program dashboard metrics display"
+    },
+    {
+      "component": "HATCH HQ",
+      "description": "Improved support for editing Offer components"
+    },
+    {
+      "component": "HATCH HQ",
+      "description": "General bugfixes, performance improvements, and design cleanup"
+    }
+  ],
+  "date": "2018-08-01",
+  "name": "Release 2018.08"
+}

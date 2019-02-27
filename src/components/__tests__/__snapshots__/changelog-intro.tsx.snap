@@ -1,0 +1,158 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ChangelogIntro render matches the expected snapshot 1`] = `
+<Styled(Component)
+  blacklist={
+    Array [
+      "css",
+      "alignItems",
+      "border",
+      "borderColor",
+      "borderBottom",
+      "borderRadius",
+      "color",
+      "bg",
+      "display",
+      "justifyContent",
+      "m",
+      "mt",
+      "mr",
+      "mb",
+      "ml",
+      "mx",
+      "my",
+      "p",
+      "pt",
+      "pr",
+      "pb",
+      "pl",
+      "px",
+      "py",
+      "width",
+    ]
+  }
+  mx="auto"
+  my={5}
+  px={6}
+  width="80%"
+>
+  <Text
+    blacklist={
+      Array [
+        "css",
+        "fontSize",
+        "lineHeight",
+        "m",
+        "mt",
+        "mr",
+        "mb",
+        "ml",
+        "mx",
+        "my",
+        "p",
+        "pt",
+        "pr",
+        "pb",
+        "pl",
+        "px",
+        "py",
+        "textStyle",
+        "alignItems",
+        "color",
+        "bg",
+        "display",
+        "flex",
+        "fontWeight",
+        "textAlign",
+      ]
+    }
+    color="green"
+    fontSize={8}
+    lineHeight="1.5"
+    m={0}
+    textAlign="center"
+    textStyle="normal"
+  >
+    Hatch Changelog
+  </Text>
+  <Text
+    blacklist={
+      Array [
+        "css",
+        "fontSize",
+        "lineHeight",
+        "m",
+        "mt",
+        "mr",
+        "mb",
+        "ml",
+        "mx",
+        "my",
+        "p",
+        "pt",
+        "pr",
+        "pb",
+        "pl",
+        "px",
+        "py",
+        "textStyle",
+        "alignItems",
+        "color",
+        "bg",
+        "display",
+        "flex",
+        "fontWeight",
+        "textAlign",
+      ]
+    }
+    fontSize={4}
+    lineHeight="1.5"
+    m={0}
+    mb={3}
+    textAlign="center"
+    textStyle="normal"
+  >
+    Check out what's new! Below is a list of new features, improvements, and bug fixes organized by monthly release.
+  </Text>
+  <Styled(Component)
+    blacklist={
+      Array [
+        "css",
+        "alignItems",
+        "border",
+        "borderColor",
+        "borderBottom",
+        "borderRadius",
+        "color",
+        "bg",
+        "display",
+        "justifyContent",
+        "m",
+        "mt",
+        "mr",
+        "mb",
+        "ml",
+        "mx",
+        "my",
+        "p",
+        "pt",
+        "pr",
+        "pb",
+        "pl",
+        "px",
+        "py",
+        "width",
+      ]
+    }
+    style={
+      Object {
+        "textAlign": "center",
+      }
+    }
+  >
+    <button>
+      Email for Updates
+    </button>
+  </Styled(Component)>
+</Styled(Component)>
+`;

@@ -1,0 +1,175 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Badge render matches the expected snapshot 1`] = `
+<StyledComponent
+  alignItems="center"
+  background="greenXLight"
+  blacklist={
+    Array [
+      "css",
+      "alignItems",
+      "background",
+      "border",
+      "borderTop",
+      "borderRight",
+      "borderBottom",
+      "borderLeft",
+      "borderColor",
+      "borderRadius",
+      "color",
+      "bg",
+      "display",
+      "fontSize",
+      "fontWeight",
+      "justifyContent",
+      "m",
+      "mt",
+      "mr",
+      "mb",
+      "ml",
+      "mx",
+      "my",
+      "p",
+      "pt",
+      "pr",
+      "pb",
+      "pl",
+      "px",
+      "py",
+      "width",
+    ]
+  }
+  border="1px solid"
+  borderColor="green"
+  borderRadius="10%"
+  color="green"
+  display="flex"
+  fontSize={1}
+  fontWeight="bold"
+  forwardedComponent={
+    Object {
+      "$$typeof": Symbol(react.forward_ref),
+      "attrs": Array [],
+      "componentStyle": ComponentStyle {
+        "componentId": "sc-bdVaJa",
+        "isStatic": false,
+        "rules": Array [
+          [Function],
+          [Function],
+          [Function],
+          [Function],
+          [Function],
+          [Function],
+          [Function],
+          [Function],
+          [Function],
+          [Function],
+          [Function],
+          [Function],
+          [Function],
+          [Function],
+          [Function],
+          [Function],
+        ],
+      },
+      "defaultProps": Object {
+        "alignItems": "center",
+        "background": "greenXLight",
+        "blacklist": Array [
+          "css",
+          "alignItems",
+          "background",
+          "border",
+          "borderTop",
+          "borderRight",
+          "borderBottom",
+          "borderLeft",
+          "borderColor",
+          "borderRadius",
+          "color",
+          "bg",
+          "display",
+          "fontSize",
+          "fontWeight",
+          "justifyContent",
+          "m",
+          "mt",
+          "mr",
+          "mb",
+          "ml",
+          "mx",
+          "my",
+          "p",
+          "pt",
+          "pr",
+          "pb",
+          "pl",
+          "px",
+          "py",
+          "width",
+        ],
+        "border": "1px solid",
+        "borderColor": "green",
+        "borderRadius": "10%",
+        "color": "green",
+        "display": "flex",
+        "fontSize": 1,
+        "fontWeight": "bold",
+        "justifyContent": "center",
+        "mx": 2,
+        "px": 2,
+      },
+      "displayName": "Styled(Component)",
+      "foldedComponentIds": Array [],
+      "propTypes": Object {
+        "alignItems": [Function],
+        "background": [Function],
+        "bg": [Function],
+        "border": [Function],
+        "borderBottom": [Function],
+        "borderColor": [Function],
+        "borderLeft": [Function],
+        "borderRadius": [Function],
+        "borderRight": [Function],
+        "borderTop": [Function],
+        "color": [Function],
+        "display": [Function],
+        "fontSize": [Function],
+        "fontWeight": [Function],
+        "justifyContent": [Function],
+        "m": [Function],
+        "mb": [Function],
+        "ml": [Function],
+        "mr": [Function],
+        "mt": [Function],
+        "mx": [Function],
+        "my": [Function],
+        "p": [Function],
+        "pb": [Function],
+        "pl": [Function],
+        "pr": [Function],
+        "pt": [Function],
+        "px": [Function],
+        "py": [Function],
+        "width": [Function],
+      },
+      "render": [Function],
+      "styledComponentId": "sc-bdVaJa",
+      "systemComponent": true,
+      "target": Object {
+        "$$typeof": Symbol(react.forward_ref),
+        "render": [Function],
+      },
+      "toString": [Function],
+      "warnTooManyClasses": [Function],
+      "withComponent": [Function],
+    }
+  }
+  forwardedRef={null}
+  justifyContent="center"
+  mx={2}
+  px={2}
+>
+  Test
+</StyledComponent>
+`;

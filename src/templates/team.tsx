@@ -10,7 +10,7 @@ import SEO from 'src/components/seo'
 import Text from 'src/components/text'
 import Wrapper from 'src/components/wrapper'
 import ProfileDefault from 'src/images/profile-default.jpg'
-import { IGraphQLImage } from 'src/types'
+import { IGraphQLImage } from 'src/models'
 import Flex from 'src/components/flex'
 
 const TeamMemberCard = system({
@@ -68,35 +68,51 @@ class TeamTemplate extends React.Component<ITeamTemplateProps, {}> {
 
     const matchingEdge = edges.find(edge => edge.node.name === teamMemberName)
     const teamMember = matchingEdge && matchingEdge.node
-    if (!teamMember) { return null; }
+    if (!teamMember) {
+      return null
+    }
 
-    const memberPostDetails = postCounts.find(postDetails => postDetails.name === teamMemberName)
+    const memberPostDetails = postCounts.find(
+      postDetails => postDetails.name === teamMemberName
+    )
     const postCount = memberPostDetails ? memberPostDetails.postCount : 0
 
     return (
       <TeamMemberCard key={kebabCase(teamMember.name)}>
         <Link to={`${basePath}/${kebabCase(teamMember.name)}/`}>
           <TeamMemberImageWrapper>
-            {(teamMember && teamMember.headshot) ?
-              <Img fluid={teamMember.headshot.childImageSharp.fluid} /> :
-              <img src={ProfileDefault} alt="" />}
+            {teamMember && teamMember.headshot ? (
+              <Img fluid={teamMember.headshot.childImageSharp.fluid} />
+            ) : (
+              <img src={ProfileDefault} alt="" />
+            )}
           </TeamMemberImageWrapper>
-          <Text is="h2" fontSize={4}>{teamMember.name}</Text>
-          <Text fontSize={3}>({postCount} post{postCount === 1 ? '' : 's'})</Text>
+          <Text is="h2" fontSize={4}>
+            {teamMember.name}
+          </Text>
+          <Text fontSize={3}>
+            ({postCount} post{postCount === 1 ? '' : 's'})
+          </Text>
         </Link>
       </TeamMemberCard>
     )
   }
 
   render() {
-    const { pageContext: { teamMemberNames } } = this.props
+    const {
+      pageContext: { teamMemberNames },
+    } = this.props
 
-    const teamMemberElements = teamMemberNames.map(name => this.renderTeamMember(name))
+    const teamMemberElements = teamMemberNames.map(name =>
+      this.renderTeamMember(name)
+    )
     return (
       <Layout pageStyle="offWhite">
         <SEO title="Hatch Team" />
         <Wrapper my={4}>
-          <Text is="h1" fontSize={6} textAlign="center">Hatch Team</Text>
+          <Text is="h1" fontSize={6} textAlign="center">
+            Hatch Team
+          </Text>
           <Flex justifyContent="center" my={3}>
             {teamMemberElements}
           </Flex>
@@ -112,7 +128,7 @@ export const pageQuery = graphql`
   {
     allMarkdownRemark(
       limit: 2000
-      filter: {fields: {sourceName: {eq: "blog"}}}
+      filter: { fields: { sourceName: { eq: "blog" } } }
     ) {
       teamMembers: group(field: frontmatter___author) {
         name: fieldValue

@@ -1,0 +1,469 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ReleaseNavigation render matches the expected snapshot 1`] = `
+<Styled(Component)
+  blacklist={
+    Array [
+      "css",
+      "fontSize",
+      "m",
+      "mt",
+      "mr",
+      "mb",
+      "ml",
+      "mx",
+      "my",
+      "p",
+      "pt",
+      "pr",
+      "pb",
+      "pl",
+      "px",
+      "py",
+      "textAlign",
+    ]
+  }
+  fontSize={3}
+  my={3}
+  textAlign="center"
+>
+  <Styled(Component)
+    blacklist={
+      Array [
+        "css",
+        "alignItems",
+        "border",
+        "borderColor",
+        "borderBottom",
+        "borderRadius",
+        "color",
+        "bg",
+        "display",
+        "justifyContent",
+        "m",
+        "mt",
+        "mr",
+        "mb",
+        "ml",
+        "mx",
+        "my",
+        "p",
+        "pt",
+        "pr",
+        "pb",
+        "pl",
+        "px",
+        "py",
+        "width",
+      ]
+    }
+    style={
+      Object {
+        "float": "left",
+        "textAlign": "left",
+      }
+    }
+    width={200}
+  >
+    <ForwardRef
+      to="/releases/release-007"
+    >
+      Previous: 
+      Release 007
+    </ForwardRef>
+     
+  </Styled(Component)>
+  <Styled(Component)
+    blacklist={
+      Array [
+        "css",
+        "alignItems",
+        "border",
+        "borderColor",
+        "borderBottom",
+        "borderRadius",
+        "color",
+        "bg",
+        "display",
+        "justifyContent",
+        "m",
+        "mt",
+        "mr",
+        "mb",
+        "ml",
+        "mx",
+        "my",
+        "p",
+        "pt",
+        "pr",
+        "pb",
+        "pl",
+        "px",
+        "py",
+        "width",
+      ]
+    }
+    display="inline-block"
+  >
+    <ForwardRef
+      to="/releases"
+    >
+      View All Releases
+    </ForwardRef>
+  </Styled(Component)>
+  <Styled(Component)
+    blacklist={
+      Array [
+        "css",
+        "alignItems",
+        "border",
+        "borderColor",
+        "borderBottom",
+        "borderRadius",
+        "color",
+        "bg",
+        "display",
+        "justifyContent",
+        "m",
+        "mt",
+        "mr",
+        "mb",
+        "ml",
+        "mx",
+        "my",
+        "p",
+        "pt",
+        "pr",
+        "pb",
+        "pl",
+        "px",
+        "py",
+        "width",
+      ]
+    }
+    style={
+      Object {
+        "float": "right",
+        "textAlign": "right",
+      }
+    }
+    width={200}
+  >
+     
+    <ForwardRef
+      to="/releases/release-009"
+    >
+      Next: 
+      Release 009
+    </ForwardRef>
+  </Styled(Component)>
+</Styled(Component)>
+`;
+
+exports[`ReleaseNavigation render matches the expected snapshot when there is no next release 1`] = `
+<Styled(Component)
+  blacklist={
+    Array [
+      "css",
+      "fontSize",
+      "m",
+      "mt",
+      "mr",
+      "mb",
+      "ml",
+      "mx",
+      "my",
+      "p",
+      "pt",
+      "pr",
+      "pb",
+      "pl",
+      "px",
+      "py",
+      "textAlign",
+    ]
+  }
+  fontSize={3}
+  my={3}
+  textAlign="center"
+>
+  <Styled(Component)
+    blacklist={
+      Array [
+        "css",
+        "alignItems",
+        "border",
+        "borderColor",
+        "borderBottom",
+        "borderRadius",
+        "color",
+        "bg",
+        "display",
+        "justifyContent",
+        "m",
+        "mt",
+        "mr",
+        "mb",
+        "ml",
+        "mx",
+        "my",
+        "p",
+        "pt",
+        "pr",
+        "pb",
+        "pl",
+        "px",
+        "py",
+        "width",
+      ]
+    }
+    style={
+      Object {
+        "float": "left",
+        "textAlign": "left",
+      }
+    }
+    width={200}
+  >
+    <ForwardRef
+      to="/releases/release-007"
+    >
+      Previous: 
+      Release 007
+    </ForwardRef>
+     
+  </Styled(Component)>
+  <Styled(Component)
+    blacklist={
+      Array [
+        "css",
+        "alignItems",
+        "border",
+        "borderColor",
+        "borderBottom",
+        "borderRadius",
+        "color",
+        "bg",
+        "display",
+        "justifyContent",
+        "m",
+        "mt",
+        "mr",
+        "mb",
+        "ml",
+        "mx",
+        "my",
+        "p",
+        "pt",
+        "pr",
+        "pb",
+        "pl",
+        "px",
+        "py",
+        "width",
+      ]
+    }
+    display="inline-block"
+  >
+    <ForwardRef
+      to="/releases"
+    >
+      View All Releases
+    </ForwardRef>
+  </Styled(Component)>
+  <Styled(Component)
+    blacklist={
+      Array [
+        "css",
+        "alignItems",
+        "border",
+        "borderColor",
+        "borderBottom",
+        "borderRadius",
+        "color",
+        "bg",
+        "display",
+        "justifyContent",
+        "m",
+        "mt",
+        "mr",
+        "mb",
+        "ml",
+        "mx",
+        "my",
+        "p",
+        "pt",
+        "pr",
+        "pb",
+        "pl",
+        "px",
+        "py",
+        "width",
+      ]
+    }
+    style={
+      Object {
+        "float": "right",
+        "textAlign": "right",
+      }
+    }
+    width={200}
+  >
+     
+  </Styled(Component)>
+</Styled(Component)>
+`;
+
+exports[`ReleaseNavigation render matches the expected snapshot when there is no previous release 1`] = `
+<Styled(Component)
+  blacklist={
+    Array [
+      "css",
+      "fontSize",
+      "m",
+      "mt",
+      "mr",
+      "mb",
+      "ml",
+      "mx",
+      "my",
+      "p",
+      "pt",
+      "pr",
+      "pb",
+      "pl",
+      "px",
+      "py",
+      "textAlign",
+    ]
+  }
+  fontSize={3}
+  my={3}
+  textAlign="center"
+>
+  <Styled(Component)
+    blacklist={
+      Array [
+        "css",
+        "alignItems",
+        "border",
+        "borderColor",
+        "borderBottom",
+        "borderRadius",
+        "color",
+        "bg",
+        "display",
+        "justifyContent",
+        "m",
+        "mt",
+        "mr",
+        "mb",
+        "ml",
+        "mx",
+        "my",
+        "p",
+        "pt",
+        "pr",
+        "pb",
+        "pl",
+        "px",
+        "py",
+        "width",
+      ]
+    }
+    style={
+      Object {
+        "float": "left",
+        "textAlign": "left",
+      }
+    }
+    width={200}
+  >
+     
+  </Styled(Component)>
+  <Styled(Component)
+    blacklist={
+      Array [
+        "css",
+        "alignItems",
+        "border",
+        "borderColor",
+        "borderBottom",
+        "borderRadius",
+        "color",
+        "bg",
+        "display",
+        "justifyContent",
+        "m",
+        "mt",
+        "mr",
+        "mb",
+        "ml",
+        "mx",
+        "my",
+        "p",
+        "pt",
+        "pr",
+        "pb",
+        "pl",
+        "px",
+        "py",
+        "width",
+      ]
+    }
+    display="inline-block"
+  >
+    <ForwardRef
+      to="/releases"
+    >
+      View All Releases
+    </ForwardRef>
+  </Styled(Component)>
+  <Styled(Component)
+    blacklist={
+      Array [
+        "css",
+        "alignItems",
+        "border",
+        "borderColor",
+        "borderBottom",
+        "borderRadius",
+        "color",
+        "bg",
+        "display",
+        "justifyContent",
+        "m",
+        "mt",
+        "mr",
+        "mb",
+        "ml",
+        "mx",
+        "my",
+        "p",
+        "pt",
+        "pr",
+        "pb",
+        "pl",
+        "px",
+        "py",
+        "width",
+      ]
+    }
+    style={
+      Object {
+        "float": "right",
+        "textAlign": "right",
+      }
+    }
+    width={200}
+  >
+     
+    <ForwardRef
+      to="/releases/release-009"
+    >
+      Next: 
+      Release 009
+    </ForwardRef>
+  </Styled(Component)>
+</Styled(Component)>
+`;
