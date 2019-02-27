@@ -50,9 +50,9 @@ class Release extends React.Component<IReleaseProps, {}> {
           <Box ml={2} style={{ flex: '1 1 0%' }}>
             <Text fontSize={3}>{change.description}</Text>
             {change.link && (
-              <Link to={change.link}>
+              <a href={change.link} target="_blank">
                 <Text fontSize={3}>Click to read more</Text>
-              </Link>
+              </a>
             )}
           </Box>
         </Flex>

@@ -53,9 +53,9 @@ describe('Release', () => {
           ],
         },
       })
-      expect(mountedComponent.find(Link).length).toEqual(2)
-      const changeLink = mountedComponent.find(Link).at(1)
-      expect(changeLink.prop('to')).toEqual(
+      expect(mountedComponent.find('a').length).toEqual(1)
+      const changeLink = mountedComponent.find('a')
+      expect(changeLink.prop('href')).toEqual(
         'https://developer.hatchloyalty.com/test-change'
       )
       expect(changeLink.text()).toEqual('Click to read more')

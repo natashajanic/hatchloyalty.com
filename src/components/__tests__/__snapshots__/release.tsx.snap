@@ -530,8 +530,9 @@ exports[`Release render matches the expected snapshot 1`] = `
         >
           Test Change 2
         </Text>
-        <ForwardRef
-          to="https://developer.hatchloyalty.com/test/change-2"
+        <a
+          href="https://developer.hatchloyalty.com/test/change-2"
+          target="_blank"
         >
           <Text
             blacklist={
@@ -570,7 +571,7 @@ exports[`Release render matches the expected snapshot 1`] = `
           >
             Click to read more
           </Text>
-        </ForwardRef>
+        </a>
       </Styled(Component)>
     </Styled(Component)>
   </Styled(Component)>
