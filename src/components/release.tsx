@@ -25,7 +25,7 @@ class Release extends React.Component<IReleaseProps, {}> {
     const releasePath = `/releases/${kebabCase(release.name)}`
 
     let title: string | React.ReactElement = release.name
-    if (!location.pathname.startsWith(releasePath)) {
+    if (!window.location.pathname.startsWith(releasePath)) {
       title = <Link to={releasePath}>{release.name}</Link>
     }
 
