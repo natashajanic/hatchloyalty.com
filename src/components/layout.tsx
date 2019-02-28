@@ -7,10 +7,8 @@ import theme from 'src/theme'
 import Header from './header'
 import Footer from './footer'
 
-/* tslint:disable no-import-side-effect */
+/* tslint:disable-next-line no-import-side-effect */
 import './layout.css'
-import 'prismjs/plugins/line-numbers/prism-line-numbers.css'
-/* tslint:enable no-import-side-effect */
 
 const PageWrapper = system(
   {
