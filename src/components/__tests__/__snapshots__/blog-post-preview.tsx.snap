@@ -438,7 +438,8 @@ exports[`BlogPostPreview render matches the expected snapshot 1`] = `
     is="div"
   >
     <span>
-      Post Written by 
+      Post Written by
+       
       <ForwardRef
         to="/team/john-doe"
       >

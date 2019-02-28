@@ -1,6 +1,6 @@
 const _ = require('lodash')
 const path = require('path')
-const { paginatePosts } = require('./helpers')
+const { paginateList } = require('./helpers')
 
 exports.createPages = (graphql, createPage) => new Promise((resolve, reject) => {
   const teamTemplate = path.resolve('./src/templates/team.tsx')
@@ -73,7 +73,7 @@ exports.createPages = (graphql, createPage) => new Promise((resolve, reject) => 
           const teamMemberPath = `/team/${_.kebabCase(teamMemberName)}`
 
           if (allMarkdownRemark && allMarkdownRemark.edges && allMarkdownRemark.edges.length > 0) {
-            paginatePosts(
+            paginateList(
               allMarkdownRemark,
               createPage,
               teamMemberTemplate,

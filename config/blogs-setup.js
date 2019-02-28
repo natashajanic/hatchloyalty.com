@@ -1,5 +1,5 @@
 const path = require('path')
-const { paginatePosts } = require('./helpers')
+const { paginateList } = require('./helpers')
 
 exports.createPages = (graphql, createPage) => new Promise((resolve, reject) => {
   const blogListTemplate = path.resolve('./src/templates/blog-list.tsx')
@@ -35,7 +35,7 @@ exports.createPages = (graphql, createPage) => new Promise((resolve, reject) => 
     }
 
     const { data: { allMarkdownRemark } } = result
-    paginatePosts(allMarkdownRemark, createPage, blogListTemplate, '/blog')
+    paginateList(allMarkdownRemark, createPage, blogListTemplate, '/blog')
 
     const { edges } = allMarkdownRemark
     edges.forEach((post, index) => {

@@ -1,0 +1,22 @@
+{
+  "changes": [
+    {
+      "component": "PLATFORM",
+      "description": "Introduces Membership write adapters for Salesforce Marketing Cloud"
+    },
+    {
+      "component": "PLATFORM",
+      "description": "Improved reliability of event notifications through backend enhancements"
+    },
+    {
+      "component": "PLATFORM",
+      "description": "Bugfix to ensure occcasional webhook call connection failures are efficiently retried"
+    },
+    {
+      "component": "HATCH HQ",
+      "description": "General improvements and bugfixes."
+    }
+  ],
+  "date": "2018-05-01",
+  "name": "Release 2018.05"
+}

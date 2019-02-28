@@ -1,0 +1,88 @@
+{
+  "changes": [
+    {
+      "component": "PLATFORM",
+      "description": "Customers can now manage Product Groups via API.",
+      "link": "https://developer.hatchloyalty.com/api/#product-groups"
+    },
+    {
+      "component": "PLATFORM",
+      "description": "Increases the maximum pagingation value from 50 to 100 per response.",
+      "link": "https://developer.hatchloyalty.com/api/#pagination"
+    },
+    {
+      "component": "PLATFORM",
+      "description": "Offer Activation & other Effects are subject to limits, global or per member, & prevent overcommit."
+    },
+    {
+      "component": "PLATFORM",
+      "description": "Offer constraints support combining \"Member In X Segment\" and \"Member In Any of (A,B,C) Segments.\""
+    },
+    {
+      "component": "PLATFORM",
+      "description": "The Membership lookup endpoint correctly includes Membership Offer and Membership Rewards context."
+    },
+    {
+      "component": "PLATFORM",
+      "description": "Membership webhook opt-in messaging is suppressed for memberships with email & phone"
+    },
+    {
+      "component": "PLATFORM",
+      "description": "Marketing Content URLs sanitized to prevent someone from including embeded Javascript or other invalid or insecure URL characters."
+    },
+    {
+      "component": "PLATFORM",
+      "description": "Updates Membership Birthday validation. Valid Membership birthdays must be between 1 and 123 years in the past."
+    },
+    {
+      "component": "PLATFORM",
+      "description": "Password policy strengthened. New passwords must meet minimum strength standard of 8 characters and may not appear in the data set of the 1,000 most common passwords. Applies to Memberships and HQ users. Brute force attempts on password will automatically lock the account for 10 minutes. Login attempts no longer leak information about whether the email or password was registered with the system."
+    },
+    {
+      "component": "PLATFORM",
+      "description": "General bugfixes and performance improvements"
+    },
+    {
+      "component": "PLATFORM",
+      "description": "General security improvements to the API."
+    },
+    {
+      "component": "HATCH HQ",
+      "description": "Enhanced search and filtering capabilities throughout app. API clients can now search and filter the following resources: Members, Point Changes, Offers, Rewards, Locations, Product Groups, Segments, and Users."
+    },
+    {
+      "component": "HATCH HQ",
+      "description": "Customers using HQ can now filter Membership Point Changes and Transactions by a date range."
+    },
+    {
+      "component": "HATCH HQ",
+      "description": "Adds support for Offer Activation Limiting. Activation limiting removes the need to \"require re-activation\" when configuring an Offer constraint."
+    },
+    {
+      "component": "HATCH HQ",
+      "description": "Introduces the ability to create and manage Segments through HQ."
+    },
+    {
+      "component": "HATCH HQ",
+      "description": "Supports the ability to assign Members to a Segment in bulk, via CSV upload."
+    },
+    {
+      "component": "HATCH HQ",
+      "description": "Offer Constraints can now be applied to Memberships \"In Any Segment\""
+    },
+    {
+      "component": "HATCH HQ",
+      "description": "Adds support for viewing archived Offers and Rewards. These records will be \"read only\" until we can add support for un-archiving."
+    },
+    {
+      "component": "HATCH HQ",
+      "description": "Adds the ability to trigger a password reset for a specific Membership."
+    },
+    {
+      "component": "HATCH HQ",
+      "description": "General bugfixes, user experience, & performance improvements"
+    }
+  ],
+  "date": "2019-01-05",
+  "name": "Release 2019.01"
+}

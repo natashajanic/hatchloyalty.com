@@ -1,0 +1,26 @@
+{
+  "changes": [
+    {
+      "component": "PLATFORM",
+      "description": "Rules conditions support the ability to track the number of times an item is purchased"
+    },
+    {
+      "component": "PLATFORM",
+      "description": "Revoke ability for a fulfilled Redemption to be canceled"
+    },
+    {
+      "component": "PLATFORM",
+      "description": "General bug fixes and cleanup"
+    },
+    {
+      "component": "HATCH HQ",
+      "description": "Adds support for dedicated instances of HQ"
+    },
+    {
+      "component": "HATCH HQ",
+      "description": "Cross browser compatibility improvements"
+    }
+  ],
+  "date": "2018-02-01",
+  "name": "Release 2018.02"
+}
