@@ -82,6 +82,15 @@ module.exports = {
               maxWidth: 600,
             },
           },
+          {
+            resolve: `gatsby-remark-prismjs`,
+            options: {
+              aliases: {
+                shell: "bash"
+              },
+              noInlineHighlight: true,
+            },
+          },
         ],
       },
     },
