@@ -1,0 +1,34 @@
+{
+  "changes": [
+    {
+      "component": "PLATFORM",
+      "description": "Additional functionality for Salesforce Marketing Cloud: SMS opt-in, and platform event sync"
+    },
+    {
+      "component": "PLATFORM",
+      "description": "Fix bug returning error to API when confirmed Membership gets re-confirmed"
+    },
+    {
+      "component": "PLATFORM",
+      "description": "Fix bug returning error to API when duplicate Membership ID is posted for create"
+    },
+    {
+      "component": "PLATFORM",
+      "description": "Fix bug returning error to API when Membership ID not found for Membership rewards index"
+    },
+    {
+      "component": "HATCH HQ",
+      "description": "Introduce Hatch Offer management via HQ user interface"
+    },
+    {
+      "component": "HATCH HQ",
+      "description": "Membership, Reward, and Offer Segment visibility"
+    },
+    {
+      "component": "HATCH HQ",
+      "description": "General bug fixes"
+    }
+  ],
+  "date": "2018-06-01",
+  "name": "Release 2018.06"
+}

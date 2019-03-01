@@ -47,6 +47,13 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
+        name: 'releases',
+        path: `${__dirname}/content/releases`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
         name: 'resources',
         path: `${__dirname}/content/resources`,
       },
@@ -73,6 +80,15 @@ module.exports = {
             resolve: `gatsby-remark-images`,
             options: {
               maxWidth: 600,
+            },
+          },
+          {
+            resolve: `gatsby-remark-prismjs`,
+            options: {
+              aliases: {
+                shell: "bash"
+              },
+              noInlineHighlight: true,
             },
           },
         ],

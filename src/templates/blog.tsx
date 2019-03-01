@@ -55,7 +55,10 @@ class BlogTemplate extends React.Component<IBlogTemplateProps, {}> {
             <PostTitle>{post.frontmatter.title}</PostTitle>
             {featuredImage && <Img fluid={featuredImage.childImageSharp.fluid} />}
             <div>
-              Written by <Link to={`/team/${kebabCase(post.frontmatter.author)}`}>{post.frontmatter.author}</Link>
+              Written by{' '}
+              <Link to={`/team/${kebabCase(post.frontmatter.author)}`}>
+                {post.frontmatter.author}
+              </Link>
               &nbsp;on {post.frontmatter.date}
             </div>
             <div>Tags: {tagLinks}</div>

@@ -1,6 +1,5 @@
 import * as React from 'react'
 import { graphql } from 'gatsby'
-import { kebabCase } from 'lodash'
 import { BookOpen } from 'react-feather'
 import Layout from 'src/components/layout'
 import SEO from 'src/components/seo'

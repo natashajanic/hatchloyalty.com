@@ -1,0 +1,59 @@
+{
+  "changes": [
+    {
+      "component": "PLATFORM",
+      "description": "Adds support to automatically grant points to a member on their birthday."
+    },
+    {
+      "component": "PLATFORM",
+      "description": "Adds support to grant or expire Membership points on a configurable schedule."
+    },
+    {
+      "component": "PLATFORM",
+      "description": "Exposes a relationship for a Transaction to the Redemption resource."
+    },
+    {
+      "component": "PLATFORM",
+      "description": "Event notification service enhancements."
+    },
+    {
+      "component": "PLATFORM",
+      "description": "Expired rewards may no longer be redeemed."
+    },
+    {
+      "component": "PLATFORM",
+      "description": "Fulfilled Redemptions may no longer be cancelled."
+    },
+    {
+      "component": "PLATFORM",
+      "description": "Fixes an occasional rounding error in money amount storage."
+    },
+    {
+      "component": "PLATFORM",
+      "description": "Corrects an occasional bug impacting the ability to activate and/or deactivate an Offer."
+    },
+    {
+      "component": "PLATFORM",
+      "description": "Added dynamic deactivation of Offers as a fulfillment outcome."
+    },
+    {
+      "component": "PLATFORM",
+      "description": "General performance improvements"
+    },
+    {
+      "component": "HATCH HQ",
+      "description": "Membership profile page improvements.",
+      "link": "https://www.hatchloyalty.com/blog/membership-profiles/"
+    },
+    {
+      "component": "HATCH HQ",
+      "description": "Updates to HQ user login form."
+    },
+    {
+      "component": "HATCH HQ",
+      "description": "General improvements and bug fixes."
+    }
+  ],
+  "date": "2018-03-01",
+  "name": "Release 2018.03"
+}

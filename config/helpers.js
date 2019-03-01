@@ -1,4 +1,4 @@
-exports.paginatePosts = (postsDetails, createPage, template, basePath, context) => {
+exports.paginateList = (postsDetails, createPage, template, basePath, context) => {
   const postsPerPage = 10
   const numPages = Math.ceil(postsDetails.edges.length / postsPerPage)
   Array.from({ length: numPages }).forEach((_, i) => {

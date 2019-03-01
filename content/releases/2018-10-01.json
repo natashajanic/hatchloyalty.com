@@ -1,0 +1,90 @@
+{
+  "changes": [
+    {
+      "component": "PLATFORM",
+      "description": "Adds category attribute to the Reward resource."
+    },
+    {
+      "component": "PLATFORM",
+      "description": "Adds support for filtering Rewards by category."
+    },
+    {
+      "component": "PLATFORM",
+      "description": "Adds support for filtering Membership Rewards by category."
+    },
+    {
+      "component": "PLATFORM",
+      "description": "Adds support for finding Memberships by Phone or ID."
+    },
+    {
+      "component": "PLATFORM",
+      "description": "Adds webhook support for notifying users when a Membership Segment is updated."
+    },
+    {
+      "component": "PLATFORM",
+      "description": "Adds support for sparse fields on custom data."
+    },
+    {
+      "component": "PLATFORM",
+      "description": "Adds support for gzip compression."
+    },
+    {
+      "component": "PLATFORM",
+      "description": "Adds created at min/max filters to Membership Point Change resource."
+    },
+    {
+      "component": "PLATFORM",
+      "description": "Adds support for rule driven Segmentation."
+    },
+    {
+      "component": "PLATFORM",
+      "description": "General bugfixes and performance improvements"
+    },
+    {
+      "component": "HATCH HQ",
+      "description": "Adds ability to click and drag to select a date range on the Dashboard."
+    },
+    {
+      "component": "HATCH HQ",
+      "description": "Adds ability to click an Offer or Reward on the Membership page."
+    },
+    {
+      "component": "HATCH HQ",
+      "description": "Updates Offer creation user experience."
+    },
+    {
+      "component": "HATCH HQ",
+      "description": "Adds ability to create product groups while configuring an Offer."
+    },
+    {
+      "component": "HATCH HQ",
+      "description": "Product group badges render with links to product group pages"
+    },
+    {
+      "component": "HATCH HQ",
+      "description": "Adds validation to prevent invalid Offers from being created."
+    },
+    {
+      "component": "HATCH HQ",
+      "description": "Adds error handling & messaging to inform users when something goes wrong."
+    },
+    {
+      "component": "HATCH HQ",
+      "description": "Updates Offer creation breadcrumbs"
+    },
+    {
+      "component": "HATCH HQ",
+      "description": "General bugfixes and performance improvements"
+    },
+    {
+      "component": "DATA ETL",
+      "description": "Add support for selectively filtering pieces of custom data"
+    },
+    {
+      "component": "DATA ETL",
+      "description": "Add support for selectively filtering Membership attributes"
+    }
+  ],
+  "date": "2018-10-01",
+  "name": "Release 2018.10"
+}
