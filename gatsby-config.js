@@ -1,3 +1,21 @@
+const remarkPlugins = [
+  {
+    resolve: `gatsby-remark-images`,
+    options: {
+      maxWidth: 600,
+    },
+  },
+  {
+    resolve: `gatsby-remark-prismjs`,
+    options: {
+      aliases: {
+        shell: "bash"
+      },
+      noInlineHighlight: true,
+    },
+  },
+]
+
 module.exports = {
   siteMetadata: {
     title: 'Hatch Loyalty',
@@ -73,25 +91,16 @@ module.exports = {
       },
     },
     {
+      resolve: `gatsby-mdx`,
+      options: {
+        extensions: ['.mdx', '.md'],
+        gatsbyRemarkPlugins: remarkPlugins,
+      }
+    },
+    {
       resolve: `gatsby-transformer-remark`,
       options: {
-        plugins: [
-          {
-            resolve: `gatsby-remark-images`,
-            options: {
-              maxWidth: 600,
-            },
-          },
-          {
-            resolve: `gatsby-remark-prismjs`,
-            options: {
-              aliases: {
-                shell: "bash"
-              },
-              noInlineHighlight: true,
-            },
-          },
-        ],
+        plugins: remarkPlugins,
       },
     },
     {

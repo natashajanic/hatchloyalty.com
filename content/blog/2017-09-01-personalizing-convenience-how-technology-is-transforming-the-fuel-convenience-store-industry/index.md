@@ -7,9 +7,10 @@ featuredImage: "./industry-leading-loyalty-provider-belly-evolves-to-hatch.png"
 tags: ["Enterprise Loyalty"]
 featured: true
 thumbnail: "2017/industry-leading-loyalty-provider-belly-evolves-to-hatch-thumb.png"
-addendum_partial: "partials/forms/gated_contact_form_2017_09_01"
 excerpt: "Understanding that it is not just Customer #48676 at the pump who purchased $20 in fuel, but Jim who pumps $20 in fuel every 6 days and prefers Diet Coke over Pepsi is crucial. A successful customer engagement strategy can lead to long-term loyalty. Having a technology platform to power that strategy not only gathers customer data, but informs marketing decisions with attributable metrics and return on investment."
 ---
+
+import ActiveCampaignForm from 'src/components/active-campaign-form';
 
 ## Introduction
 
@@ -18,3 +19,5 @@ Technology is advancing at an exponential rate and having a ripple effect across
 This occurs for a number of reasons from high costs, fragmented tech stacks and an uncertainty of how to handle big data. However, the benefits outweigh the costs as more nimble, flexible technology solutions enter the market, allowing fuel & c-store retailers the ability to bypass implementation barriers.
 
 Understanding that it is not just Customer #48676 at the pump who purchased $20 in fuel, but Jim who pumps $20 in fuel every 6 days and prefers Diet Coke over Pepsi is crucial. A successful customer engagement strategy can lead to long-term loyalty. Having a technology platform to power that strategy not only gathers customer data, but informs marketing decisions with attributable metrics and return on investment.
+
+<ActiveCampaignForm formID="_form_9" formSrc="https://hatchloyalty.activehosted.com/f/embed.php?id=9"/>

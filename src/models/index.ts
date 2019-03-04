@@ -12,6 +12,7 @@ export interface IBlogPost {
     tags: string[]
     title: string
   }
+  mdxBody?: string
   html: string
 }
 
