@@ -1,0 +1,240 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ResourcesPage render matches the expected snapshot 1`] = `
+<Layout
+  pageStyle="offWhite"
+>
+  <SEO
+    keywords={
+      Array [
+        "hatch",
+        "hatch loyalty",
+        "loyalty",
+        "docs",
+        "personalization",
+        "activation",
+      ]
+    }
+    title="All Resources"
+  />
+  <Styled(Component)
+    blacklist={
+      Array [
+        "css",
+        "maxWidth",
+        "m",
+        "mt",
+        "mr",
+        "mb",
+        "ml",
+        "mx",
+        "my",
+        "p",
+        "pt",
+        "pr",
+        "pb",
+        "pl",
+        "px",
+        "py",
+      ]
+    }
+    is="main"
+    m="0 auto"
+    maxWidth="1024px"
+    px={
+      Array [
+        3,
+        4,
+      ]
+    }
+    py={5}
+  >
+    <Styled(Component)
+      alignItems="center"
+      blacklist={
+        Array [
+          "css",
+          "alignItems",
+          "border",
+          "borderColor",
+          "borderBottom",
+          "borderRadius",
+          "color",
+          "bg",
+          "display",
+          "justifyContent",
+          "m",
+          "mt",
+          "mr",
+          "mb",
+          "ml",
+          "mx",
+          "my",
+          "p",
+          "pt",
+          "pr",
+          "pb",
+          "pl",
+          "px",
+          "py",
+          "width",
+        ]
+      }
+      display="flex"
+    >
+      <Styled(Component)
+        bg="green"
+        blacklist={
+          Array [
+            "css",
+            "borderRadius",
+            "display",
+            "m",
+            "mt",
+            "mr",
+            "mb",
+            "ml",
+            "mx",
+            "my",
+            "p",
+            "pt",
+            "pr",
+            "pb",
+            "pl",
+            "px",
+            "py",
+            "alignItems",
+            "border",
+            "borderColor",
+            "borderBottom",
+            "color",
+            "bg",
+            "justifyContent",
+            "width",
+          ]
+        }
+        borderRadius={100}
+        display="inline-flex"
+        p={2}
+      >
+        <BookOpen
+          color="#fff"
+          size={20}
+        />
+      </Styled(Component)>
+      <Text
+        blacklist={
+          Array [
+            "css",
+            "fontSize",
+            "lineHeight",
+            "m",
+            "mt",
+            "mr",
+            "mb",
+            "ml",
+            "mx",
+            "my",
+            "p",
+            "pt",
+            "pr",
+            "pb",
+            "pl",
+            "px",
+            "py",
+            "textStyle",
+            "alignItems",
+            "color",
+            "bg",
+            "display",
+            "flex",
+            "fontWeight",
+            "textAlign",
+          ]
+        }
+        fontSize={1}
+        lineHeight="1.5"
+        m={0}
+        ml={2}
+        textStyle="normal"
+      >
+        Hatch Resources/Docs
+      </Text>
+    </Styled(Component)>
+    <Text
+      blacklist={
+        Array [
+          "css",
+          "fontSize",
+          "lineHeight",
+          "m",
+          "mt",
+          "mr",
+          "mb",
+          "ml",
+          "mx",
+          "my",
+          "p",
+          "pt",
+          "pr",
+          "pb",
+          "pl",
+          "px",
+          "py",
+          "textStyle",
+          "alignItems",
+          "color",
+          "bg",
+          "display",
+          "flex",
+          "fontWeight",
+          "textAlign",
+        ]
+      }
+      fontSize={5}
+      is="h2"
+      lineHeight="1.5"
+      m={0}
+      textStyle="normal"
+    >
+      Learn from experts. Hatch is here to help you build stronger relationships with your customers.
+    </Text>
+    <ResourcePostList
+      posts={
+        Array [
+          Object {
+            "excerpt": "This is the excerpt for a resource post.",
+            "fields": Object {
+              "slug": "/test-resource-post/",
+            },
+            "frontmatter": Object {
+              "title": "Test Post 1",
+            },
+            "html": "<div>Test resource post body content.</div>",
+          },
+          Object {
+            "excerpt": "This is the excerpt for a resource post.",
+            "fields": Object {
+              "slug": "/test-resource-post/",
+            },
+            "frontmatter": Object {
+              "title": "Test Post 2",
+            },
+            "html": "<div>Test resource post body content.</div>",
+          },
+          Object {
+            "excerpt": "This is the excerpt for a resource post.",
+            "fields": Object {
+              "slug": "/test-resource-post/",
+            },
+            "frontmatter": Object {
+              "title": "Test Post 3",
+            },
+            "html": "<div>Test resource post body content.</div>",
+          },
+        ]
+      }
+    />
+  </Styled(Component)>
+</Layout>
+`;

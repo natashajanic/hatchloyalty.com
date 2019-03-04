@@ -91,6 +91,4 @@ Looking for more guidance? Full documentation for Gatsby lives [on the website](
 
 ## TODOs
 
-* Decompose pages and templates into testable components, leaving only the page structure/organization to be dictated by these classes. These classes are not testable since the GraphQL queries in some cases (e.g. when variables are used) must be defined as a page query, rather than being able to use StaticQuery. As a result these classes cannot be loaded by Jest, our test framework, which does not recognize and cannot parse these GraphQL queries which are intended to be pre-processed by Gatsby.
 * Find a better way to manage paths and routing throughout the app. Right now this uses a lot of hard-coded strings.
-* Standardize data models used throughout the app (e.g. Blog, Resource, Team Member, etc). Define clear interfaces for these data models and use them consistently. Right now a number of single-use structures are used for these data models making it unclear when it's safe to access various properties of these models.

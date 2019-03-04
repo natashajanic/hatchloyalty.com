@@ -1,0 +1,51 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ResourcePostList render matches the expected snapshot 1`] = `
+<Styled(Component)
+  blacklist={
+    Array [
+      "css",
+      "maxWidth",
+      "m",
+      "mt",
+      "mr",
+      "mb",
+      "ml",
+      "mx",
+      "my",
+      "p",
+      "pt",
+      "pr",
+      "pb",
+      "pl",
+      "px",
+      "py",
+    ]
+  }
+  maxWidth="800px"
+  mx="auto"
+  px={
+    Array [
+      3,
+      5,
+    ]
+  }
+  py={2}
+>
+  <ResourcePostPreview
+    key="/test-resource-post/"
+    post={
+      Object {
+        "excerpt": "This is the excerpt for a resource post.",
+        "fields": Object {
+          "slug": "/test-resource-post/",
+        },
+        "frontmatter": Object {
+          "title": "Test Resource Post",
+        },
+        "html": "<div>Test resource post body content.</div>",
+      }
+    }
+  />
+</Styled(Component)>
+`;

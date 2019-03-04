@@ -14,14 +14,14 @@ const TagListCard = system({
   my: 4,
 })
 
-interface ITagsListTemplateProps {
+export interface ITagListTemplateProps {
   pageContext: {
     basePath: string
     tags: Array<{ name: string; postCount: number }>
   }
 }
 
-class TagListTemplate extends React.Component<ITagsListTemplateProps, {}> {
+class TagListTemplate extends React.Component<ITagListTemplateProps, {}> {
   render() {
     const {
       pageContext: { basePath, tags },

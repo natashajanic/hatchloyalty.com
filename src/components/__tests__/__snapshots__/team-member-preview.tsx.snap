@@ -1,10 +1,11 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`BlogPostPreview render matches the expected snapshot 1`] = `
+exports[`TeamMemberPreview render matches the expected snapshot 1`] = `
 <Styled(Component)
   blacklist={
     Array [
       "css",
+      "flex",
       "m",
       "mt",
       "mr",
@@ -19,12 +20,14 @@ exports[`BlogPostPreview render matches the expected snapshot 1`] = `
       "pl",
       "px",
       "py",
+      "textAlign",
       "cursor",
     ]
   }
   border="1px solid"
   borderColor="grayLight"
   borderRadius={4}
+  flex={0}
   is={
     Object {
       "$$typeof": Symbol(react.forward_ref),
@@ -32,7 +35,7 @@ exports[`BlogPostPreview render matches the expected snapshot 1`] = `
         "$$typeof": Symbol(react.forward_ref),
         "attrs": Array [],
         "componentStyle": ComponentStyle {
-          "componentId": "sc-ifAKCX",
+          "componentId": "sc-EHOje",
           "isStatic": false,
           "rules": Array [
             [Function],
@@ -49,7 +52,7 @@ exports[`BlogPostPreview render matches the expected snapshot 1`] = `
         "foldedComponentIds": Array [],
         "propTypes": Object {},
         "render": [Function],
-        "styledComponentId": "sc-ifAKCX",
+        "styledComponentId": "sc-EHOje",
         "systemComponent": true,
         "target": Object {
           "$$typeof": Symbol(react.forward_ref),
@@ -63,7 +66,7 @@ exports[`BlogPostPreview render matches the expected snapshot 1`] = `
         "$$typeof": Symbol(react.forward_ref),
         "attrs": Array [],
         "componentStyle": ComponentStyle {
-          "componentId": "sc-EHOje",
+          "componentId": "sc-bZQynM",
           "isStatic": false,
           "rules": Array [
             [Function],
@@ -141,7 +144,7 @@ exports[`BlogPostPreview render matches the expected snapshot 1`] = `
           "py": [Function],
         },
         "render": [Function],
-        "styledComponentId": "sc-EHOje",
+        "styledComponentId": "sc-bZQynM",
         "systemComponent": true,
         "target": Object {
           "$$typeof": Symbol(react.forward_ref),
@@ -155,7 +158,7 @@ exports[`BlogPostPreview render matches the expected snapshot 1`] = `
         "$$typeof": Symbol(react.forward_ref),
         "attrs": Array [],
         "componentStyle": ComponentStyle {
-          "componentId": "sc-htpNat",
+          "componentId": "sc-bxivhb",
           "isStatic": false,
           "rules": Array [
             [Function],
@@ -239,7 +242,7 @@ exports[`BlogPostPreview render matches the expected snapshot 1`] = `
           "py": [Function],
         },
         "render": [Function],
-        "styledComponentId": "sc-htpNat",
+        "styledComponentId": "sc-bxivhb",
         "systemComponent": true,
         "target": Object {
           "$$typeof": Symbol(react.forward_ref),
@@ -253,7 +256,7 @@ exports[`BlogPostPreview render matches the expected snapshot 1`] = `
         "$$typeof": Symbol(react.forward_ref),
         "attrs": Array [],
         "componentStyle": ComponentStyle {
-          "componentId": "sc-bxivhb",
+          "componentId": "sc-ifAKCX",
           "isStatic": false,
           "rules": Array [
             [Function],
@@ -316,7 +319,7 @@ exports[`BlogPostPreview render matches the expected snapshot 1`] = `
           "py": [Function],
         },
         "render": [Function],
-        "styledComponentId": "sc-bxivhb",
+        "styledComponentId": "sc-ifAKCX",
         "systemComponent": true,
         "target": Object {
           "$$typeof": Symbol(react.forward_ref),
@@ -328,7 +331,7 @@ exports[`BlogPostPreview render matches the expected snapshot 1`] = `
       },
       "attrs": Array [],
       "componentStyle": ComponentStyle {
-        "componentId": "sc-bwzfXH",
+        "componentId": "sc-htpNat",
         "isStatic": false,
         "rules": Array [
           [Function],
@@ -393,7 +396,7 @@ exports[`BlogPostPreview render matches the expected snapshot 1`] = `
         "width": [Function],
       },
       "render": [Function],
-      "styledComponentId": "sc-bwzfXH",
+      "styledComponentId": "sc-htpNat",
       "systemComponent": true,
       "target": Object {
         "$$typeof": Symbol(react.forward_ref),
@@ -404,176 +407,257 @@ exports[`BlogPostPreview render matches the expected snapshot 1`] = `
       "withComponent": [Function],
     }
   }
-  key="/2019-02-25-test-blog-post/"
-  m={0}
-  mb={4}
+  key="john-doe"
+  m={3}
   p={3}
   px={4}
-  py={5}
+  py={4}
+  textAlign="center"
   width="100%"
 >
   <ForwardRef
-    style={
-      Object {
-        "color": "#666666",
-        "display": "block",
-        "textDecoration": "none",
+    to="/team/john-doe/"
+  >
+    <Styled(Component)
+      blacklist={
+        Array [
+          "css",
+          "borderRadius",
+          "height",
+          "m",
+          "mt",
+          "mr",
+          "mb",
+          "ml",
+          "mx",
+          "my",
+          "p",
+          "pt",
+          "pr",
+          "pb",
+          "pl",
+          "px",
+          "py",
+          "overflow",
+          "width",
+          "css",
+          "alignItems",
+          "border",
+          "borderColor",
+          "borderBottom",
+          "borderRadius",
+          "color",
+          "bg",
+          "display",
+          "justifyContent",
+          "m",
+          "mt",
+          "mr",
+          "mb",
+          "ml",
+          "mx",
+          "my",
+          "p",
+          "pt",
+          "pr",
+          "pb",
+          "pl",
+          "px",
+          "py",
+          "width",
+        ]
       }
-    }
-    to="/blog/2019-02-25-test-blog-post/"
-  >
-    Test Blog Post
-  </ForwardRef>
-  <Styled(Component)
-    blacklist={
-      Array [
-        "css",
-        "color",
-        "bg",
-        "fontSize",
-      ]
-    }
-    color="grayDark"
-    fontSize={1}
-    is="div"
-  >
-    <span>
-      Post Written by
-       
-      <ForwardRef
-        to="/team/john-doe"
-      >
-        John Doe
-      </ForwardRef>
-       on 
-      February 25, 2019
-    </span>
-    <br />
-    <span>
-      Tags: 
-      <Styled(Component)
-        blacklist={
-          Array [
-            "css",
-            "m",
-            "mt",
-            "mr",
-            "mb",
-            "ml",
-            "mx",
-            "my",
-            "p",
-            "pt",
-            "pr",
-            "pb",
-            "pl",
-            "px",
-            "py",
-          ]
+      borderRadius={50}
+      height={200}
+      is={
+        Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "attrs": Array [],
+          "componentStyle": ComponentStyle {
+            "componentId": "sc-bwzfXH",
+            "isStatic": false,
+            "rules": Array [
+              [Function],
+              [Function],
+              [Function],
+              [Function],
+              [Function],
+              [Function],
+              [Function],
+              [Function],
+              [Function],
+              [Function],
+              [Function],
+            ],
+          },
+          "defaultProps": Object {
+            "blacklist": Array [
+              "css",
+              "alignItems",
+              "border",
+              "borderColor",
+              "borderBottom",
+              "borderRadius",
+              "color",
+              "bg",
+              "display",
+              "justifyContent",
+              "m",
+              "mt",
+              "mr",
+              "mb",
+              "ml",
+              "mx",
+              "my",
+              "p",
+              "pt",
+              "pr",
+              "pb",
+              "pl",
+              "px",
+              "py",
+              "width",
+            ],
+          },
+          "displayName": "Styled(Component)",
+          "foldedComponentIds": Array [],
+          "propTypes": Object {
+            "alignItems": [Function],
+            "bg": [Function],
+            "border": [Function],
+            "borderBottom": [Function],
+            "borderColor": [Function],
+            "borderRadius": [Function],
+            "color": [Function],
+            "display": [Function],
+            "justifyContent": [Function],
+            "m": [Function],
+            "mb": [Function],
+            "ml": [Function],
+            "mr": [Function],
+            "mt": [Function],
+            "mx": [Function],
+            "my": [Function],
+            "p": [Function],
+            "pb": [Function],
+            "pl": [Function],
+            "pr": [Function],
+            "pt": [Function],
+            "px": [Function],
+            "py": [Function],
+            "width": [Function],
+          },
+          "render": [Function],
+          "styledComponentId": "sc-bwzfXH",
+          "systemComponent": true,
+          "target": Object {
+            "$$typeof": Symbol(react.forward_ref),
+            "render": [Function],
+          },
+          "toString": [Function],
+          "warnTooManyClasses": [Function],
+          "withComponent": [Function],
         }
-        is="span"
-        key="tagLink-Test"
-        mx={1}
-      >
-        <ForwardRef
-          to="/blog/tags/test"
-        >
-          Test
-        </ForwardRef>
-      </Styled(Component)>
-      <Styled(Component)
-        blacklist={
-          Array [
-            "css",
-            "m",
-            "mt",
-            "mr",
-            "mb",
-            "ml",
-            "mx",
-            "my",
-            "p",
-            "pt",
-            "pr",
-            "pb",
-            "pl",
-            "px",
-            "py",
-          ]
+      }
+      mx="auto"
+      my={2}
+      overflow="hidden"
+      width={200}
+    >
+      <Image
+        Tag="div"
+        alt=""
+        critical={false}
+        fadeIn={true}
+        fluid={
+          Object {
+            "aspectRatio": 1,
+            "sizes": "",
+            "src": "test/imgs/john-doe.png",
+            "srcSet": "",
+          }
         }
-        is="span"
-        key="tagLink-Press Release"
-        mx={1}
-      >
-        <ForwardRef
-          to="/blog/tags/press-release"
-        >
-          Press Release
-        </ForwardRef>
-      </Styled(Component)>
-    </span>
-  </Styled(Component)>
-  <Image
-    Tag="div"
-    alt=""
-    critical={false}
-    fadeIn={true}
-    fluid={
-      Object {
-        "aspectRatio": 1,
-        "sizes": "",
-        "src": "test/imgs/test-blog-post.png",
-        "srcSet": "",
+      />
+    </Styled(Component)>
+    <Text
+      blacklist={
+        Array [
+          "css",
+          "fontSize",
+          "lineHeight",
+          "m",
+          "mt",
+          "mr",
+          "mb",
+          "ml",
+          "mx",
+          "my",
+          "p",
+          "pt",
+          "pr",
+          "pb",
+          "pl",
+          "px",
+          "py",
+          "textStyle",
+          "alignItems",
+          "color",
+          "bg",
+          "display",
+          "flex",
+          "fontWeight",
+          "textAlign",
+        ]
       }
-    }
-  />
-  <Text
-    blacklist={
-      Array [
-        "css",
-        "fontSize",
-        "lineHeight",
-        "m",
-        "mt",
-        "mr",
-        "mb",
-        "ml",
-        "mx",
-        "my",
-        "p",
-        "pt",
-        "pr",
-        "pb",
-        "pl",
-        "px",
-        "py",
-        "textStyle",
-        "alignItems",
-        "color",
-        "bg",
-        "display",
-        "flex",
-        "fontWeight",
-        "textAlign",
-      ]
-    }
-    color="grayDark"
-    dangerouslySetInnerHTML={
-      Object {
-        "__html": "This is the excerpt for a blog post.",
+      fontSize={4}
+      is="h2"
+      lineHeight="1.5"
+      m={0}
+      textStyle="normal"
+    >
+      John Doe
+    </Text>
+    <Text
+      blacklist={
+        Array [
+          "css",
+          "fontSize",
+          "lineHeight",
+          "m",
+          "mt",
+          "mr",
+          "mb",
+          "ml",
+          "mx",
+          "my",
+          "p",
+          "pt",
+          "pr",
+          "pb",
+          "pl",
+          "px",
+          "py",
+          "textStyle",
+          "alignItems",
+          "color",
+          "bg",
+          "display",
+          "flex",
+          "fontWeight",
+          "textAlign",
+        ]
       }
-    }
-    fontSize={3}
-    is="p"
-    lineHeight="1.5"
-    m={0}
-    textStyle="normal"
-  />
-  <ForwardRef
-    color="grayDark"
-    to="/blog/2019-02-25-test-blog-post/"
-  >
-    Read More
+      fontSize={3}
+      lineHeight="1.5"
+      m={0}
+      textStyle="normal"
+    >
+      (
+      12
+       post
+      s
+      )
+    </Text>
   </ForwardRef>
 </Styled(Component)>
 `;

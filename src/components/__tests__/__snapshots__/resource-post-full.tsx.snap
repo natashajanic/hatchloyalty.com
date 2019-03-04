@@ -1,0 +1,82 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ResourcePostFull render matches the expected snapshot 1`] = `
+<div>
+  <Styled(Component)
+    blacklist={
+      Array [
+        "css",
+        "alignItems",
+        "border",
+        "borderColor",
+        "borderBottom",
+        "borderRadius",
+        "color",
+        "bg",
+        "display",
+        "justifyContent",
+        "m",
+        "mt",
+        "mr",
+        "mb",
+        "ml",
+        "mx",
+        "my",
+        "p",
+        "pt",
+        "pr",
+        "pb",
+        "pl",
+        "px",
+        "py",
+        "width",
+      ]
+    }
+    py={4}
+  >
+    <Styled(Component)
+      blacklist={
+        Array [
+          "css",
+          "border",
+          "borderTop",
+          "borderRight",
+          "borderBottom",
+          "borderLeft",
+          "borderColor",
+          "fontSize",
+          "m",
+          "mt",
+          "mr",
+          "mb",
+          "ml",
+          "mx",
+          "my",
+          "p",
+          "pt",
+          "pr",
+          "pb",
+          "pl",
+          "px",
+          "py",
+        ]
+      }
+      borderBottom="1px solid"
+      borderColor="grayLight"
+      fontSize={5}
+      is="h1"
+      m={0}
+      pb={4}
+    >
+      Test Resource Post
+    </Styled(Component)>
+  </Styled(Component)>
+  <div
+    dangerouslySetInnerHTML={
+      Object {
+        "__html": "<div>Test resource post body content.</div>",
+      }
+    }
+  />
+</div>
+`;

@@ -54,6 +54,7 @@ exports[`Wrapper render matches the expected snapshot 1`] = `
           "px",
           "py",
         ],
+        "is": "main",
         "m": "0 auto",
         "maxWidth": "1024px",
         "px": Array [
@@ -93,6 +94,7 @@ exports[`Wrapper render matches the expected snapshot 1`] = `
     }
   }
   forwardedRef={null}
+  is="main"
   m="0 auto"
   maxWidth="1024px"
   px={
