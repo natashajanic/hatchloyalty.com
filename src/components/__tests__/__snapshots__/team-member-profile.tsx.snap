@@ -1,0 +1,380 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TeamMemberProfile render matches the expected snapshot 1`] = `
+<Styled(Component)
+  blacklist={
+    Array [
+      "css",
+      "m",
+      "mt",
+      "mr",
+      "mb",
+      "ml",
+      "mx",
+      "my",
+      "p",
+      "pt",
+      "pr",
+      "pb",
+      "pl",
+      "px",
+      "py",
+      "textAlign",
+      "css",
+      "alignItems",
+      "border",
+      "borderColor",
+      "borderBottom",
+      "borderRadius",
+      "color",
+      "bg",
+      "display",
+      "justifyContent",
+      "m",
+      "mt",
+      "mr",
+      "mb",
+      "ml",
+      "mx",
+      "my",
+      "p",
+      "pt",
+      "pr",
+      "pb",
+      "pl",
+      "px",
+      "py",
+      "width",
+    ]
+  }
+  is={
+    Object {
+      "$$typeof": Symbol(react.forward_ref),
+      "attrs": Array [],
+      "componentStyle": ComponentStyle {
+        "componentId": "sc-bdVaJa",
+        "isStatic": false,
+        "rules": Array [
+          [Function],
+          [Function],
+          [Function],
+          [Function],
+          [Function],
+          [Function],
+          [Function],
+          [Function],
+          [Function],
+          [Function],
+          [Function],
+        ],
+      },
+      "defaultProps": Object {
+        "blacklist": Array [
+          "css",
+          "alignItems",
+          "border",
+          "borderColor",
+          "borderBottom",
+          "borderRadius",
+          "color",
+          "bg",
+          "display",
+          "justifyContent",
+          "m",
+          "mt",
+          "mr",
+          "mb",
+          "ml",
+          "mx",
+          "my",
+          "p",
+          "pt",
+          "pr",
+          "pb",
+          "pl",
+          "px",
+          "py",
+          "width",
+        ],
+      },
+      "displayName": "Styled(Component)",
+      "foldedComponentIds": Array [],
+      "propTypes": Object {
+        "alignItems": [Function],
+        "bg": [Function],
+        "border": [Function],
+        "borderBottom": [Function],
+        "borderColor": [Function],
+        "borderRadius": [Function],
+        "color": [Function],
+        "display": [Function],
+        "justifyContent": [Function],
+        "m": [Function],
+        "mb": [Function],
+        "ml": [Function],
+        "mr": [Function],
+        "mt": [Function],
+        "mx": [Function],
+        "my": [Function],
+        "p": [Function],
+        "pb": [Function],
+        "pl": [Function],
+        "pr": [Function],
+        "pt": [Function],
+        "px": [Function],
+        "py": [Function],
+        "width": [Function],
+      },
+      "render": [Function],
+      "styledComponentId": "sc-bdVaJa",
+      "systemComponent": true,
+      "target": Object {
+        "$$typeof": Symbol(react.forward_ref),
+        "render": [Function],
+      },
+      "toString": [Function],
+      "warnTooManyClasses": [Function],
+      "withComponent": [Function],
+    }
+  }
+  m={4}
+  textAlign="center"
+>
+  <Styled(Component)
+    blacklist={
+      Array [
+        "css",
+        "borderRadius",
+        "height",
+        "m",
+        "mt",
+        "mr",
+        "mb",
+        "ml",
+        "mx",
+        "my",
+        "p",
+        "pt",
+        "pr",
+        "pb",
+        "pl",
+        "px",
+        "py",
+        "overflow",
+        "width",
+        "css",
+        "alignItems",
+        "border",
+        "borderColor",
+        "borderBottom",
+        "borderRadius",
+        "color",
+        "bg",
+        "display",
+        "justifyContent",
+        "m",
+        "mt",
+        "mr",
+        "mb",
+        "ml",
+        "mx",
+        "my",
+        "p",
+        "pt",
+        "pr",
+        "pb",
+        "pl",
+        "px",
+        "py",
+        "width",
+      ]
+    }
+    borderRadius={62.5}
+    height={250}
+    is={
+      Object {
+        "$$typeof": Symbol(react.forward_ref),
+        "attrs": Array [],
+        "componentStyle": ComponentStyle {
+          "componentId": "sc-bdVaJa",
+          "isStatic": false,
+          "rules": Array [
+            [Function],
+            [Function],
+            [Function],
+            [Function],
+            [Function],
+            [Function],
+            [Function],
+            [Function],
+            [Function],
+            [Function],
+            [Function],
+          ],
+        },
+        "defaultProps": Object {
+          "blacklist": Array [
+            "css",
+            "alignItems",
+            "border",
+            "borderColor",
+            "borderBottom",
+            "borderRadius",
+            "color",
+            "bg",
+            "display",
+            "justifyContent",
+            "m",
+            "mt",
+            "mr",
+            "mb",
+            "ml",
+            "mx",
+            "my",
+            "p",
+            "pt",
+            "pr",
+            "pb",
+            "pl",
+            "px",
+            "py",
+            "width",
+          ],
+        },
+        "displayName": "Styled(Component)",
+        "foldedComponentIds": Array [],
+        "propTypes": Object {
+          "alignItems": [Function],
+          "bg": [Function],
+          "border": [Function],
+          "borderBottom": [Function],
+          "borderColor": [Function],
+          "borderRadius": [Function],
+          "color": [Function],
+          "display": [Function],
+          "justifyContent": [Function],
+          "m": [Function],
+          "mb": [Function],
+          "ml": [Function],
+          "mr": [Function],
+          "mt": [Function],
+          "mx": [Function],
+          "my": [Function],
+          "p": [Function],
+          "pb": [Function],
+          "pl": [Function],
+          "pr": [Function],
+          "pt": [Function],
+          "px": [Function],
+          "py": [Function],
+          "width": [Function],
+        },
+        "render": [Function],
+        "styledComponentId": "sc-bdVaJa",
+        "systemComponent": true,
+        "target": Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "render": [Function],
+        },
+        "toString": [Function],
+        "warnTooManyClasses": [Function],
+        "withComponent": [Function],
+      }
+    }
+    mx="auto"
+    my={2}
+    overflow="hidden"
+    width={250}
+  >
+    <Image
+      Tag="div"
+      alt=""
+      critical={false}
+      fadeIn={true}
+      fluid={
+        Object {
+          "aspectRatio": 1,
+          "sizes": "",
+          "src": "test/imgs/john-doe.png",
+          "srcSet": "",
+        }
+      }
+    />
+  </Styled(Component)>
+  <Text
+    blacklist={
+      Array [
+        "css",
+        "fontSize",
+        "lineHeight",
+        "m",
+        "mt",
+        "mr",
+        "mb",
+        "ml",
+        "mx",
+        "my",
+        "p",
+        "pt",
+        "pr",
+        "pb",
+        "pl",
+        "px",
+        "py",
+        "textStyle",
+        "alignItems",
+        "color",
+        "bg",
+        "display",
+        "flex",
+        "fontWeight",
+        "textAlign",
+      ]
+    }
+    fontSize={5}
+    is="h1"
+    lineHeight="1.5"
+    m={0}
+    textStyle="normal"
+  >
+    John Doe
+  </Text>
+  <Text
+    blacklist={
+      Array [
+        "css",
+        "fontSize",
+        "lineHeight",
+        "m",
+        "mt",
+        "mr",
+        "mb",
+        "ml",
+        "mx",
+        "my",
+        "p",
+        "pt",
+        "pr",
+        "pb",
+        "pl",
+        "px",
+        "py",
+        "textStyle",
+        "alignItems",
+        "color",
+        "bg",
+        "display",
+        "flex",
+        "fontWeight",
+        "textAlign",
+      ]
+    }
+    fontSize={2}
+    lineHeight="1.5"
+    m={0}
+    textStyle="normal"
+  >
+    CEO
+  </Text>
+</Styled(Component)>
+`;

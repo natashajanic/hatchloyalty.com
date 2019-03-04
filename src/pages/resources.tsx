@@ -1,115 +1,94 @@
+import { graphql, StaticQuery } from 'gatsby'
 import * as React from 'react'
-import { graphql, Link } from 'gatsby'
 import { BookOpen } from 'react-feather'
 import Layout from 'src/components/layout'
 import SEO from 'src/components/seo'
 import Text from 'src/components/text'
 import Box from 'src/components/box'
-import BlogPostContainer from 'src/components/blog-post-container'
 import IconCircle from 'src/components/icon-circle'
+import ResourcePostList from 'src/components/resource-post-list'
+import Wrapper from 'src/components/wrapper'
+import { IResourcePost } from 'src/models'
 
-interface IResourcesPageProps {
+export interface IPureResourcesPageProps {
   data: {
     allMarkdownRemark: {
       edges: Array<{
-        node: {
-          excerpt: string
-          fields: { slug: string }
-          frontmatter: {
-            title: string
-          }
-        }
+        node: IResourcePost
       }>
     }
   }
 }
 
-class ResourcesPage extends React.Component<IResourcesPageProps, {}> {
+export const PureResourcesPage = (props: IPureResourcesPageProps) => {
+  const { data } = props
+  const posts = data.allMarkdownRemark.edges.map(edge => edge.node)
+
+  return (
+    <Layout pageStyle="offWhite">
+      <SEO
+        title="All Resources"
+        keywords={[
+          'hatch',
+          'hatch loyalty',
+          'loyalty',
+          'docs',
+          'personalization',
+          'activation',
+        ]}
+      />
+      <Wrapper py={5}>
+        <Box display="flex" alignItems="center">
+          <IconCircle bg="green">
+            <BookOpen size={20} color="#fff" />
+          </IconCircle>
+          <Text fontSize={1} ml={2}>
+            Hatch Resources/Docs
+          </Text>
+        </Box>
+
+        <Text is="h2" fontSize={5}>
+          Learn from experts. Hatch is here to help you build stronger
+          relationships with your customers.
+        </Text>
+
+        <ResourcePostList posts={posts} />
+      </Wrapper>
+    </Layout>
+  )
+}
+
+class ResourcesPage extends React.Component<{}, {}> {
   render() {
-    const { data } = this.props
-    const resources = data.allMarkdownRemark.edges.map(({ node }) => {
-      const title = node.frontmatter.title || node.fields.slug
-      return (
-        <div key={node.fields.slug}>
-          <Link
-            to={`/resource${node.fields.slug}`}
-            style={{
-              color: '#666666',
-              display: 'block',
-              textDecoration: 'none',
-            }}
-          >
-            {title}
-          </Link>
-
-          <Text
-            is="p"
-            color="grayDark"
-            fontSize={3}
-            dangerouslySetInnerHTML={{ __html: node.excerpt }}
-          />
-
-          <Link to={`/resource${node.fields.slug}`} color="grayDark">
-            Read More
-          </Link>
-        </div>
-      )
-    })
+    const query = graphql`
+      query {
+        allMarkdownRemark(
+          sort: { fields: [frontmatter___date], order: DESC }
+          filter: { fields: { sourceName: { eq: "resources" } } }
+        ) {
+          edges {
+            node {
+              excerpt
+              fields {
+                slug
+              }
+              frontmatter {
+                title
+              }
+              html
+            }
+          }
+        }
+      }
+    `
 
     return (
-      <Layout pageStyle="offWhite">
-        <SEO
-          title="All Resources"
-          keywords={[
-            'hatch',
-            'hatch loyalty',
-            'loyalty',
-            'docs',
-            'personalization',
-            'activation',
-          ]}
-        />
-        <BlogPostContainer is="main">
-          <Box display="flex" alignItems="center">
-            <IconCircle bg="green">
-              <BookOpen size={20} color="#fff" />
-            </IconCircle>
-            <Text fontSize={1} ml={2}>
-              Hatch Resources/Docs
-            </Text>
-          </Box>
-
-          <Text is="h2" fontSize={5}>
-            Learn from experts. Hatch is here to help you build stronger
-            relationships with your customers.
-          </Text>
-
-          {resources}
-        </BlogPostContainer>
-      </Layout>
+      <StaticQuery
+        query={query}
+        render={data => <PureResourcesPage {...this.props} data={data} />}
+      />
     )
   }
 }
 
 export default ResourcesPage
-
-export const pageQuery = graphql`
-  query {
-    allMarkdownRemark(
-      sort: { fields: [frontmatter___date], order: DESC }
-      filter: { fields: { sourceName: { eq: "resources" } } }
-    ) {
-      edges {
-        node {
-          excerpt
-          fields {
-            slug
-          }
-          frontmatter {
-            title
-          }
-        }
-      }
-    }
-  }
-`

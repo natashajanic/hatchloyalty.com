@@ -1,7 +1,7 @@
 const path = require('path')
 
 exports.createPages = (graphql, createPage) => new Promise((resolve, reject) => {
-  const resourceTemplate = path.resolve('./src/templates/resources.tsx')
+  const resourceTemplate = path.resolve('./src/templates/resource.tsx')
 
   graphql(
     `
@@ -15,10 +15,6 @@ exports.createPages = (graphql, createPage) => new Promise((resolve, reject) => 
             node {
               fields {
                 slug
-                sourceName
-              }
-              frontmatter {
-                title
               }
             }
           }
@@ -32,12 +28,12 @@ exports.createPages = (graphql, createPage) => new Promise((resolve, reject) => 
     }
 
     const { data: { allMarkdownRemark: { edges } } } = result
-    edges.forEach(resource => {
+    edges.forEach(edge => {
       createPage({
-        path: `/resource${resource.node.fields.slug}`,
+        path: `/resource${edge.node.fields.slug}`,
         component: resourceTemplate,
         context: {
-          slug: resource.node.fields.slug,
+          slug: edge.node.fields.slug,
         },
       })
     })

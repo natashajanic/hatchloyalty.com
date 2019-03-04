@@ -1,0 +1,175 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TeamPage render matches the expected snapshot 1`] = `
+<Layout
+  pageStyle="offWhite"
+>
+  <SEO
+    title="Hatch Team"
+  />
+  <Styled(Component)
+    blacklist={
+      Array [
+        "css",
+        "maxWidth",
+        "m",
+        "mt",
+        "mr",
+        "mb",
+        "ml",
+        "mx",
+        "my",
+        "p",
+        "pt",
+        "pr",
+        "pb",
+        "pl",
+        "px",
+        "py",
+      ]
+    }
+    is="main"
+    m="0 auto"
+    maxWidth="1024px"
+    my={4}
+    px={
+      Array [
+        3,
+        4,
+      ]
+    }
+  >
+    <Text
+      blacklist={
+        Array [
+          "css",
+          "fontSize",
+          "lineHeight",
+          "m",
+          "mt",
+          "mr",
+          "mb",
+          "ml",
+          "mx",
+          "my",
+          "p",
+          "pt",
+          "pr",
+          "pb",
+          "pl",
+          "px",
+          "py",
+          "textStyle",
+          "alignItems",
+          "color",
+          "bg",
+          "display",
+          "flex",
+          "fontWeight",
+          "textAlign",
+        ]
+      }
+      fontSize={6}
+      is="h1"
+      lineHeight="1.5"
+      m={0}
+      textAlign="center"
+      textStyle="normal"
+    >
+      Hatch Team
+    </Text>
+    <Styled(Component)
+      blacklist={
+        Array [
+          "css",
+          "display",
+          "flexWrap",
+          "alignItems",
+          "flexDirection",
+          "justifyContent",
+          "m",
+          "mt",
+          "mr",
+          "mb",
+          "ml",
+          "mx",
+          "my",
+          "p",
+          "pt",
+          "pr",
+          "pb",
+          "pl",
+          "px",
+          "py",
+          "width",
+        ]
+      }
+      display="flex"
+      flexWrap="wrap"
+      justifyContent="center"
+      my={3}
+    >
+      <TeamMemberPreview
+        key="John Doe"
+        postCount={15}
+        teamMember={
+          Object {
+            "headshot": Object {
+              "childImageSharp": Object {
+                "fluid": Object {
+                  "aspectRatio": 1,
+                  "sizes": "",
+                  "src": "test/imgs/john-doe.png",
+                  "srcSet": "",
+                },
+              },
+            },
+            "name": "John Doe",
+            "position": "CEO",
+          }
+        }
+      />
+      <TeamMemberPreview
+        key="Sally Smith"
+        postCount={6}
+        teamMember={
+          Object {
+            "headshot": Object {
+              "childImageSharp": Object {
+                "fluid": Object {
+                  "aspectRatio": 1,
+                  "sizes": "",
+                  "src": "test/imgs/john-doe.png",
+                  "srcSet": "",
+                },
+              },
+            },
+            "name": "Sally Smith",
+            "position": "CEO",
+          }
+        }
+      />
+      <TeamMemberPreview
+        key="George Miller"
+        postCount={0}
+        teamMember={
+          Object {
+            "headshot": Object {
+              "childImageSharp": Object {
+                "fluid": Object {
+                  "aspectRatio": 1,
+                  "sizes": "",
+                  "src": "test/imgs/john-doe.png",
+                  "srcSet": "",
+                },
+              },
+            },
+            "name": "George Miller",
+            "position": "CEO",
+          }
+        }
+      />
+    </Styled(Component)>
+  </Styled(Component)>
+</Layout>
+`;

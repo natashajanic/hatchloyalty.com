@@ -1,7 +1,9 @@
 {
   "collectCoverage": true,
   "coveragePathIgnorePatterns": ["tests"],
-  "globals": {},
+  "globals": {
+    "__PATH_PREFIX__": ""
+  },
   "moduleFileExtensions": [
     "ts",
     "tsx",

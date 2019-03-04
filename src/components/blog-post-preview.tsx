@@ -3,7 +3,7 @@ import Img from 'gatsby-image'
 import { kebabCase } from 'lodash'
 import * as React from 'react'
 import system from 'system-components'
-import { IGraphQLImage } from 'src/models'
+import { IBlogPost } from 'src/models'
 import Panel from './panel'
 import Text from './text'
 
@@ -26,25 +26,17 @@ const BlogPostTag = system({
 })
 
 export interface IBlogPostPreviewProps {
-  author: string
-  date: string
-  excerpt: string
-  featuredImage?: IGraphQLImage
-  slug: string
-  tags: string[]
-  title: string
+  post: IBlogPost
 }
 
 class BlogPostPreview extends React.Component<IBlogPostPreviewProps, {}> {
   render() {
     const {
-      author,
-      date,
-      excerpt,
-      featuredImage,
-      slug,
-      tags,
-      title,
+      post: {
+        excerpt,
+        fields: { slug },
+        frontmatter: { author, date, featuredImage, tags, title },
+      },
     } = this.props
 
     const tagLinks = tags.map(tag => (

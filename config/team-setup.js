@@ -3,7 +3,6 @@ const path = require('path')
 const { paginateList } = require('./helpers')
 
 exports.createPages = (graphql, createPage) => new Promise((resolve, reject) => {
-  const teamTemplate = path.resolve('./src/templates/team.tsx')
   const teamMemberTemplate = path.resolve('./src/templates/team-member.tsx')
 
   graphql(
@@ -13,7 +12,6 @@ exports.createPages = (graphql, createPage) => new Promise((resolve, reject) => 
           edges {
             node {
               name
-              active
             }
           }
         }
@@ -26,15 +24,6 @@ exports.createPages = (graphql, createPage) => new Promise((resolve, reject) => 
     }
 
     const { data: { teamMembers: { edges } } } = result
-    const activeTeamMembers = edges.filter(edge => edge.node.active)
-    createPage({
-      path: '/team',
-      component: teamTemplate,
-      context: {
-        basePath: '/team',
-        teamMemberNames: activeTeamMembers.map(edge => edge.node.name),
-      },
-    })
 
     // Make each team member's pages
     const teamMemberPagesCreation = edges.map(edge => (

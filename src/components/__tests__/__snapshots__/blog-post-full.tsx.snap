@@ -1,0 +1,156 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`BlogPostFull render matches the expected snapshot 1`] = `
+<div>
+  <Styled(Component)
+    blacklist={
+      Array [
+        "css",
+        "alignItems",
+        "border",
+        "borderColor",
+        "borderBottom",
+        "borderRadius",
+        "color",
+        "bg",
+        "display",
+        "justifyContent",
+        "m",
+        "mt",
+        "mr",
+        "mb",
+        "ml",
+        "mx",
+        "my",
+        "p",
+        "pt",
+        "pr",
+        "pb",
+        "pl",
+        "px",
+        "py",
+        "width",
+      ]
+    }
+    py={4}
+  >
+    <Styled(Component)
+      blacklist={
+        Array [
+          "css",
+          "border",
+          "borderTop",
+          "borderRight",
+          "borderBottom",
+          "borderLeft",
+          "borderColor",
+          "fontSize",
+          "m",
+          "mt",
+          "mr",
+          "mb",
+          "ml",
+          "mx",
+          "my",
+          "p",
+          "pt",
+          "pr",
+          "pb",
+          "pl",
+          "px",
+          "py",
+        ]
+      }
+      borderBottom="1px solid"
+      borderColor="grayLight"
+      fontSize={5}
+      is="h1"
+      m={0}
+      pb={4}
+    >
+      Test Blog Post
+    </Styled(Component)>
+    <div>
+      Written by
+       
+      <ForwardRef
+        to="/team/john-doe"
+      >
+        John Doe
+      </ForwardRef>
+       on 
+      February 25, 2019
+    </div>
+    <div>
+      Tags: 
+      <Styled(Component)
+        blacklist={
+          Array [
+            "css",
+            "m",
+            "mt",
+            "mr",
+            "mb",
+            "ml",
+            "mx",
+            "my",
+            "p",
+            "pt",
+            "pr",
+            "pb",
+            "pl",
+            "px",
+            "py",
+          ]
+        }
+        is="span"
+        key="tagLink-Test"
+        mx={1}
+      >
+        <ForwardRef
+          to="/blog/tags/test"
+        >
+          Test
+        </ForwardRef>
+      </Styled(Component)>
+      <Styled(Component)
+        blacklist={
+          Array [
+            "css",
+            "m",
+            "mt",
+            "mr",
+            "mb",
+            "ml",
+            "mx",
+            "my",
+            "p",
+            "pt",
+            "pr",
+            "pb",
+            "pl",
+            "px",
+            "py",
+          ]
+        }
+        is="span"
+        key="tagLink-Press Release"
+        mx={1}
+      >
+        <ForwardRef
+          to="/blog/tags/press-release"
+        >
+          Press Release
+        </ForwardRef>
+      </Styled(Component)>
+    </div>
+  </Styled(Component)>
+  <div
+    dangerouslySetInnerHTML={
+      Object {
+        "__html": "<div>Test blog post body content.</div>",
+      }
+    }
+  />
+</div>
+`;

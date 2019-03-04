@@ -67,7 +67,8 @@
     "quotemark": [
       true,
       "single",
-      "jsx-double"
+      "jsx-double",
+      "avoid-escape"
     ],
     "semicolon": [
       false
