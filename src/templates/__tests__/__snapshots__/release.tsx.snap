@@ -1,0 +1,109 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ReleaseTemplate render matches the expected snapshot 1`] = `
+<Layout
+  pageStyle="offWhite"
+>
+  <SEO
+    keywords={
+      Array [
+        "hatch",
+        "hatch loyalty",
+        "loyalty",
+        "blog",
+        "personalization",
+        "activation",
+        "changelog",
+      ]
+    }
+    title="Changelog"
+  />
+  <Styled(Component)
+    blacklist={
+      Array [
+        "css",
+        "maxWidth",
+        "m",
+        "mt",
+        "mr",
+        "mb",
+        "ml",
+        "mx",
+        "my",
+        "p",
+        "pt",
+        "pr",
+        "pb",
+        "pl",
+        "px",
+        "py",
+      ]
+    }
+    is="main"
+    m="0 auto"
+    maxWidth="1024px"
+    px={
+      Array [
+        3,
+        4,
+      ]
+    }
+  >
+    <ReleaseNavigation
+      next={
+        Object {
+          "changes": Array [
+            Object {
+              "component": "Test",
+              "description": "Test Change 1",
+            },
+            Object {
+              "component": "Test HQ",
+              "description": "Test Change 2",
+              "link": "https://developer.hatchloyalty.com/test/change-2",
+            },
+          ],
+          "date": "January 2019",
+          "name": "Test Next Release",
+        }
+      }
+      previous={
+        Object {
+          "changes": Array [
+            Object {
+              "component": "Test",
+              "description": "Test Change 1",
+            },
+            Object {
+              "component": "Test HQ",
+              "description": "Test Change 2",
+              "link": "https://developer.hatchloyalty.com/test/change-2",
+            },
+          ],
+          "date": "January 2019",
+          "name": "Test Previous Release",
+        }
+      }
+    />
+    <Release
+      release={
+        Object {
+          "changes": Array [
+            Object {
+              "component": "Test",
+              "description": "Test Change 1",
+            },
+            Object {
+              "component": "Test HQ",
+              "description": "Test Change 2",
+              "link": "https://developer.hatchloyalty.com/test/change-2",
+            },
+          ],
+          "date": "January 2019",
+          "name": "Test Release 2019.01",
+        }
+      }
+    />
+  </Styled(Component)>
+</Layout>
+`;

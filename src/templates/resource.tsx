@@ -1,47 +1,41 @@
 import * as React from 'react'
-import { graphql, Link } from 'gatsby'
+import { graphql } from 'gatsby'
 import Layout from 'src/components/layout'
-import BlogPostFull from 'src/components/blog-post-full'
-import Wrapper from 'src/components/wrapper'
+import ResourcePostFull from 'src/components/resource-post-full'
 import SEO from 'src/components/seo'
-import { IBlogPost } from 'src/models'
+import Wrapper from 'src/components/wrapper'
+import { IResourcePost } from 'src/models'
 
-interface IBlogTemplateProps {
+interface IResourceTemplateProps {
   data: {
-    post: IBlogPost
+    post: IResourcePost
   }
 }
 
-class BlogTemplate extends React.Component<IBlogTemplateProps, {}> {
+class ResourceTemplate extends React.Component<IResourceTemplateProps, {}> {
   render() {
     const { post } = this.props.data
     return (
       <Layout>
         <SEO title={post.frontmatter.title} description={post.excerpt} />
         <Wrapper py={3}>
-          <BlogPostFull post={post} />
+          <ResourcePostFull post={post} />
         </Wrapper>
       </Layout>
     )
   }
 }
 
-export default BlogTemplate
+export default ResourceTemplate
 
 export const pageQuery = graphql`
-  query BlogBySlug($slug: String!) {
+  query ResourceBySlug($slug: String!) {
     post: markdownRemark(fields: { slug: { eq: $slug } }) {
       excerpt(pruneLength: 160)
-      fields {
-        slug
-      }
+      html
       frontmatter {
-        author
-        date(formatString: "MMMM DD, YYYY")
-        tags
         title
       }
-      html
     }
   }
 `

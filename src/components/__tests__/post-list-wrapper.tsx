@@ -1,13 +1,13 @@
 import { shallow, ShallowWrapper } from 'enzyme'
 import 'jest' // tslint:disable-line no-import-side-effect
 import * as React from 'react'
-import BlogPostContainer from '../blog-post-container'
+import PostListWrapper from '../post-list-wrapper'
 
-describe('BlogPostContainer', () => {
+describe('PostListWrapper', () => {
   let mountedComponent: ShallowWrapper<any, any, any>
 
   beforeEach(() => {
-    mountedComponent = shallow(<BlogPostContainer />)
+    mountedComponent = shallow(<PostListWrapper />)
   })
 
   describe('render', () => {

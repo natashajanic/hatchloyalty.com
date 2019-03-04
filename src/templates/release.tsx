@@ -6,18 +6,11 @@ import SEO from 'src/components/seo'
 import Wrapper from 'src/components/wrapper'
 import { IRelease } from 'src/models'
 
-interface IReleaseTemplateProps {
+export interface IReleaseTemplateProps {
   pageContext: {
     release: IRelease
     previous: IRelease
     next: IRelease
-  }
-  data: {
-    releases: {
-      edges: Array<{
-        node: IRelease
-      }>
-    }
   }
 }
 

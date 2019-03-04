@@ -1,0 +1,112 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`BlogPostList render matches the expected snapshot 1`] = `
+<Styled(Component)
+  blacklist={
+    Array [
+      "css",
+      "maxWidth",
+      "m",
+      "mt",
+      "mr",
+      "mb",
+      "ml",
+      "mx",
+      "my",
+      "p",
+      "pt",
+      "pr",
+      "pb",
+      "pl",
+      "px",
+      "py",
+    ]
+  }
+  maxWidth="800px"
+  mx="auto"
+  px={
+    Array [
+      3,
+      5,
+    ]
+  }
+  py={2}
+>
+  <Text
+    blacklist={
+      Array [
+        "css",
+        "fontSize",
+        "lineHeight",
+        "m",
+        "mt",
+        "mr",
+        "mb",
+        "ml",
+        "mx",
+        "my",
+        "p",
+        "pt",
+        "pr",
+        "pb",
+        "pl",
+        "px",
+        "py",
+        "textStyle",
+        "alignItems",
+        "color",
+        "bg",
+        "display",
+        "flex",
+        "fontWeight",
+        "textAlign",
+      ]
+    }
+    fontSize={4}
+    is="h2"
+    lineHeight="1.5"
+    m={0}
+    mb={2}
+    mt={4}
+    textStyle="normal"
+  >
+    Showing 1 of 27 posts tagged with "Test"
+  </Text>
+  <BlogPostPreview
+    key="/2019-02-25-test-blog-post/"
+    post={
+      Object {
+        "excerpt": "This is the excerpt for a blog post.",
+        "fields": Object {
+          "slug": "/2019-02-25-test-blog-post/",
+        },
+        "frontmatter": Object {
+          "author": "John Doe",
+          "date": "February 25, 2019",
+          "featuredImage": Object {
+            "childImageSharp": Object {
+              "fluid": Object {
+                "aspectRatio": 1,
+                "sizes": "",
+                "src": "test/imgs/test-blog-post.png",
+                "srcSet": "",
+              },
+            },
+          },
+          "tags": Array [
+            "Test",
+            "Press Release",
+          ],
+          "title": "Test Blog Post",
+        },
+        "html": "<div>Test blog post body content.</div>",
+      }
+    }
+  />
+  <Pager
+    basePath="/tests"
+    currentPage={1}
+    maxPage={3}
+  />
+</Styled(Component)>
+`;
