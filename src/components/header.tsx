@@ -1,11 +1,13 @@
 import { Link } from 'gatsby'
 import * as React from 'react'
+import Headroom from 'react-headroom'
 import system from 'system-components'
 import HatchLogo from 'src/images/hatch-logo.svg'
 
 const UIHeader = system({
   is: 'header',
   alignItems: 'center',
+  background: 'white',
   borderBottom: '1px solid',
   borderColor: 'grayLight',
   display: 'flex',
@@ -59,13 +61,15 @@ class Header extends React.Component<IHeaderProps, {}> {
       </NavLink>
     ))
     return (
-      <UIHeader>
-        <Link to="/">
-          <Logo src={HatchLogo} alt={siteTitle} />
-        </Link>
+      <Headroom>
+        <UIHeader>
+          <Link to="/">
+            <Logo src={HatchLogo} alt={siteTitle} />
+          </Link>
 
-        <Nav>{links}</Nav>
-      </UIHeader>
+          <Nav>{links}</Nav>
+        </UIHeader>
+      </Headroom>
     )
   }
 }

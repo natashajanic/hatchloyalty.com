@@ -2,6 +2,7 @@ import { shallow, ShallowWrapper } from 'enzyme'
 import { Link } from 'gatsby'
 import 'jest' // tslint:disable-line no-import-side-effect
 import * as React from 'react'
+import Headroom from 'react-headroom'
 import Header, { IHeaderProps } from '../header'
 
 describe('Header', () => {
@@ -30,6 +31,10 @@ describe('Header', () => {
   })
 
   describe('render', () => {
+    it('renders all content in a sticky header wrapper', async () => {
+      expect(mountedComponent.find(Headroom).length).toEqual(1)
+    })
+
     it('renders the Hatch logo', async () => {
       expect(
         mountedComponent.find('Styled(Component)[is="img"]').length

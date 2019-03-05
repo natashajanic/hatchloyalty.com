@@ -1,220 +1,236 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Header render matches the expected snapshot 1`] = `
-<Styled(Component)
-  alignItems="center"
-  blacklist={
-    Array [
-      "css",
-      "alignItems",
-      "border",
-      "borderTop",
-      "borderRight",
-      "borderBottom",
-      "borderLeft",
-      "borderColor",
-      "display",
-      "justifyContent",
-      "m",
-      "mt",
-      "mr",
-      "mb",
-      "ml",
-      "mx",
-      "my",
-      "p",
-      "pt",
-      "pr",
-      "pb",
-      "pl",
-      "px",
-      "py",
-      "width",
-    ]
-  }
-  borderBottom="1px solid"
-  borderColor="grayLight"
-  display="flex"
-  is="header"
-  justifyContent="space-between"
-  mx="auto"
-  px={3}
-  py={3}
-  width="1024px"
+<Headroom
+  calcHeightOnResize={true}
+  disable={false}
+  disableInlineStyles={false}
+  downTolerance={0}
+  onPin={[Function]}
+  onUnfix={[Function]}
+  onUnpin={[Function]}
+  parent={[Function]}
+  pinStart={0}
+  upTolerance={5}
+  wrapperStyle={Object {}}
 >
-  <ForwardRef
-    to="/"
-  >
-    <Styled(Component)
-      alt="Hatch Loyalty"
-      blacklist={
-        Array [
-          "css",
-          "m",
-          "mt",
-          "mr",
-          "mb",
-          "ml",
-          "mx",
-          "my",
-          "p",
-          "pt",
-          "pr",
-          "pb",
-          "pl",
-          "px",
-          "py",
-          "width",
-        ]
-      }
-      is="img"
-      m={0}
-      width="125px"
-    />
-  </ForwardRef>
   <Styled(Component)
+    alignItems="center"
+    background="white"
     blacklist={
       Array [
         "css",
+        "alignItems",
+        "background",
+        "border",
+        "borderTop",
+        "borderRight",
+        "borderBottom",
+        "borderLeft",
+        "borderColor",
+        "display",
+        "justifyContent",
+        "m",
+        "mt",
+        "mr",
+        "mb",
+        "ml",
+        "mx",
+        "my",
+        "p",
+        "pt",
+        "pr",
+        "pb",
+        "pl",
+        "px",
+        "py",
+        "width",
       ]
     }
-    is="nav"
+    borderBottom="1px solid"
+    borderColor="grayLight"
+    display="flex"
+    is="header"
+    justifyContent="space-between"
+    mx="auto"
+    px={3}
+    py={3}
+    width="1024px"
   >
+    <ForwardRef
+      to="/"
+    >
+      <Styled(Component)
+        alt="Hatch Loyalty"
+        blacklist={
+          Array [
+            "css",
+            "m",
+            "mt",
+            "mr",
+            "mb",
+            "ml",
+            "mx",
+            "my",
+            "p",
+            "pt",
+            "pr",
+            "pb",
+            "pl",
+            "px",
+            "py",
+            "width",
+          ]
+        }
+        is="img"
+        m={0}
+        width="125px"
+      />
+    </ForwardRef>
     <Styled(Component)
       blacklist={
         Array [
           "css",
-          "color",
-          "bg",
-          "fontSize",
-          "fontWeight",
-          "display",
-          "m",
-          "mt",
-          "mr",
-          "mb",
-          "ml",
-          "mx",
-          "my",
-          "p",
-          "pt",
-          "pr",
-          "pb",
-          "pl",
-          "px",
-          "py",
         ]
       }
-      color="offBlack"
-      display="inline-flex"
-      fontSize={3}
-      fontWeight={400}
-      is="li"
-      key="Home"
-      px={2}
+      is="nav"
     >
-      <ForwardRef
-        style={
-          Object {
-            "color": "inherit",
-            "textDecoration": "none",
-          }
+      <Styled(Component)
+        blacklist={
+          Array [
+            "css",
+            "color",
+            "bg",
+            "fontSize",
+            "fontWeight",
+            "display",
+            "m",
+            "mt",
+            "mr",
+            "mb",
+            "ml",
+            "mx",
+            "my",
+            "p",
+            "pt",
+            "pr",
+            "pb",
+            "pl",
+            "px",
+            "py",
+          ]
         }
-        to="/"
+        color="offBlack"
+        display="inline-flex"
+        fontSize={3}
+        fontWeight={400}
+        is="li"
+        key="Home"
+        px={2}
       >
-        Home
-      </ForwardRef>
-    </Styled(Component)>
-    <Styled(Component)
-      blacklist={
-        Array [
-          "css",
-          "color",
-          "bg",
-          "fontSize",
-          "fontWeight",
-          "display",
-          "m",
-          "mt",
-          "mr",
-          "mb",
-          "ml",
-          "mx",
-          "my",
-          "p",
-          "pt",
-          "pr",
-          "pb",
-          "pl",
-          "px",
-          "py",
-        ]
-      }
-      color="offBlack"
-      display="inline-flex"
-      fontSize={3}
-      fontWeight={400}
-      is="li"
-      key="Resources"
-      px={2}
-    >
-      <ForwardRef
-        style={
-          Object {
-            "color": "inherit",
-            "textDecoration": "none",
+        <ForwardRef
+          style={
+            Object {
+              "color": "inherit",
+              "textDecoration": "none",
+            }
           }
+          to="/"
+        >
+          Home
+        </ForwardRef>
+      </Styled(Component)>
+      <Styled(Component)
+        blacklist={
+          Array [
+            "css",
+            "color",
+            "bg",
+            "fontSize",
+            "fontWeight",
+            "display",
+            "m",
+            "mt",
+            "mr",
+            "mb",
+            "ml",
+            "mx",
+            "my",
+            "p",
+            "pt",
+            "pr",
+            "pb",
+            "pl",
+            "px",
+            "py",
+          ]
         }
-        to="/resources"
+        color="offBlack"
+        display="inline-flex"
+        fontSize={3}
+        fontWeight={400}
+        is="li"
+        key="Resources"
+        px={2}
       >
-        Resources
-      </ForwardRef>
-    </Styled(Component)>
-    <Styled(Component)
-      blacklist={
-        Array [
-          "css",
-          "color",
-          "bg",
-          "fontSize",
-          "fontWeight",
-          "display",
-          "m",
-          "mt",
-          "mr",
-          "mb",
-          "ml",
-          "mx",
-          "my",
-          "p",
-          "pt",
-          "pr",
-          "pb",
-          "pl",
-          "px",
-          "py",
-        ]
-      }
-      color="offBlack"
-      display="inline-flex"
-      fontSize={3}
-      fontWeight={400}
-      is="li"
-      key="Blog"
-      px={2}
-    >
-      <ForwardRef
-        style={
-          Object {
-            "color": "inherit",
-            "textDecoration": "none",
+        <ForwardRef
+          style={
+            Object {
+              "color": "inherit",
+              "textDecoration": "none",
+            }
           }
+          to="/resources"
+        >
+          Resources
+        </ForwardRef>
+      </Styled(Component)>
+      <Styled(Component)
+        blacklist={
+          Array [
+            "css",
+            "color",
+            "bg",
+            "fontSize",
+            "fontWeight",
+            "display",
+            "m",
+            "mt",
+            "mr",
+            "mb",
+            "ml",
+            "mx",
+            "my",
+            "p",
+            "pt",
+            "pr",
+            "pb",
+            "pl",
+            "px",
+            "py",
+          ]
         }
-        to="/blogs"
+        color="offBlack"
+        display="inline-flex"
+        fontSize={3}
+        fontWeight={400}
+        is="li"
+        key="Blog"
+        px={2}
       >
-        Blog
-      </ForwardRef>
+        <ForwardRef
+          style={
+            Object {
+              "color": "inherit",
+              "textDecoration": "none",
+            }
+          }
+          to="/blogs"
+        >
+          Blog
+        </ForwardRef>
+      </Styled(Component)>
     </Styled(Component)>
   </Styled(Component)>
-</Styled(Component)>
+</Headroom>
 `;
