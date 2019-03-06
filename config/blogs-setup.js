@@ -9,7 +9,7 @@ exports.createPages = (graphql, createPage) => new Promise((resolve, reject) => 
     `
       {
         allMarkdownRemark(
-          sort: { fields: [frontmatter___date], order: DESC },
+          sort: { fields: [frontmatter___date], order: DESC }
           limit: 1000
           filter: {fields: {sourceName: {eq: "blog"}}}
         ) {
@@ -18,7 +18,6 @@ exports.createPages = (graphql, createPage) => new Promise((resolve, reject) => 
             node {
               fields {
                 slug
-                sourceName
               }
               frontmatter {
                 title
@@ -37,18 +36,13 @@ exports.createPages = (graphql, createPage) => new Promise((resolve, reject) => 
     const { data: { allMarkdownRemark } } = result
     paginateList(allMarkdownRemark, createPage, blogListTemplate, '/blog')
 
-    const { edges } = allMarkdownRemark
-    edges.forEach((post, index) => {
-      const previous = index === edges.length - 1 ? null : edges[index + 1].node;
-      const next = index === 0 ? null : edges[index - 1].node;
-
+    allMarkdownRemark.edges.forEach(post => {
       createPage({
         path: `/blog${post.node.fields.slug}`,
         component: blogTemplate,
         context: {
           slug: post.node.fields.slug,
-          previous,
-          next,
+          title: post.node.frontmatter.title
         },
       })
     })

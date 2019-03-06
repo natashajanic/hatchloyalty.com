@@ -1,4 +1,5 @@
 import { Link } from 'gatsby'
+import { MDXRenderer } from 'gatsby-mdx'
 import { kebabCase } from 'lodash'
 import * as React from 'react'
 import system from 'system-components'
@@ -47,7 +48,11 @@ class BlogPostFull extends React.Component<IBlogPostFullProps, {}> {
           <div>Tags: {tagLinks}</div>
         </Box>
 
-        <div dangerouslySetInnerHTML={{ __html: post.html }} />
+        {post.mdxBody ? (
+          <MDXRenderer>{post.mdxBody}</MDXRenderer>
+        ) : (
+          <div dangerouslySetInnerHTML={{ __html: post.html }} />
+        )}
       </div>
     )
   }

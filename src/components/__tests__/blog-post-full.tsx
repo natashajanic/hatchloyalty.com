@@ -1,5 +1,16 @@
 import { shallow, ShallowWrapper } from 'enzyme'
 import { Link } from 'gatsby'
+
+// Currently this library has a JS file that contains JSX content
+// tslint:disable-next-line
+// Source: https://github.com/ChristopherBiscardi/gatsby-mdx/blob/25cce51f41677fde33a525fe4af6599ed292ad22/packages/gatsby-mdx/context.js#L7
+// This caused Jest to error when loading this file.
+jest.mock('gatsby-mdx', () => ({
+  __esModule: true,
+  MDXRenderer: () => <div />,
+}))
+import { MDXRenderer } from 'gatsby-mdx'
+
 import 'jest' // tslint:disable-line no-import-side-effect
 import * as React from 'react'
 import { mockBlogPost } from 'src/models/mocks'
@@ -68,6 +79,16 @@ describe('BlogPostFull', () => {
 
     it("renders the raw post's body as HTML", async () => {
       expect(mountedComponent.html()).toContain(mockBlogPost.html)
+    })
+
+    it('renders the post as MDX content if an MDX body is specified', async () => {
+      mountedComponent.setProps({
+        post: {
+          ...mockBlogPost,
+          mdxBody: 'function() { 1 === 1; }',
+        },
+      })
+      expect(mountedComponent.find(MDXRenderer).length).toEqual(1)
     })
 
     it('matches the expected snapshot', async () => {

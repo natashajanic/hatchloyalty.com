@@ -9,12 +9,20 @@ import { IBlogPost } from 'src/models'
 interface IBlogTemplateProps {
   data: {
     post: IBlogPost
+    title: string
+    mdx: {
+      code: { body: string }
+      frontmatter: { title: string }
+    }
   }
 }
 
 class BlogTemplate extends React.Component<IBlogTemplateProps, {}> {
   render() {
-    const { post } = this.props.data
+    const { post, mdx } = this.props.data
+    if (mdx) {
+      post.mdxBody = mdx.code.body
+    }
     return (
       <Layout>
         <SEO title={post.frontmatter.title} description={post.excerpt} />
@@ -29,7 +37,7 @@ class BlogTemplate extends React.Component<IBlogTemplateProps, {}> {
 export default BlogTemplate
 
 export const pageQuery = graphql`
-  query BlogBySlug($slug: String!) {
+  query BlogBySlug($slug: String!, $title: String!) {
     post: markdownRemark(fields: { slug: { eq: $slug } }) {
       excerpt(pruneLength: 160)
       fields {
@@ -42,6 +50,14 @@ export const pageQuery = graphql`
         title
       }
       html
+    }
+    mdx(frontmatter: { title: { eq: $title } }) {
+      code {
+        body
+      }
+      frontmatter {
+        title
+      }
     }
   }
 `
