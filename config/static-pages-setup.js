@@ -1,21 +1,23 @@
 const path = require('path')
 
 exports.createPages = (graphql, createPage) => new Promise((resolve, reject) => {
-  const resourceTemplate = path.resolve('./src/templates/resource.tsx')
+  const pageTemplate = path.resolve('./src/templates/static-page.tsx')
 
   graphql(
     `
       {
-        allMarkdownRemark(sort: {
-          fields: [frontmatter___date], order: DESC },
-          limit: 1000
-          filter: {fields: {sourceName: {eq: "resources"}}}
+        allMarkdownRemark(
+          filter: { fields: { sourceName: { eq: "staticPages" } } }
         ) {
           edges {
             node {
               fields {
                 slug
               }
+              frontmatter {
+                title
+              }
+              html
             }
           }
         }
@@ -30,10 +32,10 @@ exports.createPages = (graphql, createPage) => new Promise((resolve, reject) => 
     const { data: { allMarkdownRemark: { edges } } } = result
     edges.forEach(edge => {
       createPage({
-        path: `/resource${edge.node.fields.slug}`,
-        component: resourceTemplate,
+        path: edge.node.fields.slug,
+        component: pageTemplate,
         context: {
-          slug: edge.node.fields.slug,
+          page: edge.node,
         },
       })
     })

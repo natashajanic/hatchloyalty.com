@@ -1,0 +1,59 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`StaticPageTemplate render matches the expected snapshot 1`] = `
+<Layout>
+  <SEO
+    keywords={
+      Array [
+        "hatch",
+        "hatch loyalty",
+        "loyalty",
+        "docs",
+        "personalization",
+        "activation",
+      ]
+    }
+    title="Test Resource Post"
+  />
+  <Styled(Component)
+    blacklist={
+      Array [
+        "css",
+        "maxWidth",
+        "m",
+        "mt",
+        "mr",
+        "mb",
+        "ml",
+        "mx",
+        "my",
+        "p",
+        "pt",
+        "pr",
+        "pb",
+        "pl",
+        "px",
+        "py",
+      ]
+    }
+    is="main"
+    m="0 auto"
+    maxWidth="1024px"
+    px={
+      Array [
+        3,
+        4,
+      ]
+    }
+    py={5}
+  >
+    <div
+      dangerouslySetInnerHTML={
+        Object {
+          "__html": "<div>Test resource post body content.</div>",
+        }
+      }
+    />
+  </Styled(Component)>
+</Layout>
+`;

@@ -28,8 +28,7 @@ export interface IRelease {
   name: string
 }
 
-export interface IResourcePost {
-  excerpt: string
+export interface IStaticPage {
   fields: {
     slug: string
   }

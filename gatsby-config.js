@@ -43,9 +43,6 @@ module.exports = {
       },
     ]
   },
-  // mapping: {
-  //   "MarkdownRemark.frontmatter.author": `AuthorYaml`,
-  // },
 
   plugins: [
     {
@@ -72,14 +69,14 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        name: 'resources',
-        path: `${__dirname}/content/resources`,
+        name: 'staticPages',
+        path: `${__dirname}/content/static-pages`,
       },
     },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        name: 'team-members',
+        name: 'teamMembers',
         path: `${__dirname}/content/team-members`,
       },
     },

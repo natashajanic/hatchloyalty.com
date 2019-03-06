@@ -1,4 +1,4 @@
-import { IRelease, IBlogPost, IResourcePost, ITeamMember } from '.'
+import { IRelease, IBlogPost, IStaticPage, ITeamMember } from '.'
 
 export const mockBlogPost: IBlogPost = {
   excerpt: 'This is the excerpt for a blog post.',
@@ -37,10 +37,9 @@ export const mockRelease: IRelease = {
   name: 'Test Release 2019.01',
 }
 
-export const mockResourcePost: IResourcePost = {
-  excerpt: 'This is the excerpt for a resource post.',
+export const mockStaticPage: IStaticPage = {
   fields: {
-    slug: '/test-resource-post/',
+    slug: '/test-page/',
   },
   frontmatter: {
     title: 'Test Resource Post',

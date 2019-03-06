@@ -8,7 +8,7 @@ const { createFilePath } = require('gatsby-source-filesystem')
 
 const { createPages: createBlogPages } = require('./config/blogs-setup')
 const { createPages: createReleasesPages } = require('./config/releases-setup')
-const { createPages: createResourcePages } = require('./config/resources-setup')
+const { createPages: createStaticPages } = require('./config/static-pages-setup')
 const { createPages: createTagPages } = require('./config/tags-setup')
 const { createPages: createTeamPages } = require('./config/team-setup')
 
@@ -19,7 +19,7 @@ exports.createPages = ({ graphql, actions }) => {
 
   setupSteps.push(createBlogPages(graphql, createPage))
   setupSteps.push(createReleasesPages(graphql, createPage))
-  setupSteps.push(createResourcePages(graphql, createPage))
+  setupSteps.push(createStaticPages(graphql, createPage))
   setupSteps.push(createTagPages(graphql, createPage))
   setupSteps.push(createTeamPages(graphql, createPage))
 

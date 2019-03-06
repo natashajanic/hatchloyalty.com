@@ -1,5 +1,4 @@
 import { shallow, ShallowWrapper } from 'enzyme'
-import { Link } from 'gatsby'
 import 'jest' // tslint:disable-line no-import-side-effect
 import * as React from 'react'
 import Release from 'src/components/release'
